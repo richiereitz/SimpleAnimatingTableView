@@ -164,6 +164,8 @@
 		.y = (self.expandedIndexPath_shouldExpandFooter) ? currentOffset.y + heightModifier : currentOffset.y - heightModifier
 	}];
 	
+	[self setRefrenceRect:CGRectOffset(self.refrenceRect, 0.0f, (self.expandedIndexPath_shouldExpandFooter) ? - heightModifier : heightModifier)];
+	
 }
 
 #pragma mark - cellHeight
@@ -310,14 +312,14 @@
 {
 	kRUConditionalReturn(CGRectEqualToRect(self.refrenceRect, CGRectZero), YES);
 	
+	[self.transitionManager setReferenceFrame:self.refrenceRect];
+
 	if (self.presentedViewController)
 	{
 		[self dismissViewControllerAnimated:YES completion:nil];
 	}
 	else
 	{
-		[self.transitionManager setReferenceFrame:self.refrenceRect];
-		
 		ATModalViewController* const modal = [ATModalViewController new];
 		[modal setModalPresentationStyle:UIModalPresentationCustom];
 		[modal setTransitioningDelegate:self.transitionManager];
