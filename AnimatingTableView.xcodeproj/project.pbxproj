@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80B56651F1503FF891461C9C /* Pods_AnimatingTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9174255A2AD5B7303867E889 /* Pods_AnimatingTableView.framework */; };
 		B68958421F9126E000539DA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B68958411F9126E000539DA2 /* main.m */; };
 		B689584E1F9127B400539DA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B689584B1F91277600539DA2 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2061A0FDAEC43BEAF30BF402 /* Pods-AnimatingTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimatingTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimatingTableView/Pods-AnimatingTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		2599EDAC1DFE384FAB17EF07 /* Pods-AnimatingTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimatingTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimatingTableView/Pods-AnimatingTableView.release.xcconfig"; sourceTree = "<group>"; };
+		9174255A2AD5B7303867E889 /* Pods_AnimatingTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimatingTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B689582F1F9126E000539DA2 /* AnimatingTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatingTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68958401F9126E000539DA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B68958411F9126E000539DA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -25,17 +29,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80B56651F1503FF891461C9C /* Pods_AnimatingTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26AE8BAD989E3D1BB309075A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2061A0FDAEC43BEAF30BF402 /* Pods-AnimatingTableView.debug.xcconfig */,
+				2599EDAC1DFE384FAB17EF07 /* Pods-AnimatingTableView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6DE46EE7BF9EC48C087335B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9174255A2AD5B7303867E889 /* Pods_AnimatingTableView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B68958261F9126DF00539DA2 = {
 			isa = PBXGroup;
 			children = (
 				B68958311F9126E000539DA2 /* AnimatingTableView */,
 				B68958301F9126E000539DA2 /* Products */,
+				26AE8BAD989E3D1BB309075A /* Pods */,
+				6DE46EE7BF9EC48C087335B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B68958451F9126E000539DA2 /* Build configuration list for PBXNativeTarget "AnimatingTableView" */;
 			buildPhases = (
+				04C60C3E8B13FB088AF03538 /* [CP] Check Pods Manifest.lock */,
 				B689582B1F9126E000539DA2 /* Sources */,
 				B689582C1F9126E000539DA2 /* Frameworks */,
 				B689582D1F9126E000539DA2 /* Resources */,
+				096F0B8763A537B75A348E43 /* [CP] Embed Pods Frameworks */,
+				EBF5AE21D950CF25D07FB358 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,6 +165,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04C60C3E8B13FB088AF03538 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		096F0B8763A537B75A348E43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimatingTableView/Pods-AnimatingTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBF5AE21D950CF25D07FB358 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimatingTableView/Pods-AnimatingTableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B689582B1F9126E000539DA2 /* Sources */ = {
@@ -258,6 +333,7 @@
 		};
 		B68958461F9126E000539DA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2061A0FDAEC43BEAF30BF402 /* Pods-AnimatingTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -272,6 +348,7 @@
 		};
 		B68958471F9126E000539DA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2599EDAC1DFE384FAB17EF07 /* Pods-AnimatingTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,1546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00048079BEF7029C2057D5919CC46EC6 /* RUTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2553BE727E82A0AF661621C677A40C /* RUTableView.m */; };
+		015E190370F08E1102404636238AC792 /* NSPredicate+RUUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BABD1680C634124E5E2FE002895A651B /* NSPredicate+RUUtil.m */; };
+		02FB5606EDB8B637BE5352FB609ADF82 /* NSString+RUUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4061021F0DC089548ED6B782223D07EE /* NSString+RUUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0490E0219AE38D39D3457365542E6EAF /* RUNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D774CA25376354C66731D73EA99F539 /* RUNotifications.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0564A9CB3A79954BF94A9EDD26054ED3 /* RUKeyboardAdjustmentHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EB4215C1A17685B9C6E07EAB4BBE08 /* RUKeyboardAdjustmentHelper.m */; };
+		0696F29695A67BBDCE713DD68BAEB722 /* RUProtocolOrNil.h in Headers */ = {isa = PBXBuildFile; fileRef = 46D189F99E83EFFC86A4A33A75CF30A1 /* RUProtocolOrNil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0716AB8537F317718FCEC1150DDC5BA6 /* UIView+RUSubviews.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C7B1A116C99307C3F122C52461F9B4F /* UIView+RUSubviews.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08BD58C8BF6D5FB4ECEE1555B084EB2B /* Blocks+RUMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 545A3F6DAB5E407BF479C8411F472AAE /* Blocks+RUMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0968F008D6D42F14806FD26F7C5B611C /* UIButton+RUDiskImageFetching.h in Headers */ = {isa = PBXBuildFile; fileRef = 08EA5DD9B245C69A20219A754A49DD32 /* UIButton+RUDiskImageFetching.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		096BD56F6BC0719395669CB155E03149 /* UIView+RUMaskRoundCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = 6018C8100DFEF180930B17FE7920F859 /* UIView+RUMaskRoundCorners.m */; };
+		0A3F9D9B18C137860AB63138EBB7887B /* RUColoredNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = F888C0836D3E45EC61858C154DA900E7 /* RUColoredNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A7544EC4600B60C8C523F7762E583E8 /* UIApplication+RUPushNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8EDBBCF1BBE6266744CFCED2BDB33D /* UIApplication+RUPushNotifications.m */; };
+		0A77586DB421F8294DEBF715CFAB81AB /* ResplendentUtilities-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE8308E57545D42177AAA7A48E054B9B /* ResplendentUtilities-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AD227FA58FA68C1DA979620B62EC22D /* UIButton+RUAsynchronousImageFetching.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B936C7A226C10201F1C026BC18B9462 /* UIButton+RUAsynchronousImageFetching.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B117240F9B5D1593D4E69D399D82CFB /* UITextField+RUSelectedTextRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A074E8153716DA3429783F8273F3365 /* UITextField+RUSelectedTextRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CD633BB00F35FB0EE5BD4B19210B2F0 /* RUSlideMenuNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 605E9F0073EBCA597A4BB1C349432B2B /* RUSlideMenuNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D901F1CF388349D5EB00988F9D1A86C /* NSArray+RUShuffling.h in Headers */ = {isa = PBXBuildFile; fileRef = F6DF45F074B204ECDB36B02112E8A4C3 /* NSArray+RUShuffling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F5B039240635E89BB1AFA717F09D24F /* NSString+RUStringContainsUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 35A44BA017386DD3A6419B7F11393391 /* NSString+RUStringContainsUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F6B42DB7B79A60308A1BBEFC30595FA /* RUAsynchronousUIImageRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B410E059E06200E40585B28F319BB7EB /* RUAsynchronousUIImageRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F8A0B42E846AFD6A9B4206ABE0EBB08 /* UIView+RUMaskRoundCorners.h in Headers */ = {isa = PBXBuildFile; fileRef = 422B6922382A7DFD42CCE9BCA47E658B /* UIView+RUMaskRoundCorners.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		112D86674AA8F49E3D07F79CD4842D26 /* Pods-AnimatingTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 697296F713AAEA8055C7FD8C5BEBEA45 /* Pods-AnimatingTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12CF95D28B1241F27FAAD86BCD9FD9D8 /* RUScrollToTopManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ECF8E227464AAA262744649B6384A75 /* RUScrollToTopManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14456244C1F6FB6DC733D75D1662CFA4 /* RUViewStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4AA343ED9AB3F213286C660570B525 /* RUViewStack.m */; };
+		1585F4B13CD7FAAA7CC14A7D00493490 /* RUAsynchronousUIImageRequestProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 4968F99D2BA400D22E2C8C013716D832 /* RUAsynchronousUIImageRequestProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1865BFFF4154E89A1B9A148838648271 /* NSMutableDictionary+RUUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D20034B66CCF250185A0334AE0505D /* NSMutableDictionary+RUUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18CF2854461B1035FC59EDEB13401526 /* NSString+RUCamelCase.h in Headers */ = {isa = PBXBuildFile; fileRef = D60A43B3EF446933C383DCCC21636639 /* NSString+RUCamelCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A1B392B0EF419C03688879537D2D346 /* RUFullscreenRotatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA8B8B76F05A32838D5B1E3C97CE22D /* RUFullscreenRotatingView.m */; };
+		1CEFF1D6255DE4210B66F7688B460C73 /* RURadioButtonView.h in Headers */ = {isa = PBXBuildFile; fileRef = AD38DD211FE795E6E727EE9526ABF006 /* RURadioButtonView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DFF601F4D968041826071200CBB10A9 /* UIAlertView+RUShowUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 74AE1D8D15EF4BB61AC75C6918B5F54E /* UIAlertView+RUShowUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21C24A32A7D86A65363386756FE09BB6 /* UIImageView+RUFacebookAsynchronousImageFetching.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4F6CFD3B2EEAE3E0735344D1A6D323 /* UIImageView+RUFacebookAsynchronousImageFetching.m */; };
+		234CC82CB5A215239320368A2CA73178 /* UIImage+RUDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = D21B594E5A66A6244C569978733D81F4 /* UIImage+RUDebug.m */; };
+		239C4B8CDAB99AD2CF0C27485F025193 /* UIViewController+RUDismissOrPop.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3CEB09C8CB07940C08226E0AB8B196 /* UIViewController+RUDismissOrPop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24822A833A17C1FAD04FE69D764E57AA /* RUExceptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 47BB2ABCAF15E9923A9611CFDC25C422 /* RUExceptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2518C29492CBE35CD2714CB5847ABB99 /* RUDeallocHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 405F80380F5611FA9E7994814EA39D8E /* RUDeallocHook.m */; };
+		2577381315A3496534B94C6A1FB23176 /* UIView+RUEnableTapToResignFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4018070ECDED28FA10D671B8579949 /* UIView+RUEnableTapToResignFirstResponder.m */; };
+		260C66AAC75F8CED61E629E354A6DDA6 /* RUAsynchronousImageFetchingProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = AE1FDF3AC26FD7F3F1B3EAA15E4617B8 /* RUAsynchronousImageFetchingProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26654D3C450CCDE2464EB35D33E41FC0 /* UIView+RUDrawHole.h in Headers */ = {isa = PBXBuildFile; fileRef = 80623B0DA592EB326ECFD63573F8DDF5 /* UIView+RUDrawHole.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BA3A5ED26A42A5E93707DE963BBBA5F /* UIImageView+RUFacebookAsynchronousImageFetching.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4E3589FB00663796F66F38AB57B231 /* UIImageView+RUFacebookAsynchronousImageFetching.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C1AE209310F4E1A7C09D7F452A0616C /* UIViewController+RUNavigationBarColorSetterDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC9C741D1A65614EF2A069029718405 /* UIViewController+RUNavigationBarColorSetterDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C70F278B4268E678737B9CEF6CBD575 /* UIScrollView+RUAboveContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC6A860880F2E902E8D6477764A606 /* UIScrollView+RUAboveContentView.m */; };
+		2F35847B530779FDA61527A8D333687A /* RURadioButtonGroupProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = C76FEFE470B5D96D617B4ABC275CB4EF /* RURadioButtonGroupProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FFDB918A4F22496738659B8C270A2B0 /* NSString+RUEmailValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F24F02C027572D2D62416CC6752BA /* NSString+RUEmailValidation.m */; };
+		307EA436F5ED6B6C4502F760AAE2FEA2 /* RUCrossView.h in Headers */ = {isa = PBXBuildFile; fileRef = BB01A363DF83DA6FD4D31C048BF1E50D /* RUCrossView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31C6A3534142CCC50AB2418FC5DB9A58 /* RUConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 5411FAA4C74E5919CB279574CE715447 /* RUConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33303AA0E3D451C6ABC408975E8C5B6B /* RUKeyboardAdjustmentHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = B85E430AC48262AB01F1970223E96296 /* RUKeyboardAdjustmentHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33698DE69EFBF5140EF18CAD7DDCEA7E /* RUTopBottomBarModalView.h in Headers */ = {isa = PBXBuildFile; fileRef = AE4BC08815847BAEE8684BE632C3E1B3 /* RUTopBottomBarModalView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33E77E7C306488713B5E5166D3BD3B08 /* RURadioButtonGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = F39C6220C461DAE61A1229467090C53B /* RURadioButtonGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		363173B94AFC1BB5368A0447A46C3FBD /* NSMutableArray+RUAddObjectIfNotNil.m in Sources */ = {isa = PBXBuildFile; fileRef = BF753706704DFC99C9E2EFD183368896 /* NSMutableArray+RUAddObjectIfNotNil.m */; };
+		39BD0C1CB6B6107470F90572DC04C8F4 /* UIImage+RUDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = FA05F56A282D2350C57587F60E20C628 /* UIImage+RUDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39ED9F7AD668E49E72B8341F0AF9AC5F /* NSDictionary+RUReverse.h in Headers */ = {isa = PBXBuildFile; fileRef = 87DE0B63DFFC506911A7F48449A30C2F /* NSDictionary+RUReverse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BAC6588465261AAE12B6A0D4FA2A9FE /* NSString+RUNumberCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 666C39A6128C7C30D44180D61EB8D1F3 /* NSString+RUNumberCheck.m */; };
+		3BFA48FE76BF95FE24FDBB26B8E5CF02 /* NSNumber+RUUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 918DD8CB0DE82241737445945BC1EBEB /* NSNumber+RUUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C4FDAEF0A4BB32691CD808AF575418D /* UIImageView+RUAsynchronousImageFetching.h in Headers */ = {isa = PBXBuildFile; fileRef = 24233ECE641CFB2AF5ECF1091B974AFC /* UIImageView+RUAsynchronousImageFetching.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CC5A067E6EE0BA9170FB7680F3D1127 /* RUActionSheetManagement.h in Headers */ = {isa = PBXBuildFile; fileRef = 6011ABC42A1F32C675A3BF233D757E15 /* RUActionSheetManagement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FBF27856D0DE178E5E7387DA7250E29 /* UIColor+RUUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BC357B1895CFE04589B2EF4B3E17C9 /* UIColor+RUUtility.m */; };
+		41EFA95872FAF928C4448B27CB9D5CF5 /* UINavigationController+RUColoredStatusBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FC4FC9427BE6E2F55C38D3DCEC761A8 /* UINavigationController+RUColoredStatusBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4266540D9AFB95A56F0AD38D00C7348E /* RUAddressBookUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A6A0467B8481D9E433ED00CAE38AF9C /* RUAddressBookUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427D0D0BE4B859C130B528EC54982D24 /* RUColorPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = A3D03D13ED35F966F841E5D1736EA871 /* RUColorPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		444F36E86ED0ACD564E58ECD224A5BCB /* UIButton+RUAsynchronousImageFetching.m in Sources */ = {isa = PBXBuildFile; fileRef = 516EE64AF3CD3C94E4CFA8C63E8DC34C /* UIButton+RUAsynchronousImageFetching.m */; };
+		44C862AC9D6AF236DB1979AFB5002DCB /* UILabel+RUAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 464AFBDA3201D8E1C5AFABCEB0A70211 /* UILabel+RUAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4520B42837201A3F22572B3190F1C7E6 /* RUDiskImageFetchingController.h in Headers */ = {isa = PBXBuildFile; fileRef = 31F030C76F737E3A0D79FF13E49D15C6 /* RUDiskImageFetchingController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		455C9DEB59D5969CCB6EE4E27E088C41 /* NSString+RUDirectories.m in Sources */ = {isa = PBXBuildFile; fileRef = DB91B5F360560740A770CC5B95DE6C22 /* NSString+RUDirectories.m */; };
+		45E35DD3EB4F7DE2A3AF0321D9928C2E /* NSString+RUEncodedUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF9E6DA82235B5AB8B31D456C0FFA5E /* NSString+RUEncodedUrl.m */; };
+		45EBC50F152D34D47F0D8EC325F86724 /* RUClassOrNilUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D76C01FA8D97F765294AB2FB7A61C0 /* RUClassOrNilUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47B05F9B28B9BC144F20A97F3644ABF7 /* RUAddressBookUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D831B8D8A860F99C7BAC86C3C23CC36E /* RUAddressBookUtil.m */; };
+		4909568650A0C3BE26BBEFD53E3DE383 /* RUTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = A30D65A8772A44866A4F20693CE8AAB4 /* RUTriangle.m */; };
+		4952F478514C2C9C6F79A6B3B7A30E6F /* UIView+RUSuperviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 984A5E92A321D320210194CFA5B4F2F4 /* UIView+RUSuperviews.m */; };
+		4A6ED7C31FC5BFEC639316050AB24E7A /* UIColor+RUHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B9A3513BF6F96060D5D6967D3F3B46 /* UIColor+RUHexString.m */; };
+		4C0233B619668DBE79196B499967580C /* RUGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = F55769F2750EB0AAE3592F78EBB63E46 /* RUGradientView.m */; };
+		4C9237C2C444A9E087EADCAA5639E762 /* RUKeyboardAdjustmentHelperProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 394ECEE34DA791DA9AAA2C1551339CB7 /* RUKeyboardAdjustmentHelperProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D13D31B01B9049A60F78E72B4903A27 /* NSString+MKCoordinateRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = D04FCDDD83DAF5E9C71A38204C207F15 /* NSString+MKCoordinateRegion.m */; };
+		4E84976A9D3439645AA764D962CF521E /* RUCompatability.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EAC9226FF4DBB6DCD9A79EA845339E /* RUCompatability.m */; };
+		5017F949C8C3BC67829671D3B1FA3125 /* RUAsynchronousUIImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E74B5A9C188F0F736730F1EFB505B1A /* RUAsynchronousUIImageRequest.m */; };
+		524781D1D3D6AA312F6F037D90EE5C6B /* RUNavigationControllerDelegate_navbarColorSetterProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = CE65E51798C1544951AD31A89672AF3E /* RUNavigationControllerDelegate_navbarColorSetterProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5325905B0A557705D067AF22800931DC /* UIFont+RUHelvetica.h in Headers */ = {isa = PBXBuildFile; fileRef = D1BAB78321150E26F7FD42E641637620 /* UIFont+RUHelvetica.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53F1D2C2E86338E9EF2EA47F5DECBEEB /* RUModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5A3D40E2A766A53A5D674548F78F6F /* RUModalView.m */; };
+		54BD2EB6214608CB37ED1DB0A6ED4339 /* NSString+RUUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0277AE3B0CBF0ADF87EC279A2A746B54 /* NSString+RUUtil.m */; };
+		5692DFE80A7828EF496C93233166DB8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		57429B1595A3343567C1FCB3081AD375 /* RUScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = FDD2756D4EAFCC922C75A6E8DCE24D16 /* RUScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		575F69E6A80BA36A0513B0C8F7EAD9E1 /* UIGeometry+RUUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = DB2F3F99D2F22F28BB21896118B5C42B /* UIGeometry+RUUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57F926CF3DC214C5CA2BE88ACECCECAA /* RUViewController_NavigationBarColorSetterProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 589F4328F1064075E9B1F6D145C90797 /* RUViewController_NavigationBarColorSetterProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5837F2FA3961481E2E849A3DDDA9D539 /* UIView+RUViewHierarchyUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E45F47414AA16CCCE514E9711CF35DA /* UIView+RUViewHierarchyUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58A0CAD2E23447AF5D8F26FE0B7A3CF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		59F80358F0BAA4998057E44D8AA107BB /* UIView+RUSnapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = E50C0D2131E720680B9A82689ADFDA57 /* UIView+RUSnapshot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A9E1FF07A385B83D75D28D4665A1034 /* RUHorizontalTitlePagingViewCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A709D31F33949B29EF4E683F495A3CA /* RUHorizontalTitlePagingViewCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AC3A4C247AD91786C252B3F45A5E01F /* RUColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A34E09E0B56CF150AF08886EADDD25 /* RUColorPickerView.m */; };
+		5ADB7D76F6654099D8A90DE336C6C9A0 /* NSString+RUFormatting.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DA2D3E5CBA511AD23F291634C84C10 /* NSString+RUFormatting.m */; };
+		5B5EA55D5A5333DAB5836069733529DA /* RUHorizontalTitlePagingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7443DE774FC587645BF84780B0073365 /* RUHorizontalTitlePagingView.m */; };
+		5D236CD7DB0F0AE1AF2A37A9D1A5002C /* NSArray+RUReversing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2112F8E95C034329AFF23D04A79922ED /* NSArray+RUReversing.m */; };
+		5E3054B13B1E8C33E804C31C04786004 /* RUDebugging.h in Headers */ = {isa = PBXBuildFile; fileRef = BB5E7D67844DDF9516674CFDCCE64C7B /* RUDebugging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E4CFB7E89CBC0588ADE1E1DA4926969 /* RUHorizontalPagingView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5501FA70C089F033FDE98EA70EC847C /* RUHorizontalPagingView.m */; };
+		5E8CB1F14DDAB64C23981449C90EB1A6 /* UITabBarController+RUTabBarVisibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F82D41D5CB58226FAB6157BC2B3DBB /* UITabBarController+RUTabBarVisibility.m */; };
+		5EAC71F33035ECEB7E18A9C63B7B4514 /* NSObject+RUKeyboardNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = E6763AF277FCB20DEBC59ADF7F66A404 /* NSObject+RUKeyboardNotifications.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F4B6C4FB618F8C62556FC6BEB990358 /* UIApplication+RUOpenUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AAB47A5EE83F796F036A130BDBBCCE /* UIApplication+RUOpenUrl.m */; };
+		5F746776C005FDE57986C53087AB08CD /* UIButton+RUDiskImageFetching.m in Sources */ = {isa = PBXBuildFile; fileRef = F3206EEE6DBF4AD0E1740905D645BF8A /* UIButton+RUDiskImageFetching.m */; };
+		608C3B85980E4D00BE3847605605096B /* RUTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C1C547D188CE3A516A0EAA7F7D06F86 /* RUTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		650CC7D3C9BF1DC4C0CF744EDC3BE3B4 /* RUConditionalReturn.h in Headers */ = {isa = PBXBuildFile; fileRef = 235140C49A54C361CEE165D98E7EB54F /* RUConditionalReturn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		665EBD767577F49F695112334309E9B1 /* UIAlertView+RUShowUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 22716027C52A68D863B0C0FBADC03670 /* UIAlertView+RUShowUtil.m */; };
+		674759D8F62E68E33CD934A6EECDD6F8 /* UIInterfaceOrientation+RUUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = AC36843BAF1F1649B16CC26A9742C96C /* UIInterfaceOrientation+RUUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6789D28ACEF694444C786CF23EB1E8F1 /* UIFont+RUHelveticaNeue.h in Headers */ = {isa = PBXBuildFile; fileRef = 0920049B3ECE0A7F50B78A727A800D35 /* UIFont+RUHelveticaNeue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67F2BCBC13FBE2C65219C07C588AAE16 /* RUGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 63539DC167312F34B754FB40FFD6D86F /* RUGradientButton.m */; };
+		6832A6295AEF84AED7F44273E95A9E7D /* RUScrollWithKeyboardAdjustmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6F9C82ED8553B9C59D6DDDEFEFB311 /* RUScrollWithKeyboardAdjustmentView.m */; };
+		6850DC8129146D1C8322755C7E5721E6 /* RUScrollWithKeyboardAdjustmentView.h in Headers */ = {isa = PBXBuildFile; fileRef = ED383CCCC8B3FED7190749AE84DCE3DA /* RUScrollWithKeyboardAdjustmentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6875BDF1AC01A410B13A17A69471DA64 /* RUHorizontalTitlePagingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B78A14A30869777A82ED17BABAB65D /* RUHorizontalTitlePagingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		689483FC081A32A640AF1FA8A47A28DC /* UIActionSheet+RUShowUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 097E213AA42C26B7B2DFF9D4E3017058 /* UIActionSheet+RUShowUtil.m */; };
+		68A14E5FC1C955892623F4D5B55CC6EF /* RUClassOrNilUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC8A31283A373197F64F94E33D9F586 /* RUClassOrNilUtil.m */; };
+		6DAB0E8C5C658C8C67B0BE62DD44CFAB /* RUShowViewUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E3451172B5AA63B208434CBD641FDF /* RUShowViewUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DB9DEF8EB3E31A010BFC23ABD50D8E0 /* UIImage+RURotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4458BC2EBE409722CAFD692A70C8F1FB /* UIImage+RURotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E0FE703685EDF423399FFBD8314803B /* RUStaticVariableSynthesization.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8ED717A6261FC244C4EE1C1EEAF5ED /* RUStaticVariableSynthesization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E4185BF3217BB1F18F7C69E118D919B /* Pods-AnimatingTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4F3A1986D7C2FE2C9C239D2BFA56CB /* Pods-AnimatingTableView-dummy.m */; };
+		6E4EB54EB4BF695E689DBB47F1E98F42 /* UIView+RUDrawHole.m in Sources */ = {isa = PBXBuildFile; fileRef = 29201CE67737F061B03A2A7D5524ECCF /* UIView+RUDrawHole.m */; };
+		6FB5A65D913029350825A056FCFB21A1 /* UIView+RUSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = EADCC4E3EDCC3205448C949BFCA58028 /* UIView+RUSnapshot.m */; };
+		6FEB775DAE729E8FABCCBAD5393DEA9F /* NSString+RUStringContainsUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8589660FD1B1D4A492C21994E2756B /* NSString+RUStringContainsUtil.m */; };
+		7026283EA3D90E1C232FCF59302FEE8A /* RUOrderedMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = A80B938ABA964251AF6793C7DF5B5F56 /* RUOrderedMutableDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70F214F78D6B6C4790777517DA8D79E5 /* UINavigationController+RUColoredStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6646486EF0E30C63B5902E537FB3DC1E /* UINavigationController+RUColoredStatusBarView.m */; };
+		71BE1086E38629EE1D5CCB3E53E3639D /* UIImage+RULaunchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F99B5A01BE1061A064A21C429C2D795 /* UIImage+RULaunchImage.m */; };
+		73F70A453C292D4942628389246BEE7D /* UIApplication+RUOpenUrl.h in Headers */ = {isa = PBXBuildFile; fileRef = 889580F70A739A3FEC53F47EC432CBF4 /* UIApplication+RUOpenUrl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74338ECD5233478F1A4079095B5F683B /* CMDeviceMotion+RUOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = AD955C04E32750198C3C9BAD2940E19D /* CMDeviceMotion+RUOrientation.m */; };
+		752E65929C6919B7C89D0A5F26A86EAC /* UIView+RUUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = C42D705B3742F94C87C9BF45514376B0 /* UIView+RUUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C1EACA2FB5F9FF5FC3334A40C6F8CA /* NSURL+RUDirectories.h in Headers */ = {isa = PBXBuildFile; fileRef = 9654FDD8EEF2430785F0DE072CB1B1B7 /* NSURL+RUDirectories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		778A8F23100BF4642153FB694A4C79EC /* RUDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = D6DDBA2A6404AD8D1A384F231A6CC026 /* RUDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77A6FE9F233CF529C2DC6A166D9083CF /* RUSynthesizeAssociatedObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = B677B514B75E166AF29F2D61A4A90CB6 /* RUSynthesizeAssociatedObjects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77E9EA08BDBA8DB0EE055E2AB7D4DF30 /* UITextField+RUAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = E93A6FC2E55D5A042B2EE92C17DBA171 /* UITextField+RUAttributes.m */; };
+		785DF44A2E9DEEC72E09194D1C9A79CC /* NSObject+RUNotifications_UIApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = B146B650C165D0AAAFB2C93ADAD24F7C /* NSObject+RUNotifications_UIApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79362DB7068D13E5A636A64CC6963BEF /* UIFont+RUHelveticaNeue.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D835BCE2539B8DF675D25817AE5F14 /* UIFont+RUHelveticaNeue.m */; };
+		79F6BD1CC52C4B7432CB6CB7B2E6DD7D /* UITextField+RUOnlyTextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC2335D0F9BD3126311FD0B9F3D2F49 /* UITextField+RUOnlyTextInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A6817761318B69743DEA883F02C01FA /* NSDictionary+RUFBUserResponseObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B02F3248427A804A966D8C2B107A62A3 /* NSDictionary+RUFBUserResponseObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AFDFBA90C592332FEEDACF70C15FFA2 /* UIViewController+RUDismissOrPop.m in Sources */ = {isa = PBXBuildFile; fileRef = E5FBCA69C72E90BE5114386773091C30 /* UIViewController+RUDismissOrPop.m */; };
+		7BB1DF23D0D2B79B72286C5BF0887B25 /* RUImageCompatability.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E32B9923E70767B17BF0862D2A4B25 /* RUImageCompatability.m */; };
+		7BF1F2C4FB1D4ECF289973DD3344275F /* NSString+RUDirectories.h in Headers */ = {isa = PBXBuildFile; fileRef = BFEA43E0476A3F37FE984B3209CBD324 /* NSString+RUDirectories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C771C2E720559D70C790CB55D11D827 /* UINavigationController+RUColoredNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 161F6851F5CB0AD99981489581694407 /* UINavigationController+RUColoredNavigationBar.m */; };
+		7D850C01D0CA3E992418ABACD0E263CC /* RUSubviewTouchesView.h in Headers */ = {isa = PBXBuildFile; fileRef = C6F045BA862DF1D12AB607902EA5D530 /* RUSubviewTouchesView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EA1F1C7CE0E392ECFB3476EEFF07746 /* RUColorPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A0644F85E41984BD67BDD54EDB158A /* RUColorPickerCell.m */; };
+		7F03ECBC1E8A5443EF4E2485C7D330E2 /* RUHorizontalPagingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83CA3DE8A5545BA94DE8FC99A37023DA /* RUHorizontalPagingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8085CED92D161CA02945587ECF67C829 /* NSArray+RUShuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = A6902CEBD64608563E0034D36776592E /* NSArray+RUShuffling.m */; };
+		81D5A5566DA662610D64A53876610D53 /* UIImage+RUImageFromColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 071F25589ABB3E0A4E697D684F5B2A50 /* UIImage+RUImageFromColor.m */; };
+		825C973094002365D20B590BA1211ADF /* UIScrollView+RUAboveContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = BA9C3A6DEB07C7E34C651E53A6FFA5F5 /* UIScrollView+RUAboveContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		826961A88E1206E625AF0A8035440013 /* NSString+RUURLParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 7716D52FE90E86A2135F7F7BAE234AFD /* NSString+RUURLParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8299D26B031CC66B6F02A65343B360D9 /* RUSynthesizeUserDefaultMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = C6434D95235A447ECC84C66DA5DF9785 /* RUSynthesizeUserDefaultMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82E714F557663DB26AED4AF4AB76EFB4 /* NSURL+RUQueryParams.h in Headers */ = {isa = PBXBuildFile; fileRef = AE8232ED7F9E5C4B1F29EEC54444C7C0 /* NSURL+RUQueryParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84394F86B06C891249EBD681E437820C /* UIImage+RUImageFromColor.h in Headers */ = {isa = PBXBuildFile; fileRef = DA26419AAD74CA5E647F05AFEB1326A5 /* UIImage+RUImageFromColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84C09A142DB6BCA80DCB55A305412254 /* NSArray+RUReversing.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B755E501BD8DBAF986A53A7B8CE6954 /* NSArray+RUReversing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8632FE789C75D5F2A7D5C7A97FFCC6C7 /* RUCornerRoundingBorderedView.h in Headers */ = {isa = PBXBuildFile; fileRef = C23325FC6F6456B734174267CF635585 /* RUCornerRoundingBorderedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87B7AF24A9F37439A28D8A5ADBBAB7F5 /* RUOrderedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = B9076EAFADC6DF5CAEA2119E3F7A7305 /* RUOrderedDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87FFC54920415320C71F615B4A315A41 /* UIImage+RULaunchImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0245CD77BC3C6857F8BD6C2901C02130 /* UIImage+RULaunchImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89306EC32A5E54BD61AEC1E58E2E1EFE /* NSString+RUNumberCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D0B41E73FBDF11E6855767E5991ADD /* NSString+RUNumberCheck.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8935467B43AC89A1CB42F5FD5F8F1085 /* UITextField+RUAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = EE97D787B7D183D8A78788BC65BAB081 /* UITextField+RUAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AF1A287BB72F60585043712C5E888CB /* RUCrossView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E3DC4598DB437D7655551D55DEB11 /* RUCrossView.m */; };
+		8B787BBEC2394DBE9FB69DA1DCA83447 /* NSString+MKCoordinateRegion.h in Headers */ = {isa = PBXBuildFile; fileRef = 047442BA9F5E4F4D7AB8E63EE7C03FD7 /* NSString+MKCoordinateRegion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B7F0618FE7388DB95469D022C9E69E1 /* UIColor+RUHexString.h in Headers */ = {isa = PBXBuildFile; fileRef = A87D1E3D56B3837ED7B7CE8291E6C87D /* UIColor+RUHexString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CDD52779E824C5A0C75EA2A804D82DA /* UIView+RUViewHierarchyUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA696052B785265D19292AC49404ADE /* UIView+RUViewHierarchyUtility.m */; };
+		9094C45790544D17DC60273BF65B442C /* RUViewStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 3535ECEA56A57237AC69149B7A37D820 /* RUViewStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91F190E7A71A27CD3797EE8B70BDA2B0 /* RUTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = A9D7AF47F6277D14BC3BB261E50186A4 /* RUTriangle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92447200D602000EDFFD833D650B3804 /* UIView+RUUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A88508655E55987D8C09259DCF9FA87 /* UIView+RUUtility.m */; };
+		9458B58FA5B3E9D52E1F3B38250F228B /* RUHorizontalTitlePagingViewProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E73A9B5F7E1EC153C99A814B0F9299A /* RUHorizontalTitlePagingViewProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94DAA68EF3F797CE050639CFF4C02F7F /* RUScrollToTopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E0503035E082AFD312221BE5F0B1EB /* RUScrollToTopManager.m */; };
+		94F3E3D02CCA10A83F17719E784EA9C6 /* UIImageView+RUAsynchronousImageFetching.m in Sources */ = {isa = PBXBuildFile; fileRef = 78765DD83212BF0F762B86C6DF383E3A /* UIImageView+RUAsynchronousImageFetching.m */; };
+		95BA2134E50C1FB8D1A47ABDD372EDCD /* NSArray+RUComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCE54C58D937E63A63EED53E75AF567 /* NSArray+RUComponents.m */; };
+		96014DF6929D91EBFB14D372CF34A941 /* RUOrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 08EF5B7B19C62585A40290F391C846F7 /* RUOrderedDictionary.m */; };
+		961531240AB4628E235731501F096BFC /* UIImage+RUImageColorMasking.h in Headers */ = {isa = PBXBuildFile; fileRef = F796F6C0377B5D975B27FFC30F3E3031 /* UIImage+RUImageColorMasking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		975AE978722D9AF5A342EEADA91B2780 /* RUColorPickerCellUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E3271A3C53C1C86C5A92C342DB64B747 /* RUColorPickerCellUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98528B0B9F58E22A54EBB9A1895B7DF8 /* UITabBarController+RUTabBarVisibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 426A0F4A9A2468755D0F8A407DB0CCCF /* UITabBarController+RUTabBarVisibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9999315B4B2A40DB2669F92996DEDCF5 /* UIColor+RUUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FD4D36709EE98D80F4C8821803062D /* UIColor+RUUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C8242B0080C099C279939D139ADEF82 /* UIView+RUSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E0D9EE4D42F2C2B2222E9293D4F3AF /* UIView+RUSpinner.m */; };
+		9F4F8D7FACCA99B9F5705DE590ACCAA1 /* NSBundle+RUPListGetters.m in Sources */ = {isa = PBXBuildFile; fileRef = D82A11410612D13C69BCF6804D0570B9 /* NSBundle+RUPListGetters.m */; };
+		9F5B088DB50386ECAC3F2C6491C8E69E /* UIViewController+RUStatusBarHeight.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ADBFE12452AF05B7201B75DFB8AB0DC /* UIViewController+RUStatusBarHeight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A05B31B857891E2A97D8437E971EBA74 /* RUHorizontalPagingViewProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D79BB9E2C6D39182DEEA6C401089DDB /* RUHorizontalPagingViewProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0FCE36E86F934FA4CB97837DCD0CACB /* RUScreenHeightTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CE31DC242B4287D6032383092F84F0D /* RUScreenHeightTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1C22E85BEC90AED8FA76EA75E1ABD01 /* RUNavigationControllerDelegate_navbarColorSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = D3F3CD1FD4D20D5FF6209FA2F39CBF9D /* RUNavigationControllerDelegate_navbarColorSetter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2C744739471B231FE38834CCF9EFA39 /* RUColoredNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A63F268D528840543978DAA2EB7047 /* RUColoredNavigationBar.m */; };
+		A3BBD2D6182647EFE92E6B51385C29B8 /* UIFont+RUHelvetica.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE91087D398DCE942C9937BDC514354 /* UIFont+RUHelvetica.m */; };
+		A3DEE03BD2E24FA43A44CCB2C98F9FF5 /* UIView+RUCoreGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = F6697EB5878E06BB7A8911B665F3B940 /* UIView+RUCoreGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7E4733F5FA472318A54B39BF91C1250 /* NSString+RUEmailValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = E96DD78667723891E68F2CFBFD8525D5 /* NSString+RUEmailValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8A79F9058B85F3AD8ECC68698B2BA70 /* NSString+RUURLParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 9362D144B9D99F00022B8A4CA32F2159 /* NSString+RUURLParams.m */; };
+		A8C8B90C3D296DE080AEEE689FBDB168 /* RUFullscreenRotatingView.h in Headers */ = {isa = PBXBuildFile; fileRef = D34D9500306A77EA7597FBD45892678B /* RUFullscreenRotatingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8F9FB01289C0DA47C82E819B6DBD2C2 /* RUColorPickerCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 74C3501A18453773EE672018240CCBAC /* RUColorPickerCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A941C11A6CF90E4341AB80FFB8AA22C6 /* RUScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B3269983E1B922D718860A933B3DD5 /* RUScrollView.m */; };
+		AAF087C54969FD5CE931EE9FDE4E127C /* RUGradientButton.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8753333F7FFD7D05FFE9133619057F /* RUGradientButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABF3E97AB1BC418AED08098540D05035 /* RUTopBottomBarModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B24D1170D0F027F3291AF2DFC1592 /* RUTopBottomBarModalView.m */; };
+		AD97429D545F25D22A47FC80C0A4066D /* UIImage+RUSaveToAssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = DF66BC18743280E84A5585412DAF0C1A /* UIImage+RUSaveToAssetsLibrary.m */; };
+		ADC947E080B53B6894D2FA05BB80D1AF /* RUCornerRoundingBorderedView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE947924992BE6170239B7A220F5AE7 /* RUCornerRoundingBorderedView.m */; };
+		B0316729383C2BD153CACEF461DFA1C5 /* UIImageView+RUDiskImageFetching.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B6398969F0FA5C383C4D0B3BB136BDF /* UIImageView+RUDiskImageFetching.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B03949B84796F8B0E34F2E4DEEC51374 /* RUStringCompatability.m in Sources */ = {isa = PBXBuildFile; fileRef = C32A2E4A9724888E87938DFA5AFBC6D6 /* RUStringCompatability.m */; };
+		B1BA871F821C6BA909A1606975669CCD /* NSString+RUFormatting.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EABC3315FA011AA42BFB743EA433B6 /* NSString+RUFormatting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1CA2F794AB0309981F3A9E767AD157A /* RUCollectionViewFlowLayout_ContentSizeAdjustForMinimumLineSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BBFE74AE9D32F164167157290A53CE /* RUCollectionViewFlowLayout_ContentSizeAdjustForMinimumLineSpacing.m */; };
+		B4FA3B3843B6513E839EA38709902624 /* RUCollectionViewFlowLayout_ContentSizeAdjustForMinimumLineSpacing.h in Headers */ = {isa = PBXBuildFile; fileRef = CE5595577196BF605C3431C5BFC62623 /* RUCollectionViewFlowLayout_ContentSizeAdjustForMinimumLineSpacing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B57DE2D0AF1C134CD0A3CD0FA20612CD /* CALayer+RUMask.h in Headers */ = {isa = PBXBuildFile; fileRef = DB43553379959B468D1410B934B3C772 /* CALayer+RUMask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7621AB658425127AEFF641AA9A22BC3 /* RUDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 228CAB2B9A4AB04C43B9944031984126 /* RUDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA686FB88F624963A59FAAF51BB13C3F /* RUSlideMenuNavigationControllerProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 509B150104A703D6BAD4505D98B4BC96 /* RUSlideMenuNavigationControllerProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC490BCD61797F3713D0DF09DED959DB /* UIView+RUSpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = E9E18B9410BE00B692C152D8C954D4FB /* UIView+RUSpinner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE2995BBA8CBEC27AC3560E69E14E247 /* NSArray+RUComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = C8F9E939D544D63781993D57CAAAD49C /* NSArray+RUComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF3B0CBF29F00224ACD0296626905812 /* CAShapeLayer+RUMessageBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A884EBC8CE605D61A19C726E0CDE17F /* CAShapeLayer+RUMessageBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBA86EE0BA28A324EB6FEBCFB9F6F64 /* UIView+RUCancelControlTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C618A2D1AA9505D6118F40326231E9 /* UIView+RUCancelControlTracking.m */; };
+		C24748B7A0B6ABD8E8F5C045AF08D231 /* UIView+RUSuperviews.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F603EAC50A1B1EA01FCC9D18912277F /* UIView+RUSuperviews.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C28E8EF90D8FF417707289725E838D73 /* UINavigationController+RUNavbarColorSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E40C94E137AFD9977B6C79BA223B3A /* UINavigationController+RUNavbarColorSetter.m */; };
+		C2C9500E740D776EEC3EE32864CB45E2 /* RUSystemVersionUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EB1DB14A53BEF23301E8A6C62789FF4 /* RUSystemVersionUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C31D13D60AC697E3BA09EC07354A21AA /* CMDeviceMotion+RUOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CCF033C00EEA7CE5D11CC0E2E5D798D /* CMDeviceMotion+RUOrientation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3FC9139D45540CBC3D278B6EAC89A86 /* NSPredicate+RUUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 593A7E6959C6123B7AAAB4200E63E720 /* NSPredicate+RUUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4708519B66338838F3ECF6F774E126A /* RUSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = D1B0B04BB27CF85723B0AFD128547B55 /* RUSingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C67D045420A55C3EFE127BC577B5234A /* NSString+RUUrlComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F8BA8B6471BCE0CC259618D952FE5C /* NSString+RUUrlComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6F8A70983353B575C4578059D893190 /* RUImageViewFullscreenRotatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E76FAFFC06DFCB9C61E3CAA07249B8 /* RUImageViewFullscreenRotatingView.m */; };
+		C9FF39BB7864CA3A8FFC7276111C1FA3 /* CALayer+RUCornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 3444DE976CE7A28EEE4DABB9D86CFF3A /* CALayer+RUCornerRadius.m */; };
+		CA4B4C86CA27531DF9467B87E4B54AB0 /* NSObject+RUNotifications_UIApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D58E0A24F2E20EE7E0F1DA0B1A336C /* NSObject+RUNotifications_UIApplication.m */; };
+		CBEBBED0013224ADE575B796272D8E5F /* NSMutableDictionary+RUUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B13490EA239243A58D6CAE39ECEA85 /* NSMutableDictionary+RUUtil.m */; };
+		CCB5E96C85BE2057222E29ED513709F4 /* UIView+RUCancelControlTracking.h in Headers */ = {isa = PBXBuildFile; fileRef = E7EE4E7061111A7726BACAC7BDF926F0 /* UIView+RUCancelControlTracking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE0838C059B9A485136DF74622A131AF /* RUViewStackProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C266FD62F82DDB8EADFA0EC7D5D43F6 /* RUViewStackProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE52F1A79458A834981C70467B61B113 /* NSString+RUEncodedUrl.h in Headers */ = {isa = PBXBuildFile; fileRef = FA2E9AE56C3988C1B844C511FF188E00 /* NSString+RUEncodedUrl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFFF9FE5C5C29E7B18B25DF37A99B031 /* RUDiskImageFetchingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 645381B870DB9A46CB438254CCB71AB0 /* RUDiskImageFetchingController.m */; };
+		D06C5D1B537B9EDA51E1D32BA51575BB /* NSDictionary+RUFBUserResponseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0206B99058CF3A78AF7F7DCB8C4A6C9B /* NSDictionary+RUFBUserResponseObject.m */; };
+		D19EB27822EC912FC2FB03F94F4E5821 /* UINavigationController+RUColoredNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C7EA31E4B8D9B97FA25C035A9A53AF /* UINavigationController+RUColoredNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1EBBDE5737AAC5A124E60B693E4CA1B /* RUOrderedMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCA3453BDF27F35A18550C1BABD155D /* RUOrderedMutableDictionary.m */; };
+		D26A3FEE3A35BC70882F65A0AFF0C9D4 /* RUEnumIsInRangeSynthesization.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D06973461C493A6BE9469476572C24B /* RUEnumIsInRangeSynthesization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D409AE8054507DF0A88E2E5BB8D69EFC /* UIApplication+RUPushNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = D200EE0D0460D48132F6C8BA6FAFF057 /* UIApplication+RUPushNotifications.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D410B59D25615C9EAC48E5C1EAEFE577 /* UIViewController+RUNavigationBarColorSetterDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3024834B1A4ED84E42A99A9F4A02C1 /* UIViewController+RUNavigationBarColorSetterDelegate.m */; };
+		D58F77548C12142A3831D942983D22BB /* NSBundle+RUPListGetters.h in Headers */ = {isa = PBXBuildFile; fileRef = 1715B99F3CA70070E79BAE68E675D1D7 /* NSBundle+RUPListGetters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6F0BB8E0EA83EA5C1F76733FB123C5A /* RUSubviewTouchesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6576B5EC52BAC4068B02087C43EDC5 /* RUSubviewTouchesView.m */; };
+		D8B05BDCA9AE912680BD72F6CE9E6438 /* RURadioButtonGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7E7D63082B7ABD0CF2A8377B6804F7 /* RURadioButtonGroup.m */; };
+		D8BFE2F1B3ADAF3026FEDC07DF898B7C /* RUNavigationControllerDelegate_navbarColorSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BFBFC8490B3F7A466F9585B3168ACD /* RUNavigationControllerDelegate_navbarColorSetter.m */; };
+		DA05DA6F72E82EDD91A703A2EDFA5189 /* UIView+RUSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AF74C68ACE5BA96E8D960D869246DE /* UIView+RUSubviews.m */; };
+		DC85CBBD86BCF8BD03871B3488A0CFE9 /* NSString+RUMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = C0E91B64F87C6FAB6FA455756CA4A5B9 /* NSString+RUMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCF3FB6F83FA80040E9C2C16BBC4BB08 /* NSMutableArray+RUAddObjectIfNotNil.h in Headers */ = {isa = PBXBuildFile; fileRef = 72A77A9E039399A012F38A1C1EAAD6CD /* NSMutableArray+RUAddObjectIfNotNil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE3A5E97FE175ED3C73A5F31A13DEE6B /* NSURL+RUDirectories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF5BF6A58D61846BA9A4C66A71F7111 /* NSURL+RUDirectories.m */; };
+		DE774E6908DAD2E48C53F8EBFF338F21 /* CALayer+RUCornerRadius.h in Headers */ = {isa = PBXBuildFile; fileRef = 2309925C363E932162B387A00A071643 /* CALayer+RUCornerRadius.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF02EDF7C49CE5BB5F53171CE0502193 /* NSNumber+RUUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B21CF22014A85A1312AE9F2F63A3E6 /* NSNumber+RUUtil.m */; };
+		E0A57F292758EFC7DB81449AD16D0C14 /* RUModalView.h in Headers */ = {isa = PBXBuildFile; fileRef = 99DBA31223A25B41E33895DCE85D90E7 /* RUModalView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E15D07DC063A205EB0A0E4EDED472A1E /* NSDictionary+RUReverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8A73C757870A2A119EE232F927D406 /* NSDictionary+RUReverse.m */; };
+		E19BACA9BA7B873579D8FFA0FF875DDF /* UINavigationController+RUNavbarColorSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 525F1057DEA950B6835B6F72E152AE66 /* UINavigationController+RUNavbarColorSetter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E33E7FBC22FC34A0080C8CDBACA80E08 /* NSURL+RUQueryParams.m in Sources */ = {isa = PBXBuildFile; fileRef = F1776AE1BDD0965AC9407C434B53A2E6 /* NSURL+RUQueryParams.m */; };
+		E36AB6797EAF2B49CE3752A41BEED7C8 /* RUCreateDestroyViewSynthesization.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A479454366EB929BDAEB9981971B1DB /* RUCreateDestroyViewSynthesization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3E70ECE344AD97E50306C61AAAF2CE6 /* RUCompatability.h in Headers */ = {isa = PBXBuildFile; fileRef = D795E53FA59CDDA07EB064961CA8D920 /* RUCompatability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E40476DCEB717211B46DD13C13A79FE4 /* RUStringCompatability.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C65BFE0F3CD93071A251613FC7C6DAD /* RUStringCompatability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4B65EFC668CF9FD1AAB274F49099C1C /* ResplendentUtilities-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1204D1B4869F211658865BAE4B3AE02A /* ResplendentUtilities-dummy.m */; };
+		E51C1881ECE9C1416763B93B34051B38 /* UIImage+RURotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5A60D7689760EF5A004318C3819760 /* UIImage+RURotation.m */; };
+		E58DFD0C8BCB205E1F06E18D553AEB32 /* UIInterfaceOrientation+RUUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A67517FB948F90F73FE942E9B06BDF8F /* UIInterfaceOrientation+RUUtil.m */; };
+		E5C3DF3BB4E2E23105CB1563B08CE0F7 /* RUDeallocHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F64302BEBEFAD67708507E742E7BD6F /* RUDeallocHook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E628E6FD00E3B3A27676A1FD0AA545A2 /* UITextField+RUOnlyTextInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 0366C171B5DB57C4E56BAD611F76C5F5 /* UITextField+RUOnlyTextInput.m */; };
+		E6ABCDDE19B3CD9756A59F0C7AC69078 /* CAShapeLayer+RUMessageBox.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CE98F628EA57E839A7945BCB207DDE /* CAShapeLayer+RUMessageBox.m */; };
+		E928B1472B8EA926F35124E18B66F666 /* RUColorPickerViewProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = 900BD6CB8994A36C59E2BF0920309F73 /* RUColorPickerViewProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9CEDC28870EB0829EE862A7D98BCCAB /* UIImage+RUImageColorMasking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD6D754611FFA43AD1E95880F62C972 /* UIImage+RUImageColorMasking.m */; };
+		EBB55F039DF6DCE8C9DA17A877D26D83 /* RURadioButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C8B5E725A25E07E2F40CB26E50E674 /* RURadioButtonView.m */; };
+		EBC9B9E4EFC0DEC364FAC44DBEA17E64 /* RUFullscreenRotatingViewProtocols.h in Headers */ = {isa = PBXBuildFile; fileRef = CAEB1B52F2C7FE7BB21C89CBB5CFA250 /* RUFullscreenRotatingViewProtocols.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC17C402C2F819C27C48254CCF95D188 /* UIActionSheet+RUShowUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 5706CF97E6CBFDC3DCA5531C10BD711E /* UIActionSheet+RUShowUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC2CF5F955C536FCD31789B07BFE7A9C /* RUImageCompatability.h in Headers */ = {isa = PBXBuildFile; fileRef = 88A8EB3EDE904E75FB20A95EA6D6F779 /* RUImageCompatability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC6FC36E3AAA51F115150D48D6B321D3 /* RUHorizontalTitlePagingViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 634A9A91942C8FBF54D0A5F9D0816FEA /* RUHorizontalTitlePagingViewCollectionViewCell.m */; };
+		ED67A87B885C02C2EEC461F277F06D91 /* RUSlideMenuNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D0F3B362C5051C4C682EBD3B053569 /* RUSlideMenuNavigationController.m */; };
+		EE1FEC597E826701F90645E1A8471FC1 /* NSString+RUCamelCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 08683D056FF631C000F8D72506D14730 /* NSString+RUCamelCase.m */; };
+		EE6171AB8D32671CCF5B3D5796FA6340 /* NSString+RUUrlComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B72C8C402F7BEAE2890A8CAA7B54BF /* NSString+RUUrlComponents.m */; };
+		EEF881C214799687ED70072806B61DF1 /* UILabel+RUAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DF4F085B1BBEEC5B16DAB8D44DD7E4 /* UILabel+RUAttributes.m */; };
+		EF37761031CE349CB7AC74AA883B4F80 /* UIView+RUEnableTapToResignFirstResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = C7A4D310751C343723E8D6E2293A5F42 /* UIView+RUEnableTapToResignFirstResponder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0F5F79BDDE84332483B052475E9167B /* NSObject+RUKeyboardNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = B62011D76A3087222CC9FFAA72BAF82D /* NSObject+RUKeyboardNotifications.m */; };
+		F1A550557BD254D978E43991E0BBEFE8 /* UIImageView+RUDiskImageFetching.m in Sources */ = {isa = PBXBuildFile; fileRef = F65712898635A35A867C3DFB3709F2A9 /* UIImageView+RUDiskImageFetching.m */; };
+		F1D631B878B8F1ED8E9215710E82042C /* UIView+RUCoreGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = D66915965A02FACE35218CD7CA103E72 /* UIView+RUCoreGraphics.m */; };
+		F21B0B59F1C9BD0FCF85C15C0FC52C6F /* UITextField+RUSelectedTextRange.m in Sources */ = {isa = PBXBuildFile; fileRef = DF40A86171DB58EB123D989756399AB5 /* UITextField+RUSelectedTextRange.m */; };
+		F330FAC983EBE7C2BB68A065DDDE4E5E /* UIViewController+RUStatusBarHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6534D88F294D007C5C018E81ABB82 /* UIViewController+RUStatusBarHeight.m */; };
+		F54106D20321ADEDB964C2B300A5E182 /* UIImage+RUSaveToAssetsLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = F188514D5C31044B599BE0F6BED086FE /* UIImage+RUSaveToAssetsLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5F4BCDADD87AB7C551A1656942CDDC7 /* RUGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 906B5BBD25C0F7ED4346D8AECDF23106 /* RUGradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6CAB7E5FEB0C83E29E83F0BC99C56DD /* RUImageViewFullscreenRotatingView.h in Headers */ = {isa = PBXBuildFile; fileRef = DCB6271C11DE48A37DD48060A650FF59 /* RUImageViewFullscreenRotatingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD39277431B0A16890D817053633AE67 /* CALayer+RUMask.m in Sources */ = {isa = PBXBuildFile; fileRef = ED60F7E67AB7AFE26767073B76CE4979 /* CALayer+RUMask.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F18863D1D7C238A0D6271C50A6A74C17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B01D7516D29856FCED3133473DB3650F;
+			remoteInfo = ResplendentUtilities;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00B13490EA239243A58D6CAE39ECEA85 /* NSMutableDictionary+RUUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableDictionary+RUUtil.m"; path = "Pod/Classes/Category/NSMutableDictionary+RUUtil.m"; sourceTree = "<group>"; };
+		00B78A14A30869777A82ED17BABAB65D /* RUHorizontalTitlePagingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUHorizontalTitlePagingView.h; path = Pod/Classes/View/HorizontalTitlePagingView/RUHorizontalTitlePagingView.h; sourceTree = "<group>"; };
+		01A34E09E0B56CF150AF08886EADDD25 /* RUColorPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUColorPickerView.m; path = Pod/Classes/View/ColorPicker/RUColorPickerView.m; sourceTree = "<group>"; };
+		0206B99058CF3A78AF7F7DCB8C4A6C9B /* NSDictionary+RUFBUserResponseObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+RUFBUserResponseObject.m"; path = "Pod/Classes/Category/NSDictionary/NSDictionary+RUFBUserResponseObject.m"; sourceTree = "<group>"; };
+		0245CD77BC3C6857F8BD6C2901C02130 /* UIImage+RULaunchImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+RULaunchImage.h"; path = "Pod/Classes/Category/UIImage/UIImage+RULaunchImage.h"; sourceTree = "<group>"; };
+		0277AE3B0CBF0ADF87EC279A2A746B54 /* NSString+RUUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RUUtil.m"; path = "Pod/Classes/Category/NSString/NSString+RUUtil.m"; sourceTree = "<group>"; };
+		0366C171B5DB57C4E56BAD611F76C5F5 /* UITextField+RUOnlyTextInput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+RUOnlyTextInput.m"; path = "Pod/Classes/Category/UITextField/UITextField+RUOnlyTextInput.m"; sourceTree = "<group>"; };
+		047442BA9F5E4F4D7AB8E63EE7C03FD7 /* NSString+MKCoordinateRegion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MKCoordinateRegion.h"; path = "Pod/Classes/Category/NSString/NSString+MKCoordinateRegion.h"; sourceTree = "<group>"; };
+		04AF74C68ACE5BA96E8D960D869246DE /* UIView+RUSubviews.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RUSubviews.m"; path = "Pod/Classes/Category/UIView/UIView+RUSubviews.m"; sourceTree = "<group>"; };
+		06B6A9051F550BDB4BEEAA06505766E8 /* Pods-AnimatingTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimatingTableView.release.xcconfig"; sourceTree = "<group>"; };
+		071F25589ABB3E0A4E697D684F5B2A50 /* UIImage+RUImageFromColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RUImageFromColor.m"; path = "Pod/Classes/Category/UIImage/UIImage+RUImageFromColor.m"; sourceTree = "<group>"; };
+		08683D056FF631C000F8D72506D14730 /* NSString+RUCamelCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RUCamelCase.m"; path = "Pod/Classes/Category/NSString/NSString+RUCamelCase.m"; sourceTree = "<group>"; };
+		08BC357B1895CFE04589B2EF4B3E17C9 /* UIColor+RUUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+RUUtility.m"; path = "Pod/Classes/Category/UIColor/UIColor+RUUtility.m"; sourceTree = "<group>"; };
+		08EA5DD9B245C69A20219A754A49DD32 /* UIButton+RUDiskImageFetching.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+RUDiskImageFetching.h"; path = "Pod/Classes/Category/UIButton/UIButton+RUDiskImageFetching.h"; sourceTree = "<group>"; };
+		08EF5B7B19C62585A40290F391C846F7 /* RUOrderedDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUOrderedDictionary.m; path = Pod/Classes/Objects/RUOrderedDictionary/RUOrderedDictionary.m; sourceTree = "<group>"; };
+		0920049B3ECE0A7F50B78A727A800D35 /* UIFont+RUHelveticaNeue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+RUHelveticaNeue.h"; path = "Pod/Classes/Category/UIFont+RUHelveticaNeue.h"; sourceTree = "<group>"; };
+		097E213AA42C26B7B2DFF9D4E3017058 /* UIActionSheet+RUShowUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActionSheet+RUShowUtil.m"; path = "Pod/Classes/Category/UIActionSheet+RUShowUtil.m"; sourceTree = "<group>"; };
+		0A074E8153716DA3429783F8273F3365 /* UITextField+RUSelectedTextRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+RUSelectedTextRange.h"; path = "Pod/Classes/Category/UITextField/UITextField+RUSelectedTextRange.h"; sourceTree = "<group>"; };
+		0AEFF825ED570E183A70CA0ECDE48FB6 /* Pods-AnimatingTableView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnimatingTableView-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0B0F24F02C027572D2D62416CC6752BA /* NSString+RUEmailValidation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RUEmailValidation.m"; path = "Pod/Classes/Category/NSString/NSString+RUEmailValidation.m"; sourceTree = "<group>"; };
+		0CE31DC242B4287D6032383092F84F0D /* RUScreenHeightTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUScreenHeightTypes.h; path = Pod/Classes/Misc/Compatability/RUScreenHeightTypes.h; sourceTree = "<group>"; };
+		0D05AF32B29AE29C19D4B3CB3A084153 /* Pods-AnimatingTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AnimatingTableView.modulemap"; sourceTree = "<group>"; };
+		0F99B5A01BE1061A064A21C429C2D795 /* UIImage+RULaunchImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RULaunchImage.m"; path = "Pod/Classes/Category/UIImage/UIImage+RULaunchImage.m"; sourceTree = "<group>"; };
+		0FC4FC9427BE6E2F55C38D3DCEC761A8 /* UINavigationController+RUColoredStatusBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+RUColoredStatusBarView.h"; path = "Pod/Classes/Category/UINavigationController/UINavigationController+RUColoredStatusBarView.h"; sourceTree = "<group>"; };
+		0FCE54C58D937E63A63EED53E75AF567 /* NSArray+RUComponents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+RUComponents.m"; path = "Pod/Classes/Category/NSArray/NSArray+RUComponents.m"; sourceTree = "<group>"; };
+		1204D1B4869F211658865BAE4B3AE02A /* ResplendentUtilities-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ResplendentUtilities-dummy.m"; sourceTree = "<group>"; };
+		161F6851F5CB0AD99981489581694407 /* UINavigationController+RUColoredNavigationBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+RUColoredNavigationBar.m"; path = "Pod/Classes/Category/UINavigationController/UINavigationController+RUColoredNavigationBar.m"; sourceTree = "<group>"; };
+		1715B99F3CA70070E79BAE68E675D1D7 /* NSBundle+RUPListGetters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+RUPListGetters.h"; path = "Pod/Classes/Category/NSBundle+RUPListGetters.h"; sourceTree = "<group>"; };
+		1A884EBC8CE605D61A19C726E0CDE17F /* CAShapeLayer+RUMessageBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CAShapeLayer+RUMessageBox.h"; path = "Pod/Classes/Category/CALayer/CAShapeLayer/CAShapeLayer+RUMessageBox/CAShapeLayer+RUMessageBox.h"; sourceTree = "<group>"; };
+		1B6398969F0FA5C383C4D0B3BB136BDF /* UIImageView+RUDiskImageFetching.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RUDiskImageFetching.h"; path = "Pod/Classes/Category/UIImageView+RUDiskImageFetching.h"; sourceTree = "<group>"; };
+		1BA93B931A065CE55E9F52110B0B4763 /* ResplendentUtilities.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ResplendentUtilities.modulemap; sourceTree = "<group>"; };
+		1C1C547D188CE3A516A0EAA7F7D06F86 /* RUTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUTableView.h; path = Pod/Classes/View/TableView/RUTableView.h; sourceTree = "<group>"; };
+		1CCF033C00EEA7CE5D11CC0E2E5D798D /* CMDeviceMotion+RUOrientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CMDeviceMotion+RUOrientation.h"; path = "Pod/Classes/Category/CMDeviceMotion+RUOrientation.h"; sourceTree = "<group>"; };
+		1D06973461C493A6BE9469476572C24B /* RUEnumIsInRangeSynthesization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUEnumIsInRangeSynthesization.h; path = Pod/Classes/Misc/RUEnumIsInRangeSynthesization.h; sourceTree = "<group>"; };
+		1D6576B5EC52BAC4068B02087C43EDC5 /* RUSubviewTouchesView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUSubviewTouchesView.m; path = Pod/Classes/View/Touches/RUSubviewTouchesView.m; sourceTree = "<group>"; };
+		1DC8A31283A373197F64F94E33D9F586 /* RUClassOrNilUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUClassOrNilUtil.m; path = Pod/Classes/Misc/RUClassOrNilUtil.m; sourceTree = "<group>"; };
+		1E73A9B5F7E1EC153C99A814B0F9299A /* RUHorizontalTitlePagingViewProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUHorizontalTitlePagingViewProtocols.h; path = Pod/Classes/View/HorizontalTitlePagingView/RUHorizontalTitlePagingViewProtocols.h; sourceTree = "<group>"; };
+		20EB4215C1A17685B9C6E07EAB4BBE08 /* RUKeyboardAdjustmentHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUKeyboardAdjustmentHelper.m; path = Pod/Classes/Objects/KeyboardAdjustmentHelper/RUKeyboardAdjustmentHelper.m; sourceTree = "<group>"; };
+		2112F8E95C034329AFF23D04A79922ED /* NSArray+RUReversing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+RUReversing.m"; path = "Pod/Classes/Category/NSArray/NSArray+RUReversing.m"; sourceTree = "<group>"; };
+		22716027C52A68D863B0C0FBADC03670 /* UIAlertView+RUShowUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+RUShowUtil.m"; path = "Pod/Classes/Category/UIAlertView+RUShowUtil.m"; sourceTree = "<group>"; };
+		228CAB2B9A4AB04C43B9944031984126 /* RUDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUDLog.h; path = Pod/Classes/Misc/RUDLog.h; sourceTree = "<group>"; };
+		2309925C363E932162B387A00A071643 /* CALayer+RUCornerRadius.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+RUCornerRadius.h"; path = "Pod/Classes/Category/CALayer/CALayer+RUCornerRadius/CALayer+RUCornerRadius.h"; sourceTree = "<group>"; };
+		235140C49A54C361CEE165D98E7EB54F /* RUConditionalReturn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUConditionalReturn.h; path = Pod/Classes/Misc/RUConditionalReturn.h; sourceTree = "<group>"; };
+		24233ECE641CFB2AF5ECF1091B974AFC /* UIImageView+RUAsynchronousImageFetching.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RUAsynchronousImageFetching.h"; path = "Pod/Classes/View/ImageFetching/UIImageView+RUAsynchronousImageFetching.h"; sourceTree = "<group>"; };
+		28A0644F85E41984BD67BDD54EDB158A /* RUColorPickerCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUColorPickerCell.m; path = Pod/Classes/View/ColorPicker/RUColorPickerCell.m; sourceTree = "<group>"; };
+		2910C479CDD41E1B936BA607366347A5 /* Pods-AnimatingTableView-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnimatingTableView-resources.sh"; sourceTree = "<group>"; };
+		29201CE67737F061B03A2A7D5524ECCF /* UIView+RUDrawHole.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RUDrawHole.m"; path = "Pod/Classes/Category/UIView/UIView+RUDrawHole.m"; sourceTree = "<group>"; };
+		2AC9C741D1A65614EF2A069029718405 /* UIViewController+RUNavigationBarColorSetterDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RUNavigationBarColorSetterDelegate.h"; path = "Pod/Classes/Category/UIViewController/UIViewController+RUNavigationBarColorSetterDelegate.h"; sourceTree = "<group>"; };
+		2ADBFE12452AF05B7201B75DFB8AB0DC /* UIViewController+RUStatusBarHeight.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RUStatusBarHeight.h"; path = "Pod/Classes/Category/UIViewController/UIViewController+RUStatusBarHeight.h"; sourceTree = "<group>"; };
+		2C8EDBBCF1BBE6266744CFCED2BDB33D /* UIApplication+RUPushNotifications.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+RUPushNotifications.m"; path = "Pod/Classes/Category/UIApplication/UIApplication+RUPushNotifications.m"; sourceTree = "<group>"; };
+		31F030C76F737E3A0D79FF13E49D15C6 /* RUDiskImageFetchingController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUDiskImageFetchingController.h; path = Pod/Classes/Controller/RUDiskImageFetchingController/RUDiskImageFetchingController.h; sourceTree = "<group>"; };
+		3444DE976CE7A28EEE4DABB9D86CFF3A /* CALayer+RUCornerRadius.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+RUCornerRadius.m"; path = "Pod/Classes/Category/CALayer/CALayer+RUCornerRadius/CALayer+RUCornerRadius.m"; sourceTree = "<group>"; };
+		3535ECEA56A57237AC69149B7A37D820 /* RUViewStack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUViewStack.h; path = Pod/Classes/View/RUViewStack/RUViewStack.h; sourceTree = "<group>"; };
+		35A44BA017386DD3A6419B7F11393391 /* NSString+RUStringContainsUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RUStringContainsUtil.h"; path = "Pod/Classes/Category/NSString/NSString+RUStringContainsUtil.h"; sourceTree = "<group>"; };
+		394ECEE34DA791DA9AAA2C1551339CB7 /* RUKeyboardAdjustmentHelperProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUKeyboardAdjustmentHelperProtocols.h; path = Pod/Classes/Objects/KeyboardAdjustmentHelper/RUKeyboardAdjustmentHelperProtocols.h; sourceTree = "<group>"; };
+		3A479454366EB929BDAEB9981971B1DB /* RUCreateDestroyViewSynthesization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUCreateDestroyViewSynthesization.h; path = Pod/Classes/Misc/RUCreateDestroyViewSynthesization.h; sourceTree = "<group>"; };
+		3A623004EF989AABDB3104AF453BEA81 /* Pods-AnimatingTableView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnimatingTableView-acknowledgements.plist"; sourceTree = "<group>"; };
+		3B936C7A226C10201F1C026BC18B9462 /* UIButton+RUAsynchronousImageFetching.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+RUAsynchronousImageFetching.h"; path = "Pod/Classes/View/ImageFetching/UIButton+RUAsynchronousImageFetching.h"; sourceTree = "<group>"; };
+		3C266FD62F82DDB8EADFA0EC7D5D43F6 /* RUViewStackProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUViewStackProtocols.h; path = Pod/Classes/View/RUViewStack/RUViewStackProtocols.h; sourceTree = "<group>"; };
+		3D4018070ECDED28FA10D671B8579949 /* UIView+RUEnableTapToResignFirstResponder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RUEnableTapToResignFirstResponder.m"; path = "Pod/Classes/Category/UIView/UIView+RUEnableTapToResignFirstResponder.m"; sourceTree = "<group>"; };
+		3D79BB9E2C6D39182DEEA6C401089DDB /* RUHorizontalPagingViewProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUHorizontalPagingViewProtocols.h; path = Pod/Classes/View/HorizontalPagingView/RUHorizontalPagingViewProtocols.h; sourceTree = "<group>"; };
+		3E6E3DC4598DB437D7655551D55DEB11 /* RUCrossView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUCrossView.m; path = Pod/Classes/View/Geometry/RUCrossView.m; sourceTree = "<group>"; };
+		3E74B5A9C188F0F736730F1EFB505B1A /* RUAsynchronousUIImageRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUAsynchronousUIImageRequest.m; path = Pod/Classes/View/Image/RUAsynchronousUIImageRequest.m; sourceTree = "<group>"; };
+		3FEC6A860880F2E902E8D6477764A606 /* UIScrollView+RUAboveContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+RUAboveContentView.m"; path = "Pod/Classes/Category/UIScrollView+RUAboveContentView.m"; sourceTree = "<group>"; };
+		405F80380F5611FA9E7994814EA39D8E /* RUDeallocHook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUDeallocHook.m; path = Pod/Classes/Objects/RUDeallocHook.m; sourceTree = "<group>"; };
+		4061021F0DC089548ED6B782223D07EE /* NSString+RUUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RUUtil.h"; path = "Pod/Classes/Category/NSString/NSString+RUUtil.h"; sourceTree = "<group>"; };
+		422B6922382A7DFD42CCE9BCA47E658B /* UIView+RUMaskRoundCorners.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RUMaskRoundCorners.h"; path = "Pod/Classes/Category/UIView/UIView+RUMaskRoundCorners.h"; sourceTree = "<group>"; };
+		426A0F4A9A2468755D0F8A407DB0CCCF /* UITabBarController+RUTabBarVisibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITabBarController+RUTabBarVisibility.h"; path = "Pod/Classes/Category/UITabBarController/UITabBarController+RUTabBarVisibility.h"; sourceTree = "<group>"; };
+		42C7EA31E4B8D9B97FA25C035A9A53AF /* UINavigationController+RUColoredNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+RUColoredNavigationBar.h"; path = "Pod/Classes/Category/UINavigationController/UINavigationController+RUColoredNavigationBar.h"; sourceTree = "<group>"; };
+		4458BC2EBE409722CAFD692A70C8F1FB /* UIImage+RURotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+RURotation.h"; path = "Pod/Classes/Category/UIImage/UIImage+RURotation.h"; sourceTree = "<group>"; };
+		464AFBDA3201D8E1C5AFABCEB0A70211 /* UILabel+RUAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+RUAttributes.h"; path = "Pod/Classes/Category/UILabel/UILabel+RUAttributes.h"; sourceTree = "<group>"; };
+		46C8B5E725A25E07E2F40CB26E50E674 /* RURadioButtonView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RURadioButtonView.m; path = Pod/Classes/View/RadioButtonView/RURadioButtonView.m; sourceTree = "<group>"; };
+		46D189F99E83EFFC86A4A33A75CF30A1 /* RUProtocolOrNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUProtocolOrNil.h; path = Pod/Classes/Misc/RUProtocolOrNil.h; sourceTree = "<group>"; };
+		47BB2ABCAF15E9923A9611CFDC25C422 /* RUExceptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUExceptions.h; path = Pod/Classes/Misc/RUExceptions.h; sourceTree = "<group>"; };
+		48BFBFC8490B3F7A466F9585B3168ACD /* RUNavigationControllerDelegate_navbarColorSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUNavigationControllerDelegate_navbarColorSetter.m; path = Pod/Classes/Objects/NavigationControllerDelegate_navbarColorSetter/RUNavigationControllerDelegate_navbarColorSetter.m; sourceTree = "<group>"; };
+		4968F99D2BA400D22E2C8C013716D832 /* RUAsynchronousUIImageRequestProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUAsynchronousUIImageRequestProtocols.h; path = Pod/Classes/View/Image/RUAsynchronousUIImageRequestProtocols.h; sourceTree = "<group>"; };
+		4A5A3D40E2A766A53A5D674548F78F6F /* RUModalView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUModalView.m; path = Pod/Classes/View/Modal/RUModalView.m; sourceTree = "<group>"; };
+		4B755E501BD8DBAF986A53A7B8CE6954 /* NSArray+RUReversing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+RUReversing.h"; path = "Pod/Classes/Category/NSArray/NSArray+RUReversing.h"; sourceTree = "<group>"; };
+		4D3024834B1A4ED84E42A99A9F4A02C1 /* UIViewController+RUNavigationBarColorSetterDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RUNavigationBarColorSetterDelegate.m"; path = "Pod/Classes/Category/UIViewController/UIViewController+RUNavigationBarColorSetterDelegate.m"; sourceTree = "<group>"; };
+		4EF5BF6A58D61846BA9A4C66A71F7111 /* NSURL+RUDirectories.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURL+RUDirectories.m"; path = "Pod/Classes/Category/NSURL/NSURL+RUDirectories.m"; sourceTree = "<group>"; };
+		509B150104A703D6BAD4505D98B4BC96 /* RUSlideMenuNavigationControllerProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUSlideMenuNavigationControllerProtocols.h; path = Pod/Classes/View/UIViewController/UINavigationController/RUSlideMenuNavigationControllerProtocols.h; sourceTree = "<group>"; };
+		516EE64AF3CD3C94E4CFA8C63E8DC34C /* UIButton+RUAsynchronousImageFetching.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+RUAsynchronousImageFetching.m"; path = "Pod/Classes/View/ImageFetching/UIButton+RUAsynchronousImageFetching.m"; sourceTree = "<group>"; };
+		51D58E0A24F2E20EE7E0F1DA0B1A336C /* NSObject+RUNotifications_UIApplication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RUNotifications_UIApplication.m"; path = "Pod/Classes/Category/UIApplication/NSObject+RUNotifications_UIApplication.m"; sourceTree = "<group>"; };
+		525F1057DEA950B6835B6F72E152AE66 /* UINavigationController+RUNavbarColorSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+RUNavbarColorSetter.h"; path = "Pod/Classes/Category/UINavigationController/UINavigationController+RUNavbarColorSetter.h"; sourceTree = "<group>"; };
+		5411FAA4C74E5919CB279574CE715447 /* RUConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUConstants.h; path = Pod/Classes/Misc/RUConstants.h; sourceTree = "<group>"; };
+		545A3F6DAB5E407BF479C8411F472AAE /* Blocks+RUMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Blocks+RUMacros.h"; path = "Pod/Classes/Macros/Blocks+RUMacros.h"; sourceTree = "<group>"; };
+		54E3451172B5AA63B208434CBD641FDF /* RUShowViewUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUShowViewUtil.h; path = Pod/Classes/Misc/RUShowViewUtil.h; sourceTree = "<group>"; };
+		55D0F3B362C5051C4C682EBD3B053569 /* RUSlideMenuNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUSlideMenuNavigationController.m; path = Pod/Classes/View/UIViewController/UINavigationController/RUSlideMenuNavigationController.m; sourceTree = "<group>"; };
+		56B9A3513BF6F96060D5D6967D3F3B46 /* UIColor+RUHexString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+RUHexString.m"; path = "Pod/Classes/Category/UIColor/UIColor+RUHexString.m"; sourceTree = "<group>"; };
+		5706CF97E6CBFDC3DCA5531C10BD711E /* UIActionSheet+RUShowUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+RUShowUtil.h"; path = "Pod/Classes/Category/UIActionSheet+RUShowUtil.h"; sourceTree = "<group>"; };
+		57D0B41E73FBDF11E6855767E5991ADD /* NSString+RUNumberCheck.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RUNumberCheck.h"; path = "Pod/Classes/Category/NSString/NSString+RUNumberCheck.h"; sourceTree = "<group>"; };
+		589F4328F1064075E9B1F6D145C90797 /* RUViewController_NavigationBarColorSetterProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUViewController_NavigationBarColorSetterProtocols.h; path = Pod/Classes/Category/UIViewController/RUViewController_NavigationBarColorSetterProtocols.h; sourceTree = "<group>"; };
+		593A7E6959C6123B7AAAB4200E63E720 /* NSPredicate+RUUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPredicate+RUUtil.h"; path = "Pod/Classes/Category/NSPredicate+RUUtil.h"; sourceTree = "<group>"; };
+		5C1DDC0746702166E49A9FFE2BD294DF /* ResplendentUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ResplendentUtilities.framework; path = ResplendentUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C7B1A116C99307C3F122C52461F9B4F /* UIView+RUSubviews.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RUSubviews.h"; path = "Pod/Classes/Category/UIView/UIView+RUSubviews.h"; sourceTree = "<group>"; };
+		5DF9E6DA82235B5AB8B31D456C0FFA5E /* NSString+RUEncodedUrl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RUEncodedUrl.m"; path = "Pod/Classes/Category/NSString/NSString+RUEncodedUrl.m"; sourceTree = "<group>"; };
+		5F64302BEBEFAD67708507E742E7BD6F /* RUDeallocHook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUDeallocHook.h; path = Pod/Classes/Objects/RUDeallocHook.h; sourceTree = "<group>"; };
+		6011ABC42A1F32C675A3BF233D757E15 /* RUActionSheetManagement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUActionSheetManagement.h; path = Pod/Classes/Macros/RUActionSheetManagement.h; sourceTree = "<group>"; };
+		6018C8100DFEF180930B17FE7920F859 /* UIView+RUMaskRoundCorners.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RUMaskRoundCorners.m"; path = "Pod/Classes/Category/UIView/UIView+RUMaskRoundCorners.m"; sourceTree = "<group>"; };
+		605E9F0073EBCA597A4BB1C349432B2B /* RUSlideMenuNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUSlideMenuNavigationController.h; path = Pod/Classes/View/UIViewController/UINavigationController/RUSlideMenuNavigationController.h; sourceTree = "<group>"; };
+		634A9A91942C8FBF54D0A5F9D0816FEA /* RUHorizontalTitlePagingViewCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUHorizontalTitlePagingViewCollectionViewCell.m; path = Pod/Classes/View/HorizontalTitlePagingView/RUHorizontalTitlePagingViewCollectionViewCell.m; sourceTree = "<group>"; };
+		63539DC167312F34B754FB40FFD6D86F /* RUGradientButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUGradientButton.m; path = Pod/Classes/View/Buttons/RUGradientButton.m; sourceTree = "<group>"; };
+		63B3269983E1B922D718860A933B3DD5 /* RUScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUScrollView.m; path = Pod/Classes/View/ScrollView/RUScrollView.m; sourceTree = "<group>"; };
+		63D20034B66CCF250185A0334AE0505D /* NSMutableDictionary+RUUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableDictionary+RUUtil.h"; path = "Pod/Classes/Category/NSMutableDictionary+RUUtil.h"; sourceTree = "<group>"; };
+		63D76C01FA8D97F765294AB2FB7A61C0 /* RUClassOrNilUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUClassOrNilUtil.h; path = Pod/Classes/Misc/RUClassOrNilUtil.h; sourceTree = "<group>"; };
+		645381B870DB9A46CB438254CCB71AB0 /* RUDiskImageFetchingController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUDiskImageFetchingController.m; path = Pod/Classes/Controller/RUDiskImageFetchingController/RUDiskImageFetchingController.m; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6646486EF0E30C63B5902E537FB3DC1E /* UINavigationController+RUColoredStatusBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+RUColoredStatusBarView.m"; path = "Pod/Classes/Category/UINavigationController/UINavigationController+RUColoredStatusBarView.m"; sourceTree = "<group>"; };
+		666C39A6128C7C30D44180D61EB8D1F3 /* NSString+RUNumberCheck.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RUNumberCheck.m"; path = "Pod/Classes/Category/NSString/NSString+RUNumberCheck.m"; sourceTree = "<group>"; };
+		670DD64DB4D9F61E87D4E77D932BB8A6 /* ResplendentUtilities.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ResplendentUtilities.xcconfig; sourceTree = "<group>"; };
+		67F82D41D5CB58226FAB6157BC2B3DBB /* UITabBarController+RUTabBarVisibility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITabBarController+RUTabBarVisibility.m"; path = "Pod/Classes/Category/UITabBarController/UITabBarController+RUTabBarVisibility.m"; sourceTree = "<group>"; };
+		697296F713AAEA8055C7FD8C5BEBEA45 /* Pods-AnimatingTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnimatingTableView-umbrella.h"; sourceTree = "<group>"; };
+		6D5B24D1170D0F027F3291AF2DFC1592 /* RUTopBottomBarModalView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUTopBottomBarModalView.m; path = Pod/Classes/View/Modal/RUTopBottomBarModalView.m; sourceTree = "<group>"; };
+		6D774CA25376354C66731D73EA99F539 /* RUNotifications.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUNotifications.h; path = Pod/Classes/Misc/RUNotifications.h; sourceTree = "<group>"; };
+		6FE91087D398DCE942C9937BDC514354 /* UIFont+RUHelvetica.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+RUHelvetica.m"; path = "Pod/Classes/Category/UIFont+RUHelvetica.m"; sourceTree = "<group>"; };
+		71EE3DFDCEE9A66C3AFB5C3775856F6D /* ResplendentUtilities-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ResplendentUtilities-prefix.pch"; sourceTree = "<group>"; };
+		72A77A9E039399A012F38A1C1EAAD6CD /* NSMutableArray+RUAddObjectIfNotNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+RUAddObjectIfNotNil.h"; path = "Pod/Classes/Category/NSMutableArray+RUAddObjectIfNotNil.h"; sourceTree = "<group>"; };
+		72DAFF3CE4E43C2AC83AE79CEB108FE3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7443DE774FC587645BF84780B0073365 /* RUHorizontalTitlePagingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUHorizontalTitlePagingView.m; path = Pod/Classes/View/HorizontalTitlePagingView/RUHorizontalTitlePagingView.m; sourceTree = "<group>"; };
+		74AE1D8D15EF4BB61AC75C6918B5F54E /* UIAlertView+RUShowUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+RUShowUtil.h"; path = "Pod/Classes/Category/UIAlertView+RUShowUtil.h"; sourceTree = "<group>"; };
+		74C3501A18453773EE672018240CCBAC /* RUColorPickerCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUColorPickerCell.h; path = Pod/Classes/View/ColorPicker/RUColorPickerCell.h; sourceTree = "<group>"; };
+		75E76FAFFC06DFCB9C61E3CAA07249B8 /* RUImageViewFullscreenRotatingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUImageViewFullscreenRotatingView.m; path = Pod/Classes/Fullscreen/RUImageViewFullscreenRotatingView.m; sourceTree = "<group>"; };
+		761443A04657E4F0EBA55A411D06B465 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76164A7592E9B3BD5EEAFD13F213C390 /* Pods-AnimatingTableView-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnimatingTableView-frameworks.sh"; sourceTree = "<group>"; };
+		7716D52FE90E86A2135F7F7BAE234AFD /* NSString+RUURLParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RUURLParams.h"; path = "Pod/Classes/Category/NSString/NSString+RUURLParams.h"; sourceTree = "<group>"; };
+		78765DD83212BF0F762B86C6DF383E3A /* UIImageView+RUAsynchronousImageFetching.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RUAsynchronousImageFetching.m"; path = "Pod/Classes/View/ImageFetching/UIImageView+RUAsynchronousImageFetching.m"; sourceTree = "<group>"; };
+		79C618A2D1AA9505D6118F40326231E9 /* UIView+RUCancelControlTracking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RUCancelControlTracking.m"; path = "Pod/Classes/Category/UIView/UIView+RUCancelControlTracking.m"; sourceTree = "<group>"; };
+		7A6A0467B8481D9E433ED00CAE38AF9C /* RUAddressBookUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUAddressBookUtil.h; path = Pod/Classes/Objects/RUAddressBookUtil.h; sourceTree = "<group>"; };
+		7C65BFE0F3CD93071A251613FC7C6DAD /* RUStringCompatability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUStringCompatability.h; path = Pod/Classes/Misc/Compatability/RUStringCompatability.h; sourceTree = "<group>"; };
+		7D4AA343ED9AB3F213286C660570B525 /* RUViewStack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUViewStack.m; path = Pod/Classes/View/RUViewStack/RUViewStack.m; sourceTree = "<group>"; };
+		7D8A73C757870A2A119EE232F927D406 /* NSDictionary+RUReverse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+RUReverse.m"; path = "Pod/Classes/Category/NSDictionary/NSDictionary+RUReverse.m"; sourceTree = "<group>"; };
+		7F603EAC50A1B1EA01FCC9D18912277F /* UIView+RUSuperviews.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RUSuperviews.h"; path = "Pod/Classes/Category/UIView/UIView+RUSuperviews.h"; sourceTree = "<group>"; };
+		7FD6D754611FFA43AD1E95880F62C972 /* UIImage+RUImageColorMasking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RUImageColorMasking.m"; path = "Pod/Classes/Category/UIImage/UIImage+RUImageColorMasking.m"; sourceTree = "<group>"; };
+		80623B0DA592EB326ECFD63573F8DDF5 /* UIView+RUDrawHole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RUDrawHole.h"; path = "Pod/Classes/Category/UIView/UIView+RUDrawHole.h"; sourceTree = "<group>"; };
+		81E0503035E082AFD312221BE5F0B1EB /* RUScrollToTopManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUScrollToTopManager.m; path = Pod/Classes/Controller/RUScrollToTopManager.m; sourceTree = "<group>"; };
+		83CA3DE8A5545BA94DE8FC99A37023DA /* RUHorizontalPagingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUHorizontalPagingView.h; path = Pod/Classes/View/HorizontalPagingView/RUHorizontalPagingView.h; sourceTree = "<group>"; };
+		84EABC3315FA011AA42BFB743EA433B6 /* NSString+RUFormatting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RUFormatting.h"; path = "Pod/Classes/Category/NSString/NSString+RUFormatting.h"; sourceTree = "<group>"; };
+		87DE0B63DFFC506911A7F48449A30C2F /* NSDictionary+RUReverse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+RUReverse.h"; path = "Pod/Classes/Category/NSDictionary/NSDictionary+RUReverse.h"; sourceTree = "<group>"; };
+		889580F70A739A3FEC53F47EC432CBF4 /* UIApplication+RUOpenUrl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+RUOpenUrl.h"; path = "Pod/Classes/Category/UIApplication/UIApplication+RUOpenUrl.h"; sourceTree = "<group>"; };
+		88A8EB3EDE904E75FB20A95EA6D6F779 /* RUImageCompatability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUImageCompatability.h; path = Pod/Classes/Misc/Compatability/RUImageCompatability.h; sourceTree = "<group>"; };
+		8A709D31F33949B29EF4E683F495A3CA /* RUHorizontalTitlePagingViewCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUHorizontalTitlePagingViewCollectionViewCell.h; path = Pod/Classes/View/HorizontalTitlePagingView/RUHorizontalTitlePagingViewCollectionViewCell.h; sourceTree = "<group>"; };
+		8AA696052B785265D19292AC49404ADE /* UIView+RUViewHierarchyUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RUViewHierarchyUtility.m"; path = "Pod/Classes/Category/UIView/UIView+RUViewHierarchyUtility.m"; sourceTree = "<group>"; };
+		8D2553BE727E82A0AF661621C677A40C /* RUTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUTableView.m; path = Pod/Classes/View/TableView/RUTableView.m; sourceTree = "<group>"; };
+		8EB1DB14A53BEF23301E8A6C62789FF4 /* RUSystemVersionUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUSystemVersionUtils.h; path = Pod/Classes/Misc/RUSystemVersionUtils.h; sourceTree = "<group>"; };
+		900BD6CB8994A36C59E2BF0920309F73 /* RUColorPickerViewProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUColorPickerViewProtocols.h; path = Pod/Classes/View/ColorPicker/RUColorPickerViewProtocols.h; sourceTree = "<group>"; };
+		906B5BBD25C0F7ED4346D8AECDF23106 /* RUGradientView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUGradientView.h; path = Pod/Classes/View/Gradients/RUGradientView.h; sourceTree = "<group>"; };
+		918DD8CB0DE82241737445945BC1EBEB /* NSNumber+RUUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+RUUtil.h"; path = "Pod/Classes/Category/NSNumber+RUUtil.h"; sourceTree = "<group>"; };
+		9362D144B9D99F00022B8A4CA32F2159 /* NSString+RUURLParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RUURLParams.m"; path = "Pod/Classes/Category/NSString/NSString+RUURLParams.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93EAC9226FF4DBB6DCD9A79EA845339E /* RUCompatability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUCompatability.m; path = Pod/Classes/Misc/Compatability/RUCompatability.m; sourceTree = "<group>"; };
+		9654FDD8EEF2430785F0DE072CB1B1B7 /* NSURL+RUDirectories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURL+RUDirectories.h"; path = "Pod/Classes/Category/NSURL/NSURL+RUDirectories.h"; sourceTree = "<group>"; };
+		97A63F268D528840543978DAA2EB7047 /* RUColoredNavigationBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUColoredNavigationBar.m; path = Pod/Classes/View/UINavigationBar/RUColoredNavigationBar.m; sourceTree = "<group>"; };
+		984A5E92A321D320210194CFA5B4F2F4 /* UIView+RUSuperviews.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RUSuperviews.m"; path = "Pod/Classes/Category/UIView/UIView+RUSuperviews.m"; sourceTree = "<group>"; };
+		99DBA31223A25B41E33895DCE85D90E7 /* RUModalView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUModalView.h; path = Pod/Classes/View/Modal/RUModalView.h; sourceTree = "<group>"; };
+		9A88508655E55987D8C09259DCF9FA87 /* UIView+RUUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RUUtility.m"; path = "Pod/Classes/Category/UIView/UIView+RUUtility.m"; sourceTree = "<group>"; };
+		9CC6534D88F294D007C5C018E81ABB82 /* UIViewController+RUStatusBarHeight.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RUStatusBarHeight.m"; path = "Pod/Classes/Category/UIViewController/UIViewController+RUStatusBarHeight.m"; sourceTree = "<group>"; };
+		9E45F47414AA16CCCE514E9711CF35DA /* UIView+RUViewHierarchyUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RUViewHierarchyUtility.h"; path = "Pod/Classes/Category/UIView/UIView+RUViewHierarchyUtility.h"; sourceTree = "<group>"; };
+		9ECF8E227464AAA262744649B6384A75 /* RUScrollToTopManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUScrollToTopManager.h; path = Pod/Classes/Controller/RUScrollToTopManager.h; sourceTree = "<group>"; };
+		A0CE98F628EA57E839A7945BCB207DDE /* CAShapeLayer+RUMessageBox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CAShapeLayer+RUMessageBox.m"; path = "Pod/Classes/Category/CALayer/CAShapeLayer/CAShapeLayer+RUMessageBox/CAShapeLayer+RUMessageBox.m"; sourceTree = "<group>"; };
+		A2B72C8C402F7BEAE2890A8CAA7B54BF /* NSString+RUUrlComponents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RUUrlComponents.m"; path = "Pod/Classes/Category/NSString/NSString+RUUrlComponents.m"; sourceTree = "<group>"; };
+		A30D65A8772A44866A4F20693CE8AAB4 /* RUTriangle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUTriangle.m; path = Pod/Classes/View/Geometry/RUTriangle.m; sourceTree = "<group>"; };
+		A3D03D13ED35F966F841E5D1736EA871 /* RUColorPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUColorPickerView.h; path = Pod/Classes/View/ColorPicker/RUColorPickerView.h; sourceTree = "<group>"; };
+		A3DA2D3E5CBA511AD23F291634C84C10 /* NSString+RUFormatting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RUFormatting.m"; path = "Pod/Classes/Category/NSString/NSString+RUFormatting.m"; sourceTree = "<group>"; };
+		A49AD050937F995D5A1B2B84C525FB89 /* Pods-AnimatingTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnimatingTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		A67517FB948F90F73FE942E9B06BDF8F /* UIInterfaceOrientation+RUUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIInterfaceOrientation+RUUtil.m"; path = "Pod/Classes/Category/UIInterfaceOrientation+RUUtil.m"; sourceTree = "<group>"; };
+		A6902CEBD64608563E0034D36776592E /* NSArray+RUShuffling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+RUShuffling.m"; path = "Pod/Classes/Category/NSArray/NSArray+RUShuffling.m"; sourceTree = "<group>"; };
+		A6D835BCE2539B8DF675D25817AE5F14 /* UIFont+RUHelveticaNeue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+RUHelveticaNeue.m"; path = "Pod/Classes/Category/UIFont+RUHelveticaNeue.m"; sourceTree = "<group>"; };
+		A80B938ABA964251AF6793C7DF5B5F56 /* RUOrderedMutableDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUOrderedMutableDictionary.h; path = Pod/Classes/Objects/RUOrderedDictionary/RUOrderedMutableDictionary.h; sourceTree = "<group>"; };
+		A87D1E3D56B3837ED7B7CE8291E6C87D /* UIColor+RUHexString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+RUHexString.h"; path = "Pod/Classes/Category/UIColor/UIColor+RUHexString.h"; sourceTree = "<group>"; };
+		A9D7AF47F6277D14BC3BB261E50186A4 /* RUTriangle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUTriangle.h; path = Pod/Classes/View/Geometry/RUTriangle.h; sourceTree = "<group>"; };
+		AA5A60D7689760EF5A004318C3819760 /* UIImage+RURotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RURotation.m"; path = "Pod/Classes/Category/UIImage/UIImage+RURotation.m"; sourceTree = "<group>"; };
+		AA8ED717A6261FC244C4EE1C1EEAF5ED /* RUStaticVariableSynthesization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUStaticVariableSynthesization.h; path = Pod/Classes/Misc/RUStaticVariableSynthesization.h; sourceTree = "<group>"; };
+		AC36843BAF1F1649B16CC26A9742C96C /* UIInterfaceOrientation+RUUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIInterfaceOrientation+RUUtil.h"; path = "Pod/Classes/Category/UIInterfaceOrientation+RUUtil.h"; sourceTree = "<group>"; };
+		ACCA3453BDF27F35A18550C1BABD155D /* RUOrderedMutableDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUOrderedMutableDictionary.m; path = Pod/Classes/Objects/RUOrderedDictionary/RUOrderedMutableDictionary.m; sourceTree = "<group>"; };
+		AD38DD211FE795E6E727EE9526ABF006 /* RURadioButtonView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RURadioButtonView.h; path = Pod/Classes/View/RadioButtonView/RURadioButtonView.h; sourceTree = "<group>"; };
+		AD955C04E32750198C3C9BAD2940E19D /* CMDeviceMotion+RUOrientation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CMDeviceMotion+RUOrientation.m"; path = "Pod/Classes/Category/CMDeviceMotion+RUOrientation.m"; sourceTree = "<group>"; };
+		AE1FDF3AC26FD7F3F1B3EAA15E4617B8 /* RUAsynchronousImageFetchingProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUAsynchronousImageFetchingProtocols.h; path = Pod/Classes/View/ImageFetching/RUAsynchronousImageFetchingProtocols.h; sourceTree = "<group>"; };
+		AE4BC08815847BAEE8684BE632C3E1B3 /* RUTopBottomBarModalView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUTopBottomBarModalView.h; path = Pod/Classes/View/Modal/RUTopBottomBarModalView.h; sourceTree = "<group>"; };
+		AE8232ED7F9E5C4B1F29EEC54444C7C0 /* NSURL+RUQueryParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURL+RUQueryParams.h"; path = "Pod/Classes/Category/NSURL/NSURL+RUQueryParams.h"; sourceTree = "<group>"; };
+		B02F3248427A804A966D8C2B107A62A3 /* NSDictionary+RUFBUserResponseObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+RUFBUserResponseObject.h"; path = "Pod/Classes/Category/NSDictionary/NSDictionary+RUFBUserResponseObject.h"; sourceTree = "<group>"; };
+		B146B650C165D0AAAFB2C93ADAD24F7C /* NSObject+RUNotifications_UIApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RUNotifications_UIApplication.h"; path = "Pod/Classes/Category/UIApplication/NSObject+RUNotifications_UIApplication.h"; sourceTree = "<group>"; };
+		B2E32B9923E70767B17BF0862D2A4B25 /* RUImageCompatability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUImageCompatability.m; path = Pod/Classes/Misc/Compatability/RUImageCompatability.m; sourceTree = "<group>"; };
+		B3F8BA8B6471BCE0CC259618D952FE5C /* NSString+RUUrlComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RUUrlComponents.h"; path = "Pod/Classes/Category/NSString/NSString+RUUrlComponents.h"; sourceTree = "<group>"; };
+		B410E059E06200E40585B28F319BB7EB /* RUAsynchronousUIImageRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUAsynchronousUIImageRequest.h; path = Pod/Classes/View/Image/RUAsynchronousUIImageRequest.h; sourceTree = "<group>"; };
+		B62011D76A3087222CC9FFAA72BAF82D /* NSObject+RUKeyboardNotifications.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RUKeyboardNotifications.m"; path = "Pod/Classes/Category/Notifications/NSObject+RUKeyboardNotifications.m"; sourceTree = "<group>"; };
+		B677B514B75E166AF29F2D61A4A90CB6 /* RUSynthesizeAssociatedObjects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUSynthesizeAssociatedObjects.h; path = Pod/Classes/Misc/RUSynthesizeAssociatedObjects.h; sourceTree = "<group>"; };
+		B85E430AC48262AB01F1970223E96296 /* RUKeyboardAdjustmentHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUKeyboardAdjustmentHelper.h; path = Pod/Classes/Objects/KeyboardAdjustmentHelper/RUKeyboardAdjustmentHelper.h; sourceTree = "<group>"; };
+		B9076EAFADC6DF5CAEA2119E3F7A7305 /* RUOrderedDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUOrderedDictionary.h; path = Pod/Classes/Objects/RUOrderedDictionary/RUOrderedDictionary.h; sourceTree = "<group>"; };
+		B9B21CF22014A85A1312AE9F2F63A3E6 /* NSNumber+RUUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+RUUtil.m"; path = "Pod/Classes/Category/NSNumber+RUUtil.m"; sourceTree = "<group>"; };
+		BA3CEB09C8CB07940C08226E0AB8B196 /* UIViewController+RUDismissOrPop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RUDismissOrPop.h"; path = "Pod/Classes/Category/UIViewController/UIViewController+RUDismissOrPop.h"; sourceTree = "<group>"; };
+		BA9C3A6DEB07C7E34C651E53A6FFA5F5 /* UIScrollView+RUAboveContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+RUAboveContentView.h"; path = "Pod/Classes/Category/UIScrollView+RUAboveContentView.h"; sourceTree = "<group>"; };
+		BABD1680C634124E5E2FE002895A651B /* NSPredicate+RUUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPredicate+RUUtil.m"; path = "Pod/Classes/Category/NSPredicate+RUUtil.m"; sourceTree = "<group>"; };
+		BB01A363DF83DA6FD4D31C048BF1E50D /* RUCrossView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUCrossView.h; path = Pod/Classes/View/Geometry/RUCrossView.h; sourceTree = "<group>"; };
+		BB5E7D67844DDF9516674CFDCCE64C7B /* RUDebugging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUDebugging.h; path = Pod/Classes/Misc/RUDebugging.h; sourceTree = "<group>"; };
+		BF753706704DFC99C9E2EFD183368896 /* NSMutableArray+RUAddObjectIfNotNil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+RUAddObjectIfNotNil.m"; path = "Pod/Classes/Category/NSMutableArray+RUAddObjectIfNotNil.m"; sourceTree = "<group>"; };
+		BFEA43E0476A3F37FE984B3209CBD324 /* NSString+RUDirectories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RUDirectories.h"; path = "Pod/Classes/Category/NSString/NSString+RUDirectories.h"; sourceTree = "<group>"; };
+		C0E91B64F87C6FAB6FA455756CA4A5B9 /* NSString+RUMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RUMacros.h"; path = "Pod/Classes/Macros/NSString+RUMacros.h"; sourceTree = "<group>"; };
+		C23325FC6F6456B734174267CF635585 /* RUCornerRoundingBorderedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUCornerRoundingBorderedView.h; path = Pod/Classes/View/CornerRoundingBorderedView/RUCornerRoundingBorderedView.h; sourceTree = "<group>"; };
+		C32A2E4A9724888E87938DFA5AFBC6D6 /* RUStringCompatability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUStringCompatability.m; path = Pod/Classes/Misc/Compatability/RUStringCompatability.m; sourceTree = "<group>"; };
+		C42D705B3742F94C87C9BF45514376B0 /* UIView+RUUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RUUtility.h"; path = "Pod/Classes/Category/UIView/UIView+RUUtility.h"; sourceTree = "<group>"; };
+		C5501FA70C089F033FDE98EA70EC847C /* RUHorizontalPagingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUHorizontalPagingView.m; path = Pod/Classes/View/HorizontalPagingView/RUHorizontalPagingView.m; sourceTree = "<group>"; };
+		C6434D95235A447ECC84C66DA5DF9785 /* RUSynthesizeUserDefaultMethods.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUSynthesizeUserDefaultMethods.h; path = Pod/Classes/Misc/RUSynthesizeUserDefaultMethods.h; sourceTree = "<group>"; };
+		C6F045BA862DF1D12AB607902EA5D530 /* RUSubviewTouchesView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUSubviewTouchesView.h; path = Pod/Classes/View/Touches/RUSubviewTouchesView.h; sourceTree = "<group>"; };
+		C76FEFE470B5D96D617B4ABC275CB4EF /* RURadioButtonGroupProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RURadioButtonGroupProtocols.h; path = Pod/Classes/Objects/RURadioButtonGroup/RURadioButtonGroupProtocols.h; sourceTree = "<group>"; };
+		C7A4D310751C343723E8D6E2293A5F42 /* UIView+RUEnableTapToResignFirstResponder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RUEnableTapToResignFirstResponder.h"; path = "Pod/Classes/Category/UIView/UIView+RUEnableTapToResignFirstResponder.h"; sourceTree = "<group>"; };
+		C8F9E939D544D63781993D57CAAAD49C /* NSArray+RUComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+RUComponents.h"; path = "Pod/Classes/Category/NSArray/NSArray+RUComponents.h"; sourceTree = "<group>"; };
+		CAEB1B52F2C7FE7BB21C89CBB5CFA250 /* RUFullscreenRotatingViewProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUFullscreenRotatingViewProtocols.h; path = Pod/Classes/Fullscreen/RUFullscreenRotatingViewProtocols.h; sourceTree = "<group>"; };
+		CB4E3589FB00663796F66F38AB57B231 /* UIImageView+RUFacebookAsynchronousImageFetching.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RUFacebookAsynchronousImageFetching.h"; path = "Pod/Classes/View/ImageFetching/UIImageView+RUFacebookAsynchronousImageFetching.h"; sourceTree = "<group>"; };
+		CE5595577196BF605C3431C5BFC62623 /* RUCollectionViewFlowLayout_ContentSizeAdjustForMinimumLineSpacing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUCollectionViewFlowLayout_ContentSizeAdjustForMinimumLineSpacing.h; path = Pod/Classes/Objects/UICollectionViewFlowLayout/RUCollectionViewFlowLayout_ContentSizeAdjustForMinimumLineSpacing.h; sourceTree = "<group>"; };
+		CE65E51798C1544951AD31A89672AF3E /* RUNavigationControllerDelegate_navbarColorSetterProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUNavigationControllerDelegate_navbarColorSetterProtocols.h; path = Pod/Classes/Objects/NavigationControllerDelegate_navbarColorSetter/RUNavigationControllerDelegate_navbarColorSetterProtocols.h; sourceTree = "<group>"; };
+		D04FCDDD83DAF5E9C71A38204C207F15 /* NSString+MKCoordinateRegion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MKCoordinateRegion.m"; path = "Pod/Classes/Category/NSString/NSString+MKCoordinateRegion.m"; sourceTree = "<group>"; };
+		D0E0D9EE4D42F2C2B2222E9293D4F3AF /* UIView+RUSpinner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RUSpinner.m"; path = "Pod/Classes/Category/UIView/UIView+RUSpinner.m"; sourceTree = "<group>"; };
+		D1B0B04BB27CF85723B0AFD128547B55 /* RUSingleton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUSingleton.h; path = Pod/Classes/Misc/RUSingleton.h; sourceTree = "<group>"; };
+		D1BAB78321150E26F7FD42E641637620 /* UIFont+RUHelvetica.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+RUHelvetica.h"; path = "Pod/Classes/Category/UIFont+RUHelvetica.h"; sourceTree = "<group>"; };
+		D200EE0D0460D48132F6C8BA6FAFF057 /* UIApplication+RUPushNotifications.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+RUPushNotifications.h"; path = "Pod/Classes/Category/UIApplication/UIApplication+RUPushNotifications.h"; sourceTree = "<group>"; };
+		D21B594E5A66A6244C569978733D81F4 /* UIImage+RUDebug.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RUDebug.m"; path = "Pod/Classes/Category/UIImage/UIImage+RUDebug.m"; sourceTree = "<group>"; };
+		D34D9500306A77EA7597FBD45892678B /* RUFullscreenRotatingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUFullscreenRotatingView.h; path = Pod/Classes/Fullscreen/RUFullscreenRotatingView.h; sourceTree = "<group>"; };
+		D3F3CD1FD4D20D5FF6209FA2F39CBF9D /* RUNavigationControllerDelegate_navbarColorSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUNavigationControllerDelegate_navbarColorSetter.h; path = Pod/Classes/Objects/NavigationControllerDelegate_navbarColorSetter/RUNavigationControllerDelegate_navbarColorSetter.h; sourceTree = "<group>"; };
+		D60A43B3EF446933C383DCCC21636639 /* NSString+RUCamelCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RUCamelCase.h"; path = "Pod/Classes/Category/NSString/NSString+RUCamelCase.h"; sourceTree = "<group>"; };
+		D66915965A02FACE35218CD7CA103E72 /* UIView+RUCoreGraphics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RUCoreGraphics.m"; path = "Pod/Classes/Category/UIView/UIView+RUCoreGraphics.m"; sourceTree = "<group>"; };
+		D6DDBA2A6404AD8D1A384F231A6CC026 /* RUDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUDebug.h; path = Pod/Classes/Misc/RUDebug.h; sourceTree = "<group>"; };
+		D795E53FA59CDDA07EB064961CA8D920 /* RUCompatability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUCompatability.h; path = Pod/Classes/Misc/Compatability/RUCompatability.h; sourceTree = "<group>"; };
+		D82A11410612D13C69BCF6804D0570B9 /* NSBundle+RUPListGetters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+RUPListGetters.m"; path = "Pod/Classes/Category/NSBundle+RUPListGetters.m"; sourceTree = "<group>"; };
+		D831B8D8A860F99C7BAC86C3C23CC36E /* RUAddressBookUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUAddressBookUtil.m; path = Pod/Classes/Objects/RUAddressBookUtil.m; sourceTree = "<group>"; };
+		DA26419AAD74CA5E647F05AFEB1326A5 /* UIImage+RUImageFromColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+RUImageFromColor.h"; path = "Pod/Classes/Category/UIImage/UIImage+RUImageFromColor.h"; sourceTree = "<group>"; };
+		DA4F6CFD3B2EEAE3E0735344D1A6D323 /* UIImageView+RUFacebookAsynchronousImageFetching.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RUFacebookAsynchronousImageFetching.m"; path = "Pod/Classes/View/ImageFetching/UIImageView+RUFacebookAsynchronousImageFetching.m"; sourceTree = "<group>"; };
+		DB2F3F99D2F22F28BB21896118B5C42B /* UIGeometry+RUUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIGeometry+RUUtility.h"; path = "Pod/Classes/Category/UIGeometry+RUUtility.h"; sourceTree = "<group>"; };
+		DB43553379959B468D1410B934B3C772 /* CALayer+RUMask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+RUMask.h"; path = "Pod/Classes/Category/CALayer/CALayer+RUMask/CALayer+RUMask.h"; sourceTree = "<group>"; };
+		DB91B5F360560740A770CC5B95DE6C22 /* NSString+RUDirectories.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RUDirectories.m"; path = "Pod/Classes/Category/NSString/NSString+RUDirectories.m"; sourceTree = "<group>"; };
+		DC8753333F7FFD7D05FFE9133619057F /* RUGradientButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUGradientButton.h; path = Pod/Classes/View/Buttons/RUGradientButton.h; sourceTree = "<group>"; };
+		DCB6271C11DE48A37DD48060A650FF59 /* RUImageViewFullscreenRotatingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUImageViewFullscreenRotatingView.h; path = Pod/Classes/Fullscreen/RUImageViewFullscreenRotatingView.h; sourceTree = "<group>"; };
+		DF40A86171DB58EB123D989756399AB5 /* UITextField+RUSelectedTextRange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+RUSelectedTextRange.m"; path = "Pod/Classes/Category/UITextField/UITextField+RUSelectedTextRange.m"; sourceTree = "<group>"; };
+		DF66BC18743280E84A5585412DAF0C1A /* UIImage+RUSaveToAssetsLibrary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RUSaveToAssetsLibrary.m"; path = "Pod/Classes/Category/UIImage/UIImage+RUSaveToAssetsLibrary.m"; sourceTree = "<group>"; };
+		E0BBFE74AE9D32F164167157290A53CE /* RUCollectionViewFlowLayout_ContentSizeAdjustForMinimumLineSpacing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUCollectionViewFlowLayout_ContentSizeAdjustForMinimumLineSpacing.m; path = Pod/Classes/Objects/UICollectionViewFlowLayout/RUCollectionViewFlowLayout_ContentSizeAdjustForMinimumLineSpacing.m; sourceTree = "<group>"; };
+		E3271A3C53C1C86C5A92C342DB64B747 /* RUColorPickerCellUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUColorPickerCellUtil.h; path = Pod/Classes/View/ColorPicker/RUColorPickerCellUtil.h; sourceTree = "<group>"; };
+		E50C0D2131E720680B9A82689ADFDA57 /* UIView+RUSnapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RUSnapshot.h"; path = "Pod/Classes/Category/UIImage/UIView+RUSnapshot.h"; sourceTree = "<group>"; };
+		E5FBCA69C72E90BE5114386773091C30 /* UIViewController+RUDismissOrPop.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RUDismissOrPop.m"; path = "Pod/Classes/Category/UIViewController/UIViewController+RUDismissOrPop.m"; sourceTree = "<group>"; };
+		E6763AF277FCB20DEBC59ADF7F66A404 /* NSObject+RUKeyboardNotifications.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RUKeyboardNotifications.h"; path = "Pod/Classes/Category/Notifications/NSObject+RUKeyboardNotifications.h"; sourceTree = "<group>"; };
+		E7EE4E7061111A7726BACAC7BDF926F0 /* UIView+RUCancelControlTracking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RUCancelControlTracking.h"; path = "Pod/Classes/Category/UIView/UIView+RUCancelControlTracking.h"; sourceTree = "<group>"; };
+		E93A6FC2E55D5A042B2EE92C17DBA171 /* UITextField+RUAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+RUAttributes.m"; path = "Pod/Classes/Category/UITextField/UITextField+RUAttributes.m"; sourceTree = "<group>"; };
+		E96DD78667723891E68F2CFBFD8525D5 /* NSString+RUEmailValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RUEmailValidation.h"; path = "Pod/Classes/Category/NSString/NSString+RUEmailValidation.h"; sourceTree = "<group>"; };
+		E9E18B9410BE00B692C152D8C954D4FB /* UIView+RUSpinner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RUSpinner.h"; path = "Pod/Classes/Category/UIView/UIView+RUSpinner.h"; sourceTree = "<group>"; };
+		EAA8B8B76F05A32838D5B1E3C97CE22D /* RUFullscreenRotatingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUFullscreenRotatingView.m; path = Pod/Classes/Fullscreen/RUFullscreenRotatingView.m; sourceTree = "<group>"; };
+		EADCC4E3EDCC3205448C949BFCA58028 /* UIView+RUSnapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RUSnapshot.m"; path = "Pod/Classes/Category/UIImage/UIView+RUSnapshot.m"; sourceTree = "<group>"; };
+		EB6F9C82ED8553B9C59D6DDDEFEFB311 /* RUScrollWithKeyboardAdjustmentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUScrollWithKeyboardAdjustmentView.m; path = Pod/Classes/View/Keyboard/RUScrollWithKeyboardAdjustmentView.m; sourceTree = "<group>"; };
+		EC28868B7D22C587ACE838BF6D1CA0F1 /* Pods_AnimatingTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AnimatingTableView.framework; path = "Pods-AnimatingTableView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8589660FD1B1D4A492C21994E2756B /* NSString+RUStringContainsUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RUStringContainsUtil.m"; path = "Pod/Classes/Category/NSString/NSString+RUStringContainsUtil.m"; sourceTree = "<group>"; };
+		ED383CCCC8B3FED7190749AE84DCE3DA /* RUScrollWithKeyboardAdjustmentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUScrollWithKeyboardAdjustmentView.h; path = Pod/Classes/View/Keyboard/RUScrollWithKeyboardAdjustmentView.h; sourceTree = "<group>"; };
+		ED60F7E67AB7AFE26767073B76CE4979 /* CALayer+RUMask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+RUMask.m"; path = "Pod/Classes/Category/CALayer/CALayer+RUMask/CALayer+RUMask.m"; sourceTree = "<group>"; };
+		EE97D787B7D183D8A78788BC65BAB081 /* UITextField+RUAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+RUAttributes.h"; path = "Pod/Classes/Category/UITextField/UITextField+RUAttributes.h"; sourceTree = "<group>"; };
+		F1776AE1BDD0965AC9407C434B53A2E6 /* NSURL+RUQueryParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURL+RUQueryParams.m"; path = "Pod/Classes/Category/NSURL/NSURL+RUQueryParams.m"; sourceTree = "<group>"; };
+		F188514D5C31044B599BE0F6BED086FE /* UIImage+RUSaveToAssetsLibrary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+RUSaveToAssetsLibrary.h"; path = "Pod/Classes/Category/UIImage/UIImage+RUSaveToAssetsLibrary.h"; sourceTree = "<group>"; };
+		F1E40C94E137AFD9977B6C79BA223B3A /* UINavigationController+RUNavbarColorSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+RUNavbarColorSetter.m"; path = "Pod/Classes/Category/UINavigationController/UINavigationController+RUNavbarColorSetter.m"; sourceTree = "<group>"; };
+		F2AAB47A5EE83F796F036A130BDBBCCE /* UIApplication+RUOpenUrl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+RUOpenUrl.m"; path = "Pod/Classes/Category/UIApplication/UIApplication+RUOpenUrl.m"; sourceTree = "<group>"; };
+		F3206EEE6DBF4AD0E1740905D645BF8A /* UIButton+RUDiskImageFetching.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+RUDiskImageFetching.m"; path = "Pod/Classes/Category/UIButton/UIButton+RUDiskImageFetching.m"; sourceTree = "<group>"; };
+		F39C6220C461DAE61A1229467090C53B /* RURadioButtonGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RURadioButtonGroup.h; path = Pod/Classes/Objects/RURadioButtonGroup/RURadioButtonGroup.h; sourceTree = "<group>"; };
+		F55769F2750EB0AAE3592F78EBB63E46 /* RUGradientView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUGradientView.m; path = Pod/Classes/View/Gradients/RUGradientView.m; sourceTree = "<group>"; };
+		F5FD4D36709EE98D80F4C8821803062D /* UIColor+RUUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+RUUtility.h"; path = "Pod/Classes/Category/UIColor/UIColor+RUUtility.h"; sourceTree = "<group>"; };
+		F65712898635A35A867C3DFB3709F2A9 /* UIImageView+RUDiskImageFetching.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RUDiskImageFetching.m"; path = "Pod/Classes/Category/UIImageView+RUDiskImageFetching.m"; sourceTree = "<group>"; };
+		F6697EB5878E06BB7A8911B665F3B940 /* UIView+RUCoreGraphics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RUCoreGraphics.h"; path = "Pod/Classes/Category/UIView/UIView+RUCoreGraphics.h"; sourceTree = "<group>"; };
+		F6DF45F074B204ECDB36B02112E8A4C3 /* NSArray+RUShuffling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+RUShuffling.h"; path = "Pod/Classes/Category/NSArray/NSArray+RUShuffling.h"; sourceTree = "<group>"; };
+		F6DF4F085B1BBEEC5B16DAB8D44DD7E4 /* UILabel+RUAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+RUAttributes.m"; path = "Pod/Classes/Category/UILabel/UILabel+RUAttributes.m"; sourceTree = "<group>"; };
+		F796F6C0377B5D975B27FFC30F3E3031 /* UIImage+RUImageColorMasking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+RUImageColorMasking.h"; path = "Pod/Classes/Category/UIImage/UIImage+RUImageColorMasking.h"; sourceTree = "<group>"; };
+		F888C0836D3E45EC61858C154DA900E7 /* RUColoredNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUColoredNavigationBar.h; path = Pod/Classes/View/UINavigationBar/RUColoredNavigationBar.h; sourceTree = "<group>"; };
+		FA05F56A282D2350C57587F60E20C628 /* UIImage+RUDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+RUDebug.h"; path = "Pod/Classes/Category/UIImage/UIImage+RUDebug.h"; sourceTree = "<group>"; };
+		FA2E9AE56C3988C1B844C511FF188E00 /* NSString+RUEncodedUrl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RUEncodedUrl.h"; path = "Pod/Classes/Category/NSString/NSString+RUEncodedUrl.h"; sourceTree = "<group>"; };
+		FBC2335D0F9BD3126311FD0B9F3D2F49 /* UITextField+RUOnlyTextInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+RUOnlyTextInput.h"; path = "Pod/Classes/Category/UITextField/UITextField+RUOnlyTextInput.h"; sourceTree = "<group>"; };
+		FD7E7D63082B7ABD0CF2A8377B6804F7 /* RURadioButtonGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RURadioButtonGroup.m; path = Pod/Classes/Objects/RURadioButtonGroup/RURadioButtonGroup.m; sourceTree = "<group>"; };
+		FDD2756D4EAFCC922C75A6E8DCE24D16 /* RUScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RUScrollView.h; path = Pod/Classes/View/ScrollView/RUScrollView.h; sourceTree = "<group>"; };
+		FE8308E57545D42177AAA7A48E054B9B /* ResplendentUtilities-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ResplendentUtilities-umbrella.h"; sourceTree = "<group>"; };
+		FEE947924992BE6170239B7A220F5AE7 /* RUCornerRoundingBorderedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RUCornerRoundingBorderedView.m; path = Pod/Classes/View/CornerRoundingBorderedView/RUCornerRoundingBorderedView.m; sourceTree = "<group>"; };
+		FF4F3A1986D7C2FE2C9C239D2BFA56CB /* Pods-AnimatingTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnimatingTableView-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CF60506DEB4BCC4AE7BC54C34D1F5B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5692DFE80A7828EF496C93233166DB8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9606B8961F1BF2FFAD10EE4D7B039132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58A0CAD2E23447AF5D8F26FE0B7A3CF9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0621CAC20BFAD4FAB679594BB3BA43D1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				808C3B1DA9FD76F90CD1AFFD6F025C72 /* Pods-AnimatingTableView */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		08F6F6F5512590F2A4DB08563C1EAECC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC28868B7D22C587ACE838BF6D1CA0F1 /* Pods_AnimatingTableView.framework */,
+				5C1DDC0746702166E49A9FFE2BD294DF /* ResplendentUtilities.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E80E6845E8B1D66B41841877D8139D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2EED30F096685B85EBF9C92BDB5D422 /* ResplendentUtilities */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		56C8C728F9ABF486CCF69E3A21F11446 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				72DAFF3CE4E43C2AC83AE79CEB108FE3 /* Info.plist */,
+				1BA93B931A065CE55E9F52110B0B4763 /* ResplendentUtilities.modulemap */,
+				670DD64DB4D9F61E87D4E77D932BB8A6 /* ResplendentUtilities.xcconfig */,
+				1204D1B4869F211658865BAE4B3AE02A /* ResplendentUtilities-dummy.m */,
+				71EE3DFDCEE9A66C3AFB5C3775856F6D /* ResplendentUtilities-prefix.pch */,
+				FE8308E57545D42177AAA7A48E054B9B /* ResplendentUtilities-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ResplendentUtilities";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				1E80E6845E8B1D66B41841877D8139D8 /* Pods */,
+				08F6F6F5512590F2A4DB08563C1EAECC /* Products */,
+				0621CAC20BFAD4FAB679594BB3BA43D1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		808C3B1DA9FD76F90CD1AFFD6F025C72 /* Pods-AnimatingTableView */ = {
+			isa = PBXGroup;
+			children = (
+				761443A04657E4F0EBA55A411D06B465 /* Info.plist */,
+				0D05AF32B29AE29C19D4B3CB3A084153 /* Pods-AnimatingTableView.modulemap */,
+				0AEFF825ED570E183A70CA0ECDE48FB6 /* Pods-AnimatingTableView-acknowledgements.markdown */,
+				3A623004EF989AABDB3104AF453BEA81 /* Pods-AnimatingTableView-acknowledgements.plist */,
+				FF4F3A1986D7C2FE2C9C239D2BFA56CB /* Pods-AnimatingTableView-dummy.m */,
+				76164A7592E9B3BD5EEAFD13F213C390 /* Pods-AnimatingTableView-frameworks.sh */,
+				2910C479CDD41E1B936BA607366347A5 /* Pods-AnimatingTableView-resources.sh */,
+				697296F713AAEA8055C7FD8C5BEBEA45 /* Pods-AnimatingTableView-umbrella.h */,
+				A49AD050937F995D5A1B2B84C525FB89 /* Pods-AnimatingTableView.debug.xcconfig */,
+				06B6A9051F550BDB4BEEAA06505766E8 /* Pods-AnimatingTableView.release.xcconfig */,
+			);
+			name = "Pods-AnimatingTableView";
+			path = "Target Support Files/Pods-AnimatingTableView";
+			sourceTree = "<group>";
+		};
+		B2EED30F096685B85EBF9C92BDB5D422 /* ResplendentUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				545A3F6DAB5E407BF479C8411F472AAE /* Blocks+RUMacros.h */,
+				2309925C363E932162B387A00A071643 /* CALayer+RUCornerRadius.h */,
+				3444DE976CE7A28EEE4DABB9D86CFF3A /* CALayer+RUCornerRadius.m */,
+				DB43553379959B468D1410B934B3C772 /* CALayer+RUMask.h */,
+				ED60F7E67AB7AFE26767073B76CE4979 /* CALayer+RUMask.m */,
+				1A884EBC8CE605D61A19C726E0CDE17F /* CAShapeLayer+RUMessageBox.h */,
+				A0CE98F628EA57E839A7945BCB207DDE /* CAShapeLayer+RUMessageBox.m */,
+				1CCF033C00EEA7CE5D11CC0E2E5D798D /* CMDeviceMotion+RUOrientation.h */,
+				AD955C04E32750198C3C9BAD2940E19D /* CMDeviceMotion+RUOrientation.m */,
+				C8F9E939D544D63781993D57CAAAD49C /* NSArray+RUComponents.h */,
+				0FCE54C58D937E63A63EED53E75AF567 /* NSArray+RUComponents.m */,
+				4B755E501BD8DBAF986A53A7B8CE6954 /* NSArray+RUReversing.h */,
+				2112F8E95C034329AFF23D04A79922ED /* NSArray+RUReversing.m */,
+				F6DF45F074B204ECDB36B02112E8A4C3 /* NSArray+RUShuffling.h */,
+				A6902CEBD64608563E0034D36776592E /* NSArray+RUShuffling.m */,
+				1715B99F3CA70070E79BAE68E675D1D7 /* NSBundle+RUPListGetters.h */,
+				D82A11410612D13C69BCF6804D0570B9 /* NSBundle+RUPListGetters.m */,
+				B02F3248427A804A966D8C2B107A62A3 /* NSDictionary+RUFBUserResponseObject.h */,
+				0206B99058CF3A78AF7F7DCB8C4A6C9B /* NSDictionary+RUFBUserResponseObject.m */,
+				87DE0B63DFFC506911A7F48449A30C2F /* NSDictionary+RUReverse.h */,
+				7D8A73C757870A2A119EE232F927D406 /* NSDictionary+RUReverse.m */,
+				72A77A9E039399A012F38A1C1EAAD6CD /* NSMutableArray+RUAddObjectIfNotNil.h */,
+				BF753706704DFC99C9E2EFD183368896 /* NSMutableArray+RUAddObjectIfNotNil.m */,
+				63D20034B66CCF250185A0334AE0505D /* NSMutableDictionary+RUUtil.h */,
+				00B13490EA239243A58D6CAE39ECEA85 /* NSMutableDictionary+RUUtil.m */,
+				918DD8CB0DE82241737445945BC1EBEB /* NSNumber+RUUtil.h */,
+				B9B21CF22014A85A1312AE9F2F63A3E6 /* NSNumber+RUUtil.m */,
+				E6763AF277FCB20DEBC59ADF7F66A404 /* NSObject+RUKeyboardNotifications.h */,
+				B62011D76A3087222CC9FFAA72BAF82D /* NSObject+RUKeyboardNotifications.m */,
+				B146B650C165D0AAAFB2C93ADAD24F7C /* NSObject+RUNotifications_UIApplication.h */,
+				51D58E0A24F2E20EE7E0F1DA0B1A336C /* NSObject+RUNotifications_UIApplication.m */,
+				593A7E6959C6123B7AAAB4200E63E720 /* NSPredicate+RUUtil.h */,
+				BABD1680C634124E5E2FE002895A651B /* NSPredicate+RUUtil.m */,
+				047442BA9F5E4F4D7AB8E63EE7C03FD7 /* NSString+MKCoordinateRegion.h */,
+				D04FCDDD83DAF5E9C71A38204C207F15 /* NSString+MKCoordinateRegion.m */,
+				D60A43B3EF446933C383DCCC21636639 /* NSString+RUCamelCase.h */,
+				08683D056FF631C000F8D72506D14730 /* NSString+RUCamelCase.m */,
+				BFEA43E0476A3F37FE984B3209CBD324 /* NSString+RUDirectories.h */,
+				DB91B5F360560740A770CC5B95DE6C22 /* NSString+RUDirectories.m */,
+				E96DD78667723891E68F2CFBFD8525D5 /* NSString+RUEmailValidation.h */,
+				0B0F24F02C027572D2D62416CC6752BA /* NSString+RUEmailValidation.m */,
+				FA2E9AE56C3988C1B844C511FF188E00 /* NSString+RUEncodedUrl.h */,
+				5DF9E6DA82235B5AB8B31D456C0FFA5E /* NSString+RUEncodedUrl.m */,
+				84EABC3315FA011AA42BFB743EA433B6 /* NSString+RUFormatting.h */,
+				A3DA2D3E5CBA511AD23F291634C84C10 /* NSString+RUFormatting.m */,
+				C0E91B64F87C6FAB6FA455756CA4A5B9 /* NSString+RUMacros.h */,
+				57D0B41E73FBDF11E6855767E5991ADD /* NSString+RUNumberCheck.h */,
+				666C39A6128C7C30D44180D61EB8D1F3 /* NSString+RUNumberCheck.m */,
+				35A44BA017386DD3A6419B7F11393391 /* NSString+RUStringContainsUtil.h */,
+				EC8589660FD1B1D4A492C21994E2756B /* NSString+RUStringContainsUtil.m */,
+				B3F8BA8B6471BCE0CC259618D952FE5C /* NSString+RUUrlComponents.h */,
+				A2B72C8C402F7BEAE2890A8CAA7B54BF /* NSString+RUUrlComponents.m */,
+				7716D52FE90E86A2135F7F7BAE234AFD /* NSString+RUURLParams.h */,
+				9362D144B9D99F00022B8A4CA32F2159 /* NSString+RUURLParams.m */,
+				4061021F0DC089548ED6B782223D07EE /* NSString+RUUtil.h */,
+				0277AE3B0CBF0ADF87EC279A2A746B54 /* NSString+RUUtil.m */,
+				9654FDD8EEF2430785F0DE072CB1B1B7 /* NSURL+RUDirectories.h */,
+				4EF5BF6A58D61846BA9A4C66A71F7111 /* NSURL+RUDirectories.m */,
+				AE8232ED7F9E5C4B1F29EEC54444C7C0 /* NSURL+RUQueryParams.h */,
+				F1776AE1BDD0965AC9407C434B53A2E6 /* NSURL+RUQueryParams.m */,
+				6011ABC42A1F32C675A3BF233D757E15 /* RUActionSheetManagement.h */,
+				7A6A0467B8481D9E433ED00CAE38AF9C /* RUAddressBookUtil.h */,
+				D831B8D8A860F99C7BAC86C3C23CC36E /* RUAddressBookUtil.m */,
+				AE1FDF3AC26FD7F3F1B3EAA15E4617B8 /* RUAsynchronousImageFetchingProtocols.h */,
+				B410E059E06200E40585B28F319BB7EB /* RUAsynchronousUIImageRequest.h */,
+				3E74B5A9C188F0F736730F1EFB505B1A /* RUAsynchronousUIImageRequest.m */,
+				4968F99D2BA400D22E2C8C013716D832 /* RUAsynchronousUIImageRequestProtocols.h */,
+				63D76C01FA8D97F765294AB2FB7A61C0 /* RUClassOrNilUtil.h */,
+				1DC8A31283A373197F64F94E33D9F586 /* RUClassOrNilUtil.m */,
+				CE5595577196BF605C3431C5BFC62623 /* RUCollectionViewFlowLayout_ContentSizeAdjustForMinimumLineSpacing.h */,
+				E0BBFE74AE9D32F164167157290A53CE /* RUCollectionViewFlowLayout_ContentSizeAdjustForMinimumLineSpacing.m */,
+				F888C0836D3E45EC61858C154DA900E7 /* RUColoredNavigationBar.h */,
+				97A63F268D528840543978DAA2EB7047 /* RUColoredNavigationBar.m */,
+				74C3501A18453773EE672018240CCBAC /* RUColorPickerCell.h */,
+				28A0644F85E41984BD67BDD54EDB158A /* RUColorPickerCell.m */,
+				E3271A3C53C1C86C5A92C342DB64B747 /* RUColorPickerCellUtil.h */,
+				A3D03D13ED35F966F841E5D1736EA871 /* RUColorPickerView.h */,
+				01A34E09E0B56CF150AF08886EADDD25 /* RUColorPickerView.m */,
+				900BD6CB8994A36C59E2BF0920309F73 /* RUColorPickerViewProtocols.h */,
+				D795E53FA59CDDA07EB064961CA8D920 /* RUCompatability.h */,
+				93EAC9226FF4DBB6DCD9A79EA845339E /* RUCompatability.m */,
+				235140C49A54C361CEE165D98E7EB54F /* RUConditionalReturn.h */,
+				5411FAA4C74E5919CB279574CE715447 /* RUConstants.h */,
+				C23325FC6F6456B734174267CF635585 /* RUCornerRoundingBorderedView.h */,
+				FEE947924992BE6170239B7A220F5AE7 /* RUCornerRoundingBorderedView.m */,
+				3A479454366EB929BDAEB9981971B1DB /* RUCreateDestroyViewSynthesization.h */,
+				BB01A363DF83DA6FD4D31C048BF1E50D /* RUCrossView.h */,
+				3E6E3DC4598DB437D7655551D55DEB11 /* RUCrossView.m */,
+				5F64302BEBEFAD67708507E742E7BD6F /* RUDeallocHook.h */,
+				405F80380F5611FA9E7994814EA39D8E /* RUDeallocHook.m */,
+				D6DDBA2A6404AD8D1A384F231A6CC026 /* RUDebug.h */,
+				BB5E7D67844DDF9516674CFDCCE64C7B /* RUDebugging.h */,
+				31F030C76F737E3A0D79FF13E49D15C6 /* RUDiskImageFetchingController.h */,
+				645381B870DB9A46CB438254CCB71AB0 /* RUDiskImageFetchingController.m */,
+				228CAB2B9A4AB04C43B9944031984126 /* RUDLog.h */,
+				1D06973461C493A6BE9469476572C24B /* RUEnumIsInRangeSynthesization.h */,
+				47BB2ABCAF15E9923A9611CFDC25C422 /* RUExceptions.h */,
+				D34D9500306A77EA7597FBD45892678B /* RUFullscreenRotatingView.h */,
+				EAA8B8B76F05A32838D5B1E3C97CE22D /* RUFullscreenRotatingView.m */,
+				CAEB1B52F2C7FE7BB21C89CBB5CFA250 /* RUFullscreenRotatingViewProtocols.h */,
+				DC8753333F7FFD7D05FFE9133619057F /* RUGradientButton.h */,
+				63539DC167312F34B754FB40FFD6D86F /* RUGradientButton.m */,
+				906B5BBD25C0F7ED4346D8AECDF23106 /* RUGradientView.h */,
+				F55769F2750EB0AAE3592F78EBB63E46 /* RUGradientView.m */,
+				83CA3DE8A5545BA94DE8FC99A37023DA /* RUHorizontalPagingView.h */,
+				C5501FA70C089F033FDE98EA70EC847C /* RUHorizontalPagingView.m */,
+				3D79BB9E2C6D39182DEEA6C401089DDB /* RUHorizontalPagingViewProtocols.h */,
+				00B78A14A30869777A82ED17BABAB65D /* RUHorizontalTitlePagingView.h */,
+				7443DE774FC587645BF84780B0073365 /* RUHorizontalTitlePagingView.m */,
+				8A709D31F33949B29EF4E683F495A3CA /* RUHorizontalTitlePagingViewCollectionViewCell.h */,
+				634A9A91942C8FBF54D0A5F9D0816FEA /* RUHorizontalTitlePagingViewCollectionViewCell.m */,
+				1E73A9B5F7E1EC153C99A814B0F9299A /* RUHorizontalTitlePagingViewProtocols.h */,
+				88A8EB3EDE904E75FB20A95EA6D6F779 /* RUImageCompatability.h */,
+				B2E32B9923E70767B17BF0862D2A4B25 /* RUImageCompatability.m */,
+				DCB6271C11DE48A37DD48060A650FF59 /* RUImageViewFullscreenRotatingView.h */,
+				75E76FAFFC06DFCB9C61E3CAA07249B8 /* RUImageViewFullscreenRotatingView.m */,
+				B85E430AC48262AB01F1970223E96296 /* RUKeyboardAdjustmentHelper.h */,
+				20EB4215C1A17685B9C6E07EAB4BBE08 /* RUKeyboardAdjustmentHelper.m */,
+				394ECEE34DA791DA9AAA2C1551339CB7 /* RUKeyboardAdjustmentHelperProtocols.h */,
+				99DBA31223A25B41E33895DCE85D90E7 /* RUModalView.h */,
+				4A5A3D40E2A766A53A5D674548F78F6F /* RUModalView.m */,
+				D3F3CD1FD4D20D5FF6209FA2F39CBF9D /* RUNavigationControllerDelegate_navbarColorSetter.h */,
+				48BFBFC8490B3F7A466F9585B3168ACD /* RUNavigationControllerDelegate_navbarColorSetter.m */,
+				CE65E51798C1544951AD31A89672AF3E /* RUNavigationControllerDelegate_navbarColorSetterProtocols.h */,
+				6D774CA25376354C66731D73EA99F539 /* RUNotifications.h */,
+				B9076EAFADC6DF5CAEA2119E3F7A7305 /* RUOrderedDictionary.h */,
+				08EF5B7B19C62585A40290F391C846F7 /* RUOrderedDictionary.m */,
+				A80B938ABA964251AF6793C7DF5B5F56 /* RUOrderedMutableDictionary.h */,
+				ACCA3453BDF27F35A18550C1BABD155D /* RUOrderedMutableDictionary.m */,
+				46D189F99E83EFFC86A4A33A75CF30A1 /* RUProtocolOrNil.h */,
+				F39C6220C461DAE61A1229467090C53B /* RURadioButtonGroup.h */,
+				FD7E7D63082B7ABD0CF2A8377B6804F7 /* RURadioButtonGroup.m */,
+				C76FEFE470B5D96D617B4ABC275CB4EF /* RURadioButtonGroupProtocols.h */,
+				AD38DD211FE795E6E727EE9526ABF006 /* RURadioButtonView.h */,
+				46C8B5E725A25E07E2F40CB26E50E674 /* RURadioButtonView.m */,
+				0CE31DC242B4287D6032383092F84F0D /* RUScreenHeightTypes.h */,
+				9ECF8E227464AAA262744649B6384A75 /* RUScrollToTopManager.h */,
+				81E0503035E082AFD312221BE5F0B1EB /* RUScrollToTopManager.m */,
+				FDD2756D4EAFCC922C75A6E8DCE24D16 /* RUScrollView.h */,
+				63B3269983E1B922D718860A933B3DD5 /* RUScrollView.m */,
+				ED383CCCC8B3FED7190749AE84DCE3DA /* RUScrollWithKeyboardAdjustmentView.h */,
+				EB6F9C82ED8553B9C59D6DDDEFEFB311 /* RUScrollWithKeyboardAdjustmentView.m */,
+				54E3451172B5AA63B208434CBD641FDF /* RUShowViewUtil.h */,
+				D1B0B04BB27CF85723B0AFD128547B55 /* RUSingleton.h */,
+				605E9F0073EBCA597A4BB1C349432B2B /* RUSlideMenuNavigationController.h */,
+				55D0F3B362C5051C4C682EBD3B053569 /* RUSlideMenuNavigationController.m */,
+				509B150104A703D6BAD4505D98B4BC96 /* RUSlideMenuNavigationControllerProtocols.h */,
+				AA8ED717A6261FC244C4EE1C1EEAF5ED /* RUStaticVariableSynthesization.h */,
+				7C65BFE0F3CD93071A251613FC7C6DAD /* RUStringCompatability.h */,
+				C32A2E4A9724888E87938DFA5AFBC6D6 /* RUStringCompatability.m */,
+				C6F045BA862DF1D12AB607902EA5D530 /* RUSubviewTouchesView.h */,
+				1D6576B5EC52BAC4068B02087C43EDC5 /* RUSubviewTouchesView.m */,
+				B677B514B75E166AF29F2D61A4A90CB6 /* RUSynthesizeAssociatedObjects.h */,
+				C6434D95235A447ECC84C66DA5DF9785 /* RUSynthesizeUserDefaultMethods.h */,
+				8EB1DB14A53BEF23301E8A6C62789FF4 /* RUSystemVersionUtils.h */,
+				1C1C547D188CE3A516A0EAA7F7D06F86 /* RUTableView.h */,
+				8D2553BE727E82A0AF661621C677A40C /* RUTableView.m */,
+				AE4BC08815847BAEE8684BE632C3E1B3 /* RUTopBottomBarModalView.h */,
+				6D5B24D1170D0F027F3291AF2DFC1592 /* RUTopBottomBarModalView.m */,
+				A9D7AF47F6277D14BC3BB261E50186A4 /* RUTriangle.h */,
+				A30D65A8772A44866A4F20693CE8AAB4 /* RUTriangle.m */,
+				589F4328F1064075E9B1F6D145C90797 /* RUViewController_NavigationBarColorSetterProtocols.h */,
+				3535ECEA56A57237AC69149B7A37D820 /* RUViewStack.h */,
+				7D4AA343ED9AB3F213286C660570B525 /* RUViewStack.m */,
+				3C266FD62F82DDB8EADFA0EC7D5D43F6 /* RUViewStackProtocols.h */,
+				5706CF97E6CBFDC3DCA5531C10BD711E /* UIActionSheet+RUShowUtil.h */,
+				097E213AA42C26B7B2DFF9D4E3017058 /* UIActionSheet+RUShowUtil.m */,
+				74AE1D8D15EF4BB61AC75C6918B5F54E /* UIAlertView+RUShowUtil.h */,
+				22716027C52A68D863B0C0FBADC03670 /* UIAlertView+RUShowUtil.m */,
+				889580F70A739A3FEC53F47EC432CBF4 /* UIApplication+RUOpenUrl.h */,
+				F2AAB47A5EE83F796F036A130BDBBCCE /* UIApplication+RUOpenUrl.m */,
+				D200EE0D0460D48132F6C8BA6FAFF057 /* UIApplication+RUPushNotifications.h */,
+				2C8EDBBCF1BBE6266744CFCED2BDB33D /* UIApplication+RUPushNotifications.m */,
+				3B936C7A226C10201F1C026BC18B9462 /* UIButton+RUAsynchronousImageFetching.h */,
+				516EE64AF3CD3C94E4CFA8C63E8DC34C /* UIButton+RUAsynchronousImageFetching.m */,
+				08EA5DD9B245C69A20219A754A49DD32 /* UIButton+RUDiskImageFetching.h */,
+				F3206EEE6DBF4AD0E1740905D645BF8A /* UIButton+RUDiskImageFetching.m */,
+				A87D1E3D56B3837ED7B7CE8291E6C87D /* UIColor+RUHexString.h */,
+				56B9A3513BF6F96060D5D6967D3F3B46 /* UIColor+RUHexString.m */,
+				F5FD4D36709EE98D80F4C8821803062D /* UIColor+RUUtility.h */,
+				08BC357B1895CFE04589B2EF4B3E17C9 /* UIColor+RUUtility.m */,
+				D1BAB78321150E26F7FD42E641637620 /* UIFont+RUHelvetica.h */,
+				6FE91087D398DCE942C9937BDC514354 /* UIFont+RUHelvetica.m */,
+				0920049B3ECE0A7F50B78A727A800D35 /* UIFont+RUHelveticaNeue.h */,
+				A6D835BCE2539B8DF675D25817AE5F14 /* UIFont+RUHelveticaNeue.m */,
+				DB2F3F99D2F22F28BB21896118B5C42B /* UIGeometry+RUUtility.h */,
+				FA05F56A282D2350C57587F60E20C628 /* UIImage+RUDebug.h */,
+				D21B594E5A66A6244C569978733D81F4 /* UIImage+RUDebug.m */,
+				F796F6C0377B5D975B27FFC30F3E3031 /* UIImage+RUImageColorMasking.h */,
+				7FD6D754611FFA43AD1E95880F62C972 /* UIImage+RUImageColorMasking.m */,
+				DA26419AAD74CA5E647F05AFEB1326A5 /* UIImage+RUImageFromColor.h */,
+				071F25589ABB3E0A4E697D684F5B2A50 /* UIImage+RUImageFromColor.m */,
+				0245CD77BC3C6857F8BD6C2901C02130 /* UIImage+RULaunchImage.h */,
+				0F99B5A01BE1061A064A21C429C2D795 /* UIImage+RULaunchImage.m */,
+				4458BC2EBE409722CAFD692A70C8F1FB /* UIImage+RURotation.h */,
+				AA5A60D7689760EF5A004318C3819760 /* UIImage+RURotation.m */,
+				F188514D5C31044B599BE0F6BED086FE /* UIImage+RUSaveToAssetsLibrary.h */,
+				DF66BC18743280E84A5585412DAF0C1A /* UIImage+RUSaveToAssetsLibrary.m */,
+				24233ECE641CFB2AF5ECF1091B974AFC /* UIImageView+RUAsynchronousImageFetching.h */,
+				78765DD83212BF0F762B86C6DF383E3A /* UIImageView+RUAsynchronousImageFetching.m */,
+				1B6398969F0FA5C383C4D0B3BB136BDF /* UIImageView+RUDiskImageFetching.h */,
+				F65712898635A35A867C3DFB3709F2A9 /* UIImageView+RUDiskImageFetching.m */,
+				CB4E3589FB00663796F66F38AB57B231 /* UIImageView+RUFacebookAsynchronousImageFetching.h */,
+				DA4F6CFD3B2EEAE3E0735344D1A6D323 /* UIImageView+RUFacebookAsynchronousImageFetching.m */,
+				AC36843BAF1F1649B16CC26A9742C96C /* UIInterfaceOrientation+RUUtil.h */,
+				A67517FB948F90F73FE942E9B06BDF8F /* UIInterfaceOrientation+RUUtil.m */,
+				464AFBDA3201D8E1C5AFABCEB0A70211 /* UILabel+RUAttributes.h */,
+				F6DF4F085B1BBEEC5B16DAB8D44DD7E4 /* UILabel+RUAttributes.m */,
+				42C7EA31E4B8D9B97FA25C035A9A53AF /* UINavigationController+RUColoredNavigationBar.h */,
+				161F6851F5CB0AD99981489581694407 /* UINavigationController+RUColoredNavigationBar.m */,
+				0FC4FC9427BE6E2F55C38D3DCEC761A8 /* UINavigationController+RUColoredStatusBarView.h */,
+				6646486EF0E30C63B5902E537FB3DC1E /* UINavigationController+RUColoredStatusBarView.m */,
+				525F1057DEA950B6835B6F72E152AE66 /* UINavigationController+RUNavbarColorSetter.h */,
+				F1E40C94E137AFD9977B6C79BA223B3A /* UINavigationController+RUNavbarColorSetter.m */,
+				BA9C3A6DEB07C7E34C651E53A6FFA5F5 /* UIScrollView+RUAboveContentView.h */,
+				3FEC6A860880F2E902E8D6477764A606 /* UIScrollView+RUAboveContentView.m */,
+				426A0F4A9A2468755D0F8A407DB0CCCF /* UITabBarController+RUTabBarVisibility.h */,
+				67F82D41D5CB58226FAB6157BC2B3DBB /* UITabBarController+RUTabBarVisibility.m */,
+				EE97D787B7D183D8A78788BC65BAB081 /* UITextField+RUAttributes.h */,
+				E93A6FC2E55D5A042B2EE92C17DBA171 /* UITextField+RUAttributes.m */,
+				FBC2335D0F9BD3126311FD0B9F3D2F49 /* UITextField+RUOnlyTextInput.h */,
+				0366C171B5DB57C4E56BAD611F76C5F5 /* UITextField+RUOnlyTextInput.m */,
+				0A074E8153716DA3429783F8273F3365 /* UITextField+RUSelectedTextRange.h */,
+				DF40A86171DB58EB123D989756399AB5 /* UITextField+RUSelectedTextRange.m */,
+				E7EE4E7061111A7726BACAC7BDF926F0 /* UIView+RUCancelControlTracking.h */,
+				79C618A2D1AA9505D6118F40326231E9 /* UIView+RUCancelControlTracking.m */,
+				F6697EB5878E06BB7A8911B665F3B940 /* UIView+RUCoreGraphics.h */,
+				D66915965A02FACE35218CD7CA103E72 /* UIView+RUCoreGraphics.m */,
+				80623B0DA592EB326ECFD63573F8DDF5 /* UIView+RUDrawHole.h */,
+				29201CE67737F061B03A2A7D5524ECCF /* UIView+RUDrawHole.m */,
+				C7A4D310751C343723E8D6E2293A5F42 /* UIView+RUEnableTapToResignFirstResponder.h */,
+				3D4018070ECDED28FA10D671B8579949 /* UIView+RUEnableTapToResignFirstResponder.m */,
+				422B6922382A7DFD42CCE9BCA47E658B /* UIView+RUMaskRoundCorners.h */,
+				6018C8100DFEF180930B17FE7920F859 /* UIView+RUMaskRoundCorners.m */,
+				E50C0D2131E720680B9A82689ADFDA57 /* UIView+RUSnapshot.h */,
+				EADCC4E3EDCC3205448C949BFCA58028 /* UIView+RUSnapshot.m */,
+				E9E18B9410BE00B692C152D8C954D4FB /* UIView+RUSpinner.h */,
+				D0E0D9EE4D42F2C2B2222E9293D4F3AF /* UIView+RUSpinner.m */,
+				5C7B1A116C99307C3F122C52461F9B4F /* UIView+RUSubviews.h */,
+				04AF74C68ACE5BA96E8D960D869246DE /* UIView+RUSubviews.m */,
+				7F603EAC50A1B1EA01FCC9D18912277F /* UIView+RUSuperviews.h */,
+				984A5E92A321D320210194CFA5B4F2F4 /* UIView+RUSuperviews.m */,
+				C42D705B3742F94C87C9BF45514376B0 /* UIView+RUUtility.h */,
+				9A88508655E55987D8C09259DCF9FA87 /* UIView+RUUtility.m */,
+				9E45F47414AA16CCCE514E9711CF35DA /* UIView+RUViewHierarchyUtility.h */,
+				8AA696052B785265D19292AC49404ADE /* UIView+RUViewHierarchyUtility.m */,
+				BA3CEB09C8CB07940C08226E0AB8B196 /* UIViewController+RUDismissOrPop.h */,
+				E5FBCA69C72E90BE5114386773091C30 /* UIViewController+RUDismissOrPop.m */,
+				2AC9C741D1A65614EF2A069029718405 /* UIViewController+RUNavigationBarColorSetterDelegate.h */,
+				4D3024834B1A4ED84E42A99A9F4A02C1 /* UIViewController+RUNavigationBarColorSetterDelegate.m */,
+				2ADBFE12452AF05B7201B75DFB8AB0DC /* UIViewController+RUStatusBarHeight.h */,
+				9CC6534D88F294D007C5C018E81ABB82 /* UIViewController+RUStatusBarHeight.m */,
+				56C8C728F9ABF486CCF69E3A21F11446 /* Support Files */,
+			);
+			name = ResplendentUtilities;
+			path = ResplendentUtilities;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2ECE6DEE2B3C884E986398ED6DD80400 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112D86674AA8F49E3D07F79CD4842D26 /* Pods-AnimatingTableView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621270C2205A21716D41820782B38F0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08BD58C8BF6D5FB4ECEE1555B084EB2B /* Blocks+RUMacros.h in Headers */,
+				DE774E6908DAD2E48C53F8EBFF338F21 /* CALayer+RUCornerRadius.h in Headers */,
+				B57DE2D0AF1C134CD0A3CD0FA20612CD /* CALayer+RUMask.h in Headers */,
+				BF3B0CBF29F00224ACD0296626905812 /* CAShapeLayer+RUMessageBox.h in Headers */,
+				C31D13D60AC697E3BA09EC07354A21AA /* CMDeviceMotion+RUOrientation.h in Headers */,
+				BE2995BBA8CBEC27AC3560E69E14E247 /* NSArray+RUComponents.h in Headers */,
+				84C09A142DB6BCA80DCB55A305412254 /* NSArray+RUReversing.h in Headers */,
+				0D901F1CF388349D5EB00988F9D1A86C /* NSArray+RUShuffling.h in Headers */,
+				D58F77548C12142A3831D942983D22BB /* NSBundle+RUPListGetters.h in Headers */,
+				7A6817761318B69743DEA883F02C01FA /* NSDictionary+RUFBUserResponseObject.h in Headers */,
+				39ED9F7AD668E49E72B8341F0AF9AC5F /* NSDictionary+RUReverse.h in Headers */,
+				DCF3FB6F83FA80040E9C2C16BBC4BB08 /* NSMutableArray+RUAddObjectIfNotNil.h in Headers */,
+				1865BFFF4154E89A1B9A148838648271 /* NSMutableDictionary+RUUtil.h in Headers */,
+				3BFA48FE76BF95FE24FDBB26B8E5CF02 /* NSNumber+RUUtil.h in Headers */,
+				5EAC71F33035ECEB7E18A9C63B7B4514 /* NSObject+RUKeyboardNotifications.h in Headers */,
+				785DF44A2E9DEEC72E09194D1C9A79CC /* NSObject+RUNotifications_UIApplication.h in Headers */,
+				C3FC9139D45540CBC3D278B6EAC89A86 /* NSPredicate+RUUtil.h in Headers */,
+				8B787BBEC2394DBE9FB69DA1DCA83447 /* NSString+MKCoordinateRegion.h in Headers */,
+				18CF2854461B1035FC59EDEB13401526 /* NSString+RUCamelCase.h in Headers */,
+				7BF1F2C4FB1D4ECF289973DD3344275F /* NSString+RUDirectories.h in Headers */,
+				A7E4733F5FA472318A54B39BF91C1250 /* NSString+RUEmailValidation.h in Headers */,
+				CE52F1A79458A834981C70467B61B113 /* NSString+RUEncodedUrl.h in Headers */,
+				B1BA871F821C6BA909A1606975669CCD /* NSString+RUFormatting.h in Headers */,
+				DC85CBBD86BCF8BD03871B3488A0CFE9 /* NSString+RUMacros.h in Headers */,
+				89306EC32A5E54BD61AEC1E58E2E1EFE /* NSString+RUNumberCheck.h in Headers */,
+				0F5B039240635E89BB1AFA717F09D24F /* NSString+RUStringContainsUtil.h in Headers */,
+				C67D045420A55C3EFE127BC577B5234A /* NSString+RUUrlComponents.h in Headers */,
+				826961A88E1206E625AF0A8035440013 /* NSString+RUURLParams.h in Headers */,
+				02FB5606EDB8B637BE5352FB609ADF82 /* NSString+RUUtil.h in Headers */,
+				75C1EACA2FB5F9FF5FC3334A40C6F8CA /* NSURL+RUDirectories.h in Headers */,
+				82E714F557663DB26AED4AF4AB76EFB4 /* NSURL+RUQueryParams.h in Headers */,
+				0A77586DB421F8294DEBF715CFAB81AB /* ResplendentUtilities-umbrella.h in Headers */,
+				3CC5A067E6EE0BA9170FB7680F3D1127 /* RUActionSheetManagement.h in Headers */,
+				4266540D9AFB95A56F0AD38D00C7348E /* RUAddressBookUtil.h in Headers */,
+				260C66AAC75F8CED61E629E354A6DDA6 /* RUAsynchronousImageFetchingProtocols.h in Headers */,
+				0F6B42DB7B79A60308A1BBEFC30595FA /* RUAsynchronousUIImageRequest.h in Headers */,
+				1585F4B13CD7FAAA7CC14A7D00493490 /* RUAsynchronousUIImageRequestProtocols.h in Headers */,
+				45EBC50F152D34D47F0D8EC325F86724 /* RUClassOrNilUtil.h in Headers */,
+				B4FA3B3843B6513E839EA38709902624 /* RUCollectionViewFlowLayout_ContentSizeAdjustForMinimumLineSpacing.h in Headers */,
+				0A3F9D9B18C137860AB63138EBB7887B /* RUColoredNavigationBar.h in Headers */,
+				A8F9FB01289C0DA47C82E819B6DBD2C2 /* RUColorPickerCell.h in Headers */,
+				975AE978722D9AF5A342EEADA91B2780 /* RUColorPickerCellUtil.h in Headers */,
+				427D0D0BE4B859C130B528EC54982D24 /* RUColorPickerView.h in Headers */,
+				E928B1472B8EA926F35124E18B66F666 /* RUColorPickerViewProtocols.h in Headers */,
+				E3E70ECE344AD97E50306C61AAAF2CE6 /* RUCompatability.h in Headers */,
+				650CC7D3C9BF1DC4C0CF744EDC3BE3B4 /* RUConditionalReturn.h in Headers */,
+				31C6A3534142CCC50AB2418FC5DB9A58 /* RUConstants.h in Headers */,
+				8632FE789C75D5F2A7D5C7A97FFCC6C7 /* RUCornerRoundingBorderedView.h in Headers */,
+				E36AB6797EAF2B49CE3752A41BEED7C8 /* RUCreateDestroyViewSynthesization.h in Headers */,
+				307EA436F5ED6B6C4502F760AAE2FEA2 /* RUCrossView.h in Headers */,
+				E5C3DF3BB4E2E23105CB1563B08CE0F7 /* RUDeallocHook.h in Headers */,
+				778A8F23100BF4642153FB694A4C79EC /* RUDebug.h in Headers */,
+				5E3054B13B1E8C33E804C31C04786004 /* RUDebugging.h in Headers */,
+				4520B42837201A3F22572B3190F1C7E6 /* RUDiskImageFetchingController.h in Headers */,
+				B7621AB658425127AEFF641AA9A22BC3 /* RUDLog.h in Headers */,
+				D26A3FEE3A35BC70882F65A0AFF0C9D4 /* RUEnumIsInRangeSynthesization.h in Headers */,
+				24822A833A17C1FAD04FE69D764E57AA /* RUExceptions.h in Headers */,
+				A8C8B90C3D296DE080AEEE689FBDB168 /* RUFullscreenRotatingView.h in Headers */,
+				EBC9B9E4EFC0DEC364FAC44DBEA17E64 /* RUFullscreenRotatingViewProtocols.h in Headers */,
+				AAF087C54969FD5CE931EE9FDE4E127C /* RUGradientButton.h in Headers */,
+				F5F4BCDADD87AB7C551A1656942CDDC7 /* RUGradientView.h in Headers */,
+				7F03ECBC1E8A5443EF4E2485C7D330E2 /* RUHorizontalPagingView.h in Headers */,
+				A05B31B857891E2A97D8437E971EBA74 /* RUHorizontalPagingViewProtocols.h in Headers */,
+				6875BDF1AC01A410B13A17A69471DA64 /* RUHorizontalTitlePagingView.h in Headers */,
+				5A9E1FF07A385B83D75D28D4665A1034 /* RUHorizontalTitlePagingViewCollectionViewCell.h in Headers */,
+				9458B58FA5B3E9D52E1F3B38250F228B /* RUHorizontalTitlePagingViewProtocols.h in Headers */,
+				EC2CF5F955C536FCD31789B07BFE7A9C /* RUImageCompatability.h in Headers */,
+				F6CAB7E5FEB0C83E29E83F0BC99C56DD /* RUImageViewFullscreenRotatingView.h in Headers */,
+				33303AA0E3D451C6ABC408975E8C5B6B /* RUKeyboardAdjustmentHelper.h in Headers */,
+				4C9237C2C444A9E087EADCAA5639E762 /* RUKeyboardAdjustmentHelperProtocols.h in Headers */,
+				E0A57F292758EFC7DB81449AD16D0C14 /* RUModalView.h in Headers */,
+				A1C22E85BEC90AED8FA76EA75E1ABD01 /* RUNavigationControllerDelegate_navbarColorSetter.h in Headers */,
+				524781D1D3D6AA312F6F037D90EE5C6B /* RUNavigationControllerDelegate_navbarColorSetterProtocols.h in Headers */,
+				0490E0219AE38D39D3457365542E6EAF /* RUNotifications.h in Headers */,
+				87B7AF24A9F37439A28D8A5ADBBAB7F5 /* RUOrderedDictionary.h in Headers */,
+				7026283EA3D90E1C232FCF59302FEE8A /* RUOrderedMutableDictionary.h in Headers */,
+				0696F29695A67BBDCE713DD68BAEB722 /* RUProtocolOrNil.h in Headers */,
+				33E77E7C306488713B5E5166D3BD3B08 /* RURadioButtonGroup.h in Headers */,
+				2F35847B530779FDA61527A8D333687A /* RURadioButtonGroupProtocols.h in Headers */,
+				1CEFF1D6255DE4210B66F7688B460C73 /* RURadioButtonView.h in Headers */,
+				A0FCE36E86F934FA4CB97837DCD0CACB /* RUScreenHeightTypes.h in Headers */,
+				12CF95D28B1241F27FAAD86BCD9FD9D8 /* RUScrollToTopManager.h in Headers */,
+				57429B1595A3343567C1FCB3081AD375 /* RUScrollView.h in Headers */,
+				6850DC8129146D1C8322755C7E5721E6 /* RUScrollWithKeyboardAdjustmentView.h in Headers */,
+				6DAB0E8C5C658C8C67B0BE62DD44CFAB /* RUShowViewUtil.h in Headers */,
+				C4708519B66338838F3ECF6F774E126A /* RUSingleton.h in Headers */,
+				0CD633BB00F35FB0EE5BD4B19210B2F0 /* RUSlideMenuNavigationController.h in Headers */,
+				BA686FB88F624963A59FAAF51BB13C3F /* RUSlideMenuNavigationControllerProtocols.h in Headers */,
+				6E0FE703685EDF423399FFBD8314803B /* RUStaticVariableSynthesization.h in Headers */,
+				E40476DCEB717211B46DD13C13A79FE4 /* RUStringCompatability.h in Headers */,
+				7D850C01D0CA3E992418ABACD0E263CC /* RUSubviewTouchesView.h in Headers */,
+				77A6FE9F233CF529C2DC6A166D9083CF /* RUSynthesizeAssociatedObjects.h in Headers */,
+				8299D26B031CC66B6F02A65343B360D9 /* RUSynthesizeUserDefaultMethods.h in Headers */,
+				C2C9500E740D776EEC3EE32864CB45E2 /* RUSystemVersionUtils.h in Headers */,
+				608C3B85980E4D00BE3847605605096B /* RUTableView.h in Headers */,
+				33698DE69EFBF5140EF18CAD7DDCEA7E /* RUTopBottomBarModalView.h in Headers */,
+				91F190E7A71A27CD3797EE8B70BDA2B0 /* RUTriangle.h in Headers */,
+				57F926CF3DC214C5CA2BE88ACECCECAA /* RUViewController_NavigationBarColorSetterProtocols.h in Headers */,
+				9094C45790544D17DC60273BF65B442C /* RUViewStack.h in Headers */,
+				CE0838C059B9A485136DF74622A131AF /* RUViewStackProtocols.h in Headers */,
+				EC17C402C2F819C27C48254CCF95D188 /* UIActionSheet+RUShowUtil.h in Headers */,
+				1DFF601F4D968041826071200CBB10A9 /* UIAlertView+RUShowUtil.h in Headers */,
+				73F70A453C292D4942628389246BEE7D /* UIApplication+RUOpenUrl.h in Headers */,
+				D409AE8054507DF0A88E2E5BB8D69EFC /* UIApplication+RUPushNotifications.h in Headers */,
+				0AD227FA58FA68C1DA979620B62EC22D /* UIButton+RUAsynchronousImageFetching.h in Headers */,
+				0968F008D6D42F14806FD26F7C5B611C /* UIButton+RUDiskImageFetching.h in Headers */,
+				8B7F0618FE7388DB95469D022C9E69E1 /* UIColor+RUHexString.h in Headers */,
+				9999315B4B2A40DB2669F92996DEDCF5 /* UIColor+RUUtility.h in Headers */,
+				5325905B0A557705D067AF22800931DC /* UIFont+RUHelvetica.h in Headers */,
+				6789D28ACEF694444C786CF23EB1E8F1 /* UIFont+RUHelveticaNeue.h in Headers */,
+				575F69E6A80BA36A0513B0C8F7EAD9E1 /* UIGeometry+RUUtility.h in Headers */,
+				39BD0C1CB6B6107470F90572DC04C8F4 /* UIImage+RUDebug.h in Headers */,
+				961531240AB4628E235731501F096BFC /* UIImage+RUImageColorMasking.h in Headers */,
+				84394F86B06C891249EBD681E437820C /* UIImage+RUImageFromColor.h in Headers */,
+				87FFC54920415320C71F615B4A315A41 /* UIImage+RULaunchImage.h in Headers */,
+				6DB9DEF8EB3E31A010BFC23ABD50D8E0 /* UIImage+RURotation.h in Headers */,
+				F54106D20321ADEDB964C2B300A5E182 /* UIImage+RUSaveToAssetsLibrary.h in Headers */,
+				3C4FDAEF0A4BB32691CD808AF575418D /* UIImageView+RUAsynchronousImageFetching.h in Headers */,
+				B0316729383C2BD153CACEF461DFA1C5 /* UIImageView+RUDiskImageFetching.h in Headers */,
+				2BA3A5ED26A42A5E93707DE963BBBA5F /* UIImageView+RUFacebookAsynchronousImageFetching.h in Headers */,
+				674759D8F62E68E33CD934A6EECDD6F8 /* UIInterfaceOrientation+RUUtil.h in Headers */,
+				44C862AC9D6AF236DB1979AFB5002DCB /* UILabel+RUAttributes.h in Headers */,
+				D19EB27822EC912FC2FB03F94F4E5821 /* UINavigationController+RUColoredNavigationBar.h in Headers */,
+				41EFA95872FAF928C4448B27CB9D5CF5 /* UINavigationController+RUColoredStatusBarView.h in Headers */,
+				E19BACA9BA7B873579D8FFA0FF875DDF /* UINavigationController+RUNavbarColorSetter.h in Headers */,
+				825C973094002365D20B590BA1211ADF /* UIScrollView+RUAboveContentView.h in Headers */,
+				98528B0B9F58E22A54EBB9A1895B7DF8 /* UITabBarController+RUTabBarVisibility.h in Headers */,
+				8935467B43AC89A1CB42F5FD5F8F1085 /* UITextField+RUAttributes.h in Headers */,
+				79F6BD1CC52C4B7432CB6CB7B2E6DD7D /* UITextField+RUOnlyTextInput.h in Headers */,
+				0B117240F9B5D1593D4E69D399D82CFB /* UITextField+RUSelectedTextRange.h in Headers */,
+				CCB5E96C85BE2057222E29ED513709F4 /* UIView+RUCancelControlTracking.h in Headers */,
+				A3DEE03BD2E24FA43A44CCB2C98F9FF5 /* UIView+RUCoreGraphics.h in Headers */,
+				26654D3C450CCDE2464EB35D33E41FC0 /* UIView+RUDrawHole.h in Headers */,
+				EF37761031CE349CB7AC74AA883B4F80 /* UIView+RUEnableTapToResignFirstResponder.h in Headers */,
+				0F8A0B42E846AFD6A9B4206ABE0EBB08 /* UIView+RUMaskRoundCorners.h in Headers */,
+				59F80358F0BAA4998057E44D8AA107BB /* UIView+RUSnapshot.h in Headers */,
+				BC490BCD61797F3713D0DF09DED959DB /* UIView+RUSpinner.h in Headers */,
+				0716AB8537F317718FCEC1150DDC5BA6 /* UIView+RUSubviews.h in Headers */,
+				C24748B7A0B6ABD8E8F5C045AF08D231 /* UIView+RUSuperviews.h in Headers */,
+				752E65929C6919B7C89D0A5F26A86EAC /* UIView+RUUtility.h in Headers */,
+				5837F2FA3961481E2E849A3DDDA9D539 /* UIView+RUViewHierarchyUtility.h in Headers */,
+				239C4B8CDAB99AD2CF0C27485F025193 /* UIViewController+RUDismissOrPop.h in Headers */,
+				2C1AE209310F4E1A7C09D7F452A0616C /* UIViewController+RUNavigationBarColorSetterDelegate.h in Headers */,
+				9F5B088DB50386ECAC3F2C6491C8E69E /* UIViewController+RUStatusBarHeight.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6466A5F655F50A22C07CE38E99E672DA /* Pods-AnimatingTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8671280BB211561E11C18892F4E4159 /* Build configuration list for PBXNativeTarget "Pods-AnimatingTableView" */;
+			buildPhases = (
+				463728F173557C98AAF85E2A23F1FDED /* Sources */,
+				9606B8961F1BF2FFAD10EE4D7B039132 /* Frameworks */,
+				2ECE6DEE2B3C884E986398ED6DD80400 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D7E920FA757E202FE47B2303ACABD91 /* PBXTargetDependency */,
+			);
+			name = "Pods-AnimatingTableView";
+			productName = "Pods-AnimatingTableView";
+			productReference = EC28868B7D22C587ACE838BF6D1CA0F1 /* Pods_AnimatingTableView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B01D7516D29856FCED3133473DB3650F /* ResplendentUtilities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82B04959C4F39E8779DC9061725AEA37 /* Build configuration list for PBXNativeTarget "ResplendentUtilities" */;
+			buildPhases = (
+				0E20E9B8D4224A769A9B93EFD93AA4CD /* Sources */,
+				6CF60506DEB4BCC4AE7BC54C34D1F5B0 /* Frameworks */,
+				621270C2205A21716D41820782B38F0A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ResplendentUtilities;
+			productName = ResplendentUtilities;
+			productReference = 5C1DDC0746702166E49A9FFE2BD294DF /* ResplendentUtilities.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 08F6F6F5512590F2A4DB08563C1EAECC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6466A5F655F50A22C07CE38E99E672DA /* Pods-AnimatingTableView */,
+				B01D7516D29856FCED3133473DB3650F /* ResplendentUtilities */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E20E9B8D4224A769A9B93EFD93AA4CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FF39BB7864CA3A8FFC7276111C1FA3 /* CALayer+RUCornerRadius.m in Sources */,
+				FD39277431B0A16890D817053633AE67 /* CALayer+RUMask.m in Sources */,
+				E6ABCDDE19B3CD9756A59F0C7AC69078 /* CAShapeLayer+RUMessageBox.m in Sources */,
+				74338ECD5233478F1A4079095B5F683B /* CMDeviceMotion+RUOrientation.m in Sources */,
+				95BA2134E50C1FB8D1A47ABDD372EDCD /* NSArray+RUComponents.m in Sources */,
+				5D236CD7DB0F0AE1AF2A37A9D1A5002C /* NSArray+RUReversing.m in Sources */,
+				8085CED92D161CA02945587ECF67C829 /* NSArray+RUShuffling.m in Sources */,
+				9F4F8D7FACCA99B9F5705DE590ACCAA1 /* NSBundle+RUPListGetters.m in Sources */,
+				D06C5D1B537B9EDA51E1D32BA51575BB /* NSDictionary+RUFBUserResponseObject.m in Sources */,
+				E15D07DC063A205EB0A0E4EDED472A1E /* NSDictionary+RUReverse.m in Sources */,
+				363173B94AFC1BB5368A0447A46C3FBD /* NSMutableArray+RUAddObjectIfNotNil.m in Sources */,
+				CBEBBED0013224ADE575B796272D8E5F /* NSMutableDictionary+RUUtil.m in Sources */,
+				DF02EDF7C49CE5BB5F53171CE0502193 /* NSNumber+RUUtil.m in Sources */,
+				F0F5F79BDDE84332483B052475E9167B /* NSObject+RUKeyboardNotifications.m in Sources */,
+				CA4B4C86CA27531DF9467B87E4B54AB0 /* NSObject+RUNotifications_UIApplication.m in Sources */,
+				015E190370F08E1102404636238AC792 /* NSPredicate+RUUtil.m in Sources */,
+				4D13D31B01B9049A60F78E72B4903A27 /* NSString+MKCoordinateRegion.m in Sources */,
+				EE1FEC597E826701F90645E1A8471FC1 /* NSString+RUCamelCase.m in Sources */,
+				455C9DEB59D5969CCB6EE4E27E088C41 /* NSString+RUDirectories.m in Sources */,
+				2FFDB918A4F22496738659B8C270A2B0 /* NSString+RUEmailValidation.m in Sources */,
+				45E35DD3EB4F7DE2A3AF0321D9928C2E /* NSString+RUEncodedUrl.m in Sources */,
+				5ADB7D76F6654099D8A90DE336C6C9A0 /* NSString+RUFormatting.m in Sources */,
+				3BAC6588465261AAE12B6A0D4FA2A9FE /* NSString+RUNumberCheck.m in Sources */,
+				6FEB775DAE729E8FABCCBAD5393DEA9F /* NSString+RUStringContainsUtil.m in Sources */,
+				EE6171AB8D32671CCF5B3D5796FA6340 /* NSString+RUUrlComponents.m in Sources */,
+				A8A79F9058B85F3AD8ECC68698B2BA70 /* NSString+RUURLParams.m in Sources */,
+				54BD2EB6214608CB37ED1DB0A6ED4339 /* NSString+RUUtil.m in Sources */,
+				DE3A5E97FE175ED3C73A5F31A13DEE6B /* NSURL+RUDirectories.m in Sources */,
+				E33E7FBC22FC34A0080C8CDBACA80E08 /* NSURL+RUQueryParams.m in Sources */,
+				E4B65EFC668CF9FD1AAB274F49099C1C /* ResplendentUtilities-dummy.m in Sources */,
+				47B05F9B28B9BC144F20A97F3644ABF7 /* RUAddressBookUtil.m in Sources */,
+				5017F949C8C3BC67829671D3B1FA3125 /* RUAsynchronousUIImageRequest.m in Sources */,
+				68A14E5FC1C955892623F4D5B55CC6EF /* RUClassOrNilUtil.m in Sources */,
+				B1CA2F794AB0309981F3A9E767AD157A /* RUCollectionViewFlowLayout_ContentSizeAdjustForMinimumLineSpacing.m in Sources */,
+				A2C744739471B231FE38834CCF9EFA39 /* RUColoredNavigationBar.m in Sources */,
+				7EA1F1C7CE0E392ECFB3476EEFF07746 /* RUColorPickerCell.m in Sources */,
+				5AC3A4C247AD91786C252B3F45A5E01F /* RUColorPickerView.m in Sources */,
+				4E84976A9D3439645AA764D962CF521E /* RUCompatability.m in Sources */,
+				ADC947E080B53B6894D2FA05BB80D1AF /* RUCornerRoundingBorderedView.m in Sources */,
+				8AF1A287BB72F60585043712C5E888CB /* RUCrossView.m in Sources */,
+				2518C29492CBE35CD2714CB5847ABB99 /* RUDeallocHook.m in Sources */,
+				CFFF9FE5C5C29E7B18B25DF37A99B031 /* RUDiskImageFetchingController.m in Sources */,
+				1A1B392B0EF419C03688879537D2D346 /* RUFullscreenRotatingView.m in Sources */,
+				67F2BCBC13FBE2C65219C07C588AAE16 /* RUGradientButton.m in Sources */,
+				4C0233B619668DBE79196B499967580C /* RUGradientView.m in Sources */,
+				5E4CFB7E89CBC0588ADE1E1DA4926969 /* RUHorizontalPagingView.m in Sources */,
+				5B5EA55D5A5333DAB5836069733529DA /* RUHorizontalTitlePagingView.m in Sources */,
+				EC6FC36E3AAA51F115150D48D6B321D3 /* RUHorizontalTitlePagingViewCollectionViewCell.m in Sources */,
+				7BB1DF23D0D2B79B72286C5BF0887B25 /* RUImageCompatability.m in Sources */,
+				C6F8A70983353B575C4578059D893190 /* RUImageViewFullscreenRotatingView.m in Sources */,
+				0564A9CB3A79954BF94A9EDD26054ED3 /* RUKeyboardAdjustmentHelper.m in Sources */,
+				53F1D2C2E86338E9EF2EA47F5DECBEEB /* RUModalView.m in Sources */,
+				D8BFE2F1B3ADAF3026FEDC07DF898B7C /* RUNavigationControllerDelegate_navbarColorSetter.m in Sources */,
+				96014DF6929D91EBFB14D372CF34A941 /* RUOrderedDictionary.m in Sources */,
+				D1EBBDE5737AAC5A124E60B693E4CA1B /* RUOrderedMutableDictionary.m in Sources */,
+				D8B05BDCA9AE912680BD72F6CE9E6438 /* RURadioButtonGroup.m in Sources */,
+				EBB55F039DF6DCE8C9DA17A877D26D83 /* RURadioButtonView.m in Sources */,
+				94DAA68EF3F797CE050639CFF4C02F7F /* RUScrollToTopManager.m in Sources */,
+				A941C11A6CF90E4341AB80FFB8AA22C6 /* RUScrollView.m in Sources */,
+				6832A6295AEF84AED7F44273E95A9E7D /* RUScrollWithKeyboardAdjustmentView.m in Sources */,
+				ED67A87B885C02C2EEC461F277F06D91 /* RUSlideMenuNavigationController.m in Sources */,
+				B03949B84796F8B0E34F2E4DEEC51374 /* RUStringCompatability.m in Sources */,
+				D6F0BB8E0EA83EA5C1F76733FB123C5A /* RUSubviewTouchesView.m in Sources */,
+				00048079BEF7029C2057D5919CC46EC6 /* RUTableView.m in Sources */,
+				ABF3E97AB1BC418AED08098540D05035 /* RUTopBottomBarModalView.m in Sources */,
+				4909568650A0C3BE26BBEFD53E3DE383 /* RUTriangle.m in Sources */,
+				14456244C1F6FB6DC733D75D1662CFA4 /* RUViewStack.m in Sources */,
+				689483FC081A32A640AF1FA8A47A28DC /* UIActionSheet+RUShowUtil.m in Sources */,
+				665EBD767577F49F695112334309E9B1 /* UIAlertView+RUShowUtil.m in Sources */,
+				5F4B6C4FB618F8C62556FC6BEB990358 /* UIApplication+RUOpenUrl.m in Sources */,
+				0A7544EC4600B60C8C523F7762E583E8 /* UIApplication+RUPushNotifications.m in Sources */,
+				444F36E86ED0ACD564E58ECD224A5BCB /* UIButton+RUAsynchronousImageFetching.m in Sources */,
+				5F746776C005FDE57986C53087AB08CD /* UIButton+RUDiskImageFetching.m in Sources */,
+				4A6ED7C31FC5BFEC639316050AB24E7A /* UIColor+RUHexString.m in Sources */,
+				3FBF27856D0DE178E5E7387DA7250E29 /* UIColor+RUUtility.m in Sources */,
+				A3BBD2D6182647EFE92E6B51385C29B8 /* UIFont+RUHelvetica.m in Sources */,
+				79362DB7068D13E5A636A64CC6963BEF /* UIFont+RUHelveticaNeue.m in Sources */,
+				234CC82CB5A215239320368A2CA73178 /* UIImage+RUDebug.m in Sources */,
+				E9CEDC28870EB0829EE862A7D98BCCAB /* UIImage+RUImageColorMasking.m in Sources */,
+				81D5A5566DA662610D64A53876610D53 /* UIImage+RUImageFromColor.m in Sources */,
+				71BE1086E38629EE1D5CCB3E53E3639D /* UIImage+RULaunchImage.m in Sources */,
+				E51C1881ECE9C1416763B93B34051B38 /* UIImage+RURotation.m in Sources */,
+				AD97429D545F25D22A47FC80C0A4066D /* UIImage+RUSaveToAssetsLibrary.m in Sources */,
+				94F3E3D02CCA10A83F17719E784EA9C6 /* UIImageView+RUAsynchronousImageFetching.m in Sources */,
+				F1A550557BD254D978E43991E0BBEFE8 /* UIImageView+RUDiskImageFetching.m in Sources */,
+				21C24A32A7D86A65363386756FE09BB6 /* UIImageView+RUFacebookAsynchronousImageFetching.m in Sources */,
+				E58DFD0C8BCB205E1F06E18D553AEB32 /* UIInterfaceOrientation+RUUtil.m in Sources */,
+				EEF881C214799687ED70072806B61DF1 /* UILabel+RUAttributes.m in Sources */,
+				7C771C2E720559D70C790CB55D11D827 /* UINavigationController+RUColoredNavigationBar.m in Sources */,
+				70F214F78D6B6C4790777517DA8D79E5 /* UINavigationController+RUColoredStatusBarView.m in Sources */,
+				C28E8EF90D8FF417707289725E838D73 /* UINavigationController+RUNavbarColorSetter.m in Sources */,
+				2C70F278B4268E678737B9CEF6CBD575 /* UIScrollView+RUAboveContentView.m in Sources */,
+				5E8CB1F14DDAB64C23981449C90EB1A6 /* UITabBarController+RUTabBarVisibility.m in Sources */,
+				77E9EA08BDBA8DB0EE055E2AB7D4DF30 /* UITextField+RUAttributes.m in Sources */,
+				E628E6FD00E3B3A27676A1FD0AA545A2 /* UITextField+RUOnlyTextInput.m in Sources */,
+				F21B0B59F1C9BD0FCF85C15C0FC52C6F /* UITextField+RUSelectedTextRange.m in Sources */,
+				BFBA86EE0BA28A324EB6FEBCFB9F6F64 /* UIView+RUCancelControlTracking.m in Sources */,
+				F1D631B878B8F1ED8E9215710E82042C /* UIView+RUCoreGraphics.m in Sources */,
+				6E4EB54EB4BF695E689DBB47F1E98F42 /* UIView+RUDrawHole.m in Sources */,
+				2577381315A3496534B94C6A1FB23176 /* UIView+RUEnableTapToResignFirstResponder.m in Sources */,
+				096BD56F6BC0719395669CB155E03149 /* UIView+RUMaskRoundCorners.m in Sources */,
+				6FB5A65D913029350825A056FCFB21A1 /* UIView+RUSnapshot.m in Sources */,
+				9C8242B0080C099C279939D139ADEF82 /* UIView+RUSpinner.m in Sources */,
+				DA05DA6F72E82EDD91A703A2EDFA5189 /* UIView+RUSubviews.m in Sources */,
+				4952F478514C2C9C6F79A6B3B7A30E6F /* UIView+RUSuperviews.m in Sources */,
+				92447200D602000EDFFD833D650B3804 /* UIView+RUUtility.m in Sources */,
+				8CDD52779E824C5A0C75EA2A804D82DA /* UIView+RUViewHierarchyUtility.m in Sources */,
+				7AFDFBA90C592332FEEDACF70C15FFA2 /* UIViewController+RUDismissOrPop.m in Sources */,
+				D410B59D25615C9EAC48E5C1EAEFE577 /* UIViewController+RUNavigationBarColorSetterDelegate.m in Sources */,
+				F330FAC983EBE7C2BB68A065DDDE4E5E /* UIViewController+RUStatusBarHeight.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463728F173557C98AAF85E2A23F1FDED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4185BF3217BB1F18F7C69E118D919B /* Pods-AnimatingTableView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D7E920FA757E202FE47B2303ACABD91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResplendentUtilities;
+			target = B01D7516D29856FCED3133473DB3650F /* ResplendentUtilities */;
+			targetProxy = F18863D1D7C238A0D6271C50A6A74C17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2061AEEF9F4D25A77BA27F7AA53156B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 670DD64DB4D9F61E87D4E77D932BB8A6 /* ResplendentUtilities.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ResplendentUtilities/ResplendentUtilities-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ResplendentUtilities/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ResplendentUtilities/ResplendentUtilities.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ResplendentUtilities;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E487F173E6C9664F4E9E26B9635D23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		794F802246BC8DD0F7C68043AE52BD59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A49AD050937F995D5A1B2B84C525FB89 /* Pods-AnimatingTableView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AnimatingTableView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnimatingTableView/Pods-AnimatingTableView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AnimatingTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AC29F9505F303C82007578747A707EF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 670DD64DB4D9F61E87D4E77D932BB8A6 /* ResplendentUtilities.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ResplendentUtilities/ResplendentUtilities-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ResplendentUtilities/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ResplendentUtilities/ResplendentUtilities.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ResplendentUtilities;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5C3068BD049A80103C8CB417C059C9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06B6A9051F550BDB4BEEAA06505766E8 /* Pods-AnimatingTableView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AnimatingTableView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnimatingTableView/Pods-AnimatingTableView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AnimatingTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E487F173E6C9664F4E9E26B9635D23C /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82B04959C4F39E8779DC9061725AEA37 /* Build configuration list for PBXNativeTarget "ResplendentUtilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2061AEEF9F4D25A77BA27F7AA53156B7 /* Debug */,
+				AC29F9505F303C82007578747A707EF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8671280BB211561E11C18892F4E4159 /* Build configuration list for PBXNativeTarget "Pods-AnimatingTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794F802246BC8DD0F7C68043AE52BD59 /* Debug */,
+				C5C3068BD049A80103C8CB417C059C9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
