@@ -35,7 +35,7 @@
 	[super viewDidLoad];
 	
 	[self.view setBackgroundColor:[UIColor redColor]];
-		
+	
 	_dismissButton = [UIButton buttonWithType:UIButtonTypeCustom];
 	[self.dismissButton setBackgroundColor:[UIColor blueColor]];
 	[self.dismissButton setTitle:@"Push Me To Go Back" forState:UIControlStateNormal];
@@ -68,6 +68,10 @@
 
 -(void)dismissButton_didTouchUpInside
 {
+	[UIView animateWithDuration:0.3 animations:^{
+		[self.view setBackgroundColor:[UIColor whiteColor]];
+	}];
+	
 	[self.dismissButtonDelegate modalViewController_dismissButton_didTouchUpInside];
 }
 
