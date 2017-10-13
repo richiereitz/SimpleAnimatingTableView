@@ -43,6 +43,12 @@
 #pragma mark - transitionManager
 @property (nonatomic, strong, nullable) ATPresentationTransitionManager* transitionManager;
 
+#pragma mark - referenceRect
+@property (nonatomic, assign) CGRect refrenceRect;
+
+#pragma mark - beginTransition
+-(void)beginTransition;
+
 @end
 
 
@@ -63,7 +69,11 @@
 	[self.tableView setDelegate:self];
 	[self.tableView setDataSource:self];
 	[self.view addSubview:self.tableView];
-	
+
+	/* The following modifications to UITableView are done to disable certain automations that UITableView forces in iOS 11. This is to maintain consistent functionality with older iOS versions */
+	[self.tableView setEstimatedSectionFooterHeight:0.0f];
+	[self.tableView setEstimatedSectionHeaderHeight:0.0f];
+	[self.tableView setEstimatedRowHeight:0.0f];
 	if ([self.tableView respondsToSelector:@selector(setContentInsetAdjustmentBehavior:)])
 	{
 		if (@available(iOS 11, *))
@@ -94,7 +104,7 @@
 
 -(void)tableView_expandedIndexPath_animate_update
 {
-	kRUConditionalReturn(self.expandedIndexPath.section == 0, NO);
+	kRUConditionalReturn(self.expandedIndexPath.section == 0 && self.expandedIndexPath, NO);
 	kRUConditionalReturn(self.expandedIndexPath.section == [self.tableView numberOfSections] - 1, NO);
 	
 	CGPoint const currentOffset = self.tableView.contentOffset;
@@ -174,9 +184,9 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	[self.tableView performBatchUpdates:^{
-		[self expandedIndexPath_update_for_selectedIndexPath:indexPath];
-	} completion:nil];
+	[self.tableView beginUpdates];
+	[self expandedIndexPath_update_for_selectedIndexPath:indexPath];
+	[self.tableView endUpdates];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -233,22 +243,46 @@
 	
 	_expandedIndexPath_shouldExpandFooter = expandedIndexPath_shouldExpandFooter;
 	
-	__weak typeof(self) const self_weak = self;
-	[UIView animateWithDuration:0.3 animations:^{
-		[self_weak tableView_expandedIndexPath_shouldExpandFooter_animate_update];
-	}];
+	if (expandedIndexPath_shouldExpandFooter)
+	{
+		__weak typeof(self) const self_weak = self;
+		[UIView animateWithDuration:0.3
+						 animations:^
+		 {
+			 [self_weak tableView_expandedIndexPath_shouldExpandFooter_animate_update];
+		 }
+						 completion:^(BOOL finished)
+		 {
+			 [self_weak beginTransition];
+		 }];
+	}
+	else
+	{
+		__weak typeof(self) const self_weak = self;
+		[UIView animateWithDuration:0.3
+						 animations:^
+		 {
+			 [self_weak tableView_expandedIndexPath_shouldExpandFooter_animate_update];
+			 [self_weak beginTransition];
+
+		 }
+						 completion:nil];
+	}
+
 }
 
-#pragma mark - ATExpandingTableViewCell_beginAnimatedPresentationButton_didTouchUpInsideDelegate
--(void)expandingTableViewCell_beginAnimatedPresentationButton_didTouchUpInside:(ATExpandingTableViewCell *)expandingTableViewCell
-															 withReferenceRect:(CGRect)referenceRect
+#pragma mark - beginTransition
+-(void)beginTransition
 {
-	[self.tableView performBatchUpdates:^{
-		[self setExpandedIndexPath_shouldExpandFooter:YES];
-		
-	} completion:^(BOOL finished) {
-		CGRect const referenceRect_forPresentation = [expandingTableViewCell convertRect:expandingTableViewCell.roundedContentView.frame toView:self.view];
-		[self.transitionManager setReferenceFrame:referenceRect_forPresentation];
+	kRUConditionalReturn(CGRectEqualToRect(self.refrenceRect, CGRectZero), YES);
+	
+	if (self.presentedViewController)
+	{
+		[self dismissViewControllerAnimated:YES completion:nil];
+	}
+	else
+	{
+		[self.transitionManager setReferenceFrame:self.refrenceRect];
 		
 		ATModalViewController* const modal = [ATModalViewController new];
 		[modal setModalPresentationStyle:UIModalPresentationCustom];
@@ -256,17 +290,25 @@
 		[modal setDismissButtonDelegate:self];
 		
 		[self presentViewController:modal animated:YES completion:nil];
-	}];
+	}
+}
+
+#pragma mark - ATExpandingTableViewCell_beginAnimatedPresentationButton_didTouchUpInsideDelegate
+-(void)expandingTableViewCell_beginAnimatedPresentationButton_didTouchUpInside:(ATExpandingTableViewCell *)expandingTableViewCell
+															 withReferenceRect:(CGRect)referenceRect
+{
+	[self setRefrenceRect:[expandingTableViewCell convertRect:expandingTableViewCell.roundedContentView.frame toView:self.view]];
+	[self.tableView beginUpdates];
+	[self setExpandedIndexPath_shouldExpandFooter:YES];
+	[self.tableView endUpdates];
 }
 
 #pragma mark - ATModalViewController_dismissalDelegate
 -(void)modalViewController_dismissButton_didTouchUpInside
 {
-	[self.tableView performBatchUpdates:^{
-		[self setExpandedIndexPath_shouldExpandFooter:NO];
-	} completion:^(BOOL finished) {
-		[self dismissViewControllerAnimated:YES completion:nil];
-	}];
+	[self.tableView beginUpdates];
+	[self setExpandedIndexPath_shouldExpandFooter:NO];
+	[self.tableView endUpdates];
 }
 
 @end

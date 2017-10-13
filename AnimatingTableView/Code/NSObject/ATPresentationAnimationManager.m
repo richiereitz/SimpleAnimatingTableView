@@ -52,7 +52,7 @@
 #pragma mark - UIViewControllerAnimatedTransitioning
 -(NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
 {
-	return 0.6f;
+	return 0.4f;
 }
 
 -(void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext

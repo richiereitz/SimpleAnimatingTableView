@@ -38,6 +38,7 @@
 	if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier])
 	{
 		[self setBackgroundColor:[UIColor clearColor]];
+		[self.contentView setBackgroundColor:[UIColor clearColor]];
 		
 		_roundedContentView = [UIView new];
 		[self.roundedContentView setBackgroundColor:[UIColor whiteColor]];
