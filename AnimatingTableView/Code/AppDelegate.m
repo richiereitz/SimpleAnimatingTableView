@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ATAnimatingTableViewController.h"
 
 
 
@@ -26,11 +27,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// Override point for customization after application launch.
 	
-	UIViewController* const viewController = [UIViewController new];
+	ATAnimatingTableViewController* const viewController = [ATAnimatingTableViewController new];
 	[viewController.view setBackgroundColor:[UIColor blueColor]];
 	
+	UINavigationController* const navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+	[[UINavigationBar appearance] setBarTintColor:[UIColor purpleColor]];
+	
 	UIWindow* const window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-	[window setRootViewController:viewController];
+	[window setRootViewController:navigationController];
 	[self setWindow:window];
 	[self.window makeKeyAndVisible];
 	return YES;
