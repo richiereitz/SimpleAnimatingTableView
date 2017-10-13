@@ -34,12 +34,12 @@
 {
 	[super viewDidLoad];
 	
-	[self.view setBackgroundColor:[UIColor whiteColor]];
+	[self.view setBackgroundColor:[UIColor redColor]];
 	
 	_dismissButton = [UIButton buttonWithType:UIButtonTypeCustom];
-	[self.dismissButton setBackgroundColor:[UIColor greenColor]];
+	[self.dismissButton setBackgroundColor:[UIColor blueColor]];
 	[self.dismissButton setTitle:@"Push Me To Go Back" forState:UIControlStateNormal];
-	[self.dismissButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+	[self.dismissButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 	[self.dismissButton addTarget:self action:@selector(dismissButton_didTouchUpInside) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:self.dismissButton];
 }
@@ -61,7 +61,7 @@
 	
 	return CGRectCeilOrigin((CGRect){
 		.origin.x	= CGRectGetHorizontallyAlignedXCoordForWidthOnWidth(size.width, CGRectGetWidth(self.view.bounds)),
-		.origin.y	= CGRectGetVerticallyAlignedYCoordForHeightOnHeight(size.height, CGRectGetHeight(self.view.bounds)),
+		.origin.y	= 20.0f,
 		.size		= size
 	});
 }
