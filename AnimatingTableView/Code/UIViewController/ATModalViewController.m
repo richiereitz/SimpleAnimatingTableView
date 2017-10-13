@@ -34,7 +34,7 @@
 {
 	[super viewDidLoad];
 	
-	[self.view setBackgroundColor:[UIColor redColor]];
+	[self.view setBackgroundColor:[UIColor whiteColor]];
 	
 	_dismissButton = [UIButton buttonWithType:UIButtonTypeCustom];
 	[self.dismissButton setBackgroundColor:[UIColor blueColor]];
@@ -42,6 +42,14 @@
 	[self.dismissButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 	[self.dismissButton addTarget:self action:@selector(dismissButton_didTouchUpInside) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:self.dismissButton];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+	__weak typeof(self) const self_weak = self;
+	[UIView animateWithDuration:0.3 animations:^{
+		[self_weak.view setBackgroundColor:[UIColor redColor]];
+	}];
 }
 
 -(void)viewWillLayoutSubviews
