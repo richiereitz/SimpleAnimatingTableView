@@ -68,8 +68,9 @@
 
 -(void)dismissButton_didTouchUpInside
 {
+	__weak typeof(self) const self_weak = self;
 	[UIView animateWithDuration:0.3 animations:^{
-		[self.view setBackgroundColor:[UIColor whiteColor]];
+		[self_weak.view setBackgroundColor:[UIColor whiteColor]];
 	}];
 	
 	[self.dismissButtonDelegate modalViewController_dismissButton_didTouchUpInside];
