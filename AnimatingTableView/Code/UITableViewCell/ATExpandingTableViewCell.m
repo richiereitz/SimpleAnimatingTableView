@@ -17,7 +17,6 @@
 @interface ATExpandingTableViewCell()
 
 #pragma mark - roundedContentView
-@property (nonatomic, readonly, strong, nullable) UIView* roundedContentView;
 -(CGRect)roundedContentView_frame;
 
 #pragma mark - beginAnimatedPresentationButton
@@ -66,7 +65,7 @@
 #pragma mark - roundedContentView
 -(CGRect)roundedContentView_frame
 {
-	CGFloat const padding_horizontal = 20.0f;
+	CGFloat const padding_horizontal = 30.0f;
 	return UIEdgeInsetsInsetRect(self.contentView.bounds, (UIEdgeInsets){
 		.left = padding_horizontal,
 		.right = padding_horizontal
@@ -92,7 +91,8 @@
 
 -(void)beginAnimatedPresentationButton_didTouchUpInside
 {
-	[self.beginAnimatedPresentationButtonDelegate expandingTableViewCell_beginAnimatedPresentationButton_didTouchUpInside:self];	
+	[self.beginAnimatedPresentationButtonDelegate expandingTableViewCell_beginAnimatedPresentationButton_didTouchUpInside:self
+																										withReferenceRect:[self roundedContentView_frame]];
 }
 
 @end

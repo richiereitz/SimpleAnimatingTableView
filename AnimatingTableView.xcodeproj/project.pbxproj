@@ -12,6 +12,9 @@
 		B689584E1F9127B400539DA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B689584B1F91277600539DA2 /* AppDelegate.m */; };
 		B68958521F91299700539DA2 /* ATAnimatingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B68958511F91299700539DA2 /* ATAnimatingTableViewController.m */; };
 		B68958561F9137EA00539DA2 /* ATExpandingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B68958551F9137EA00539DA2 /* ATExpandingTableViewCell.m */; };
+		B689585B1F913F8E00539DA2 /* ATPresentationAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B689585A1F913F8E00539DA2 /* ATPresentationAnimationManager.m */; };
+		B689585E1F913FA100539DA2 /* ATPresentationTransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B689585D1F913FA100539DA2 /* ATPresentationTransitionManager.m */; };
+		B68958611F9146AE00539DA2 /* ATModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B68958601F9146AE00539DA2 /* ATModalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,13 @@
 		B68958541F9137EA00539DA2 /* ATExpandingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATExpandingTableViewCell.h; sourceTree = "<group>"; };
 		B68958551F9137EA00539DA2 /* ATExpandingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATExpandingTableViewCell.m; sourceTree = "<group>"; };
 		B68958571F913DE100539DA2 /* ATExpandingTableViewCell_Protocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATExpandingTableViewCell_Protocols.h; sourceTree = "<group>"; };
+		B68958591F913F8E00539DA2 /* ATPresentationAnimationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATPresentationAnimationManager.h; sourceTree = "<group>"; };
+		B689585A1F913F8E00539DA2 /* ATPresentationAnimationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATPresentationAnimationManager.m; sourceTree = "<group>"; };
+		B689585C1F913FA100539DA2 /* ATPresentationTransitionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATPresentationTransitionManager.h; sourceTree = "<group>"; };
+		B689585D1F913FA100539DA2 /* ATPresentationTransitionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATPresentationTransitionManager.m; sourceTree = "<group>"; };
+		B689585F1F9146AE00539DA2 /* ATModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATModalViewController.h; sourceTree = "<group>"; };
+		B68958601F9146AE00539DA2 /* ATModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATModalViewController.m; sourceTree = "<group>"; };
+		B68958621F9146CB00539DA2 /* ATModalViewController_Protocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATModalViewController_Protocols.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +102,7 @@
 		B68958481F9126F400539DA2 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				B68958581F913F7000539DA2 /* NSObject */,
 				B68958531F9137D100539DA2 /* UITableViewCell */,
 				B689584F1F91297600539DA2 /* UIViewController */,
 				B689584C1F91277600539DA2 /* AppDelegate.h */,
@@ -113,6 +124,9 @@
 			children = (
 				B68958501F91299700539DA2 /* ATAnimatingTableViewController.h */,
 				B68958511F91299700539DA2 /* ATAnimatingTableViewController.m */,
+				B68958621F9146CB00539DA2 /* ATModalViewController_Protocols.h */,
+				B689585F1F9146AE00539DA2 /* ATModalViewController.h */,
+				B68958601F9146AE00539DA2 /* ATModalViewController.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -125,6 +139,17 @@
 				B68958551F9137EA00539DA2 /* ATExpandingTableViewCell.m */,
 			);
 			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		B68958581F913F7000539DA2 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				B68958591F913F8E00539DA2 /* ATPresentationAnimationManager.h */,
+				B689585A1F913F8E00539DA2 /* ATPresentationAnimationManager.m */,
+				B689585C1F913FA100539DA2 /* ATPresentationTransitionManager.h */,
+				B689585D1F913FA100539DA2 /* ATPresentationTransitionManager.m */,
+			);
+			path = NSObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,8 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B689585B1F913F8E00539DA2 /* ATPresentationAnimationManager.m in Sources */,
+				B68958611F9146AE00539DA2 /* ATModalViewController.m in Sources */,
 				B68958521F91299700539DA2 /* ATAnimatingTableViewController.m in Sources */,
 				B689584E1F9127B400539DA2 /* AppDelegate.m in Sources */,
+				B689585E1F913FA100539DA2 /* ATPresentationTransitionManager.m in Sources */,
 				B68958421F9126E000539DA2 /* main.m in Sources */,
 				B68958561F9137EA00539DA2 /* ATExpandingTableViewCell.m in Sources */,
 			);

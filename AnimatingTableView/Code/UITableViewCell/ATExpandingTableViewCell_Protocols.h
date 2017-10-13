@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import <UIKit/UIKit.h>
+
 
 
 
@@ -20,6 +22,7 @@
 
 @protocol ATExpandingTableViewCell_beginAnimatedPresentationButton_didTouchUpInsideDelegate <NSObject>
 
--(void)expandingTableViewCell_beginAnimatedPresentationButton_didTouchUpInside:(nullable ATExpandingTableViewCell*)expandingTableViewCell;
+-(void)expandingTableViewCell_beginAnimatedPresentationButton_didTouchUpInside:(nullable ATExpandingTableViewCell*)expandingTableViewCell
+															 withReferenceRect:(CGRect)referenceRect;
 
 @end

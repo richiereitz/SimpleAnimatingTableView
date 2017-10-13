@@ -17,6 +17,9 @@
 @interface ATExpandingTableViewCell : UITableViewCell
 
 #pragma mark - beginAnimatedPresentationButtonDelegate
-@property (nonatomic, assign, nullable) id<ATExpandingTableViewCell_beginAnimatedPresentationButton_didTouchUpInsideDelegate>beginAnimatedPresentationButtonDelegate ;
+@property (nonatomic, assign, nullable) id<ATExpandingTableViewCell_beginAnimatedPresentationButton_didTouchUpInsideDelegate>beginAnimatedPresentationButtonDelegate;
+
+#pragma mark - roundedContentView
+@property (nonatomic, readonly, strong, nullable) UIView* roundedContentView;
 
 @end
