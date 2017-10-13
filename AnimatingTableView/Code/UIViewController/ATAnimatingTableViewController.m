@@ -7,6 +7,7 @@
 //
 
 #import "ATAnimatingTableViewController.h"
+#import "ATExpandingTableViewCell.h"
 
 #import <ResplendentUtilities/NSString+RUMacros.h>
 #import <ResplendentUtilities/RUConditionalReturn.h>
@@ -15,7 +16,7 @@
 
 
 
-@interface ATAnimatingTableViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface ATAnimatingTableViewController () <UITableViewDelegate, UITableViewDataSource, ATExpandingTableViewCell_beginAnimatedPresentationButton_didTouchUpInsideDelegate>
 
 #pragma mark - tableView
 @property (nonatomic, readonly, strong, nullable) UITableView* tableView;
@@ -48,10 +49,22 @@
 	[super viewDidLoad];
 	
 	_tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
-	[self.tableView setBackgroundColor:[UIColor orangeColor]];
+	[self.tableView setBackgroundColor:[UIColor blueColor]];
 	[self.tableView setDelegate:self];
 	[self.tableView setDataSource:self];
 	[self.view addSubview:self.tableView];
+	
+	if ([self.tableView respondsToSelector:@selector(setContentInsetAdjustmentBehavior:)])
+	{
+		if (@available(iOS 11, *))
+		{
+			[self.tableView setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
+		}
+		else
+		{
+			NSAssert(false, @"should be available.");
+		}
+	}
 }
 
 -(void)viewWillLayoutSubviews
@@ -64,7 +77,9 @@
 #pragma mark - tableView
 -(CGRect)tableView_frame
 {
-	return self.view.bounds;
+	return UIEdgeInsetsInsetRect(self.view.bounds, (UIEdgeInsets){
+		.top = CGRectGetMaxY(self.navigationController.navigationBar.frame)
+	});
 }
 
 -(void)tableView_expandedIndexPath_animate_update
@@ -89,12 +104,12 @@
 #pragma mark - cellHeight
 -(CGFloat)cellHeight_default
 {
-	return 150.0f;
+	return 100.0f;
 }
 
 -(CGFloat)cellHeight_expanded
 {
-	return 250.0f;
+	return 200.0f;
 }
 
 #pragma mark - UITableViewDelegate, UITableViewDataSource
@@ -110,12 +125,13 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	kRUDefineNSStringConstant(kATAnimatingTableViewCell_StringIdentifier);
-	UITableViewCell* const cell = ([self.tableView dequeueReusableCellWithIdentifier:kATAnimatingTableViewCell_StringIdentifier]
+	kRUDefineNSStringConstant(kATExpandingTableViewCell_StringIdentifier);
+	ATExpandingTableViewCell* const cell = ([self.tableView dequeueReusableCellWithIdentifier:kATExpandingTableViewCell_StringIdentifier]
 								   ?:
-								   [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kATAnimatingTableViewCell_StringIdentifier]);
-	[cell setBackgroundColor:[UIColor whiteColor]];
+								   [[ATExpandingTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kATExpandingTableViewCell_StringIdentifier]);
+
 	[cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+	[cell setBeginAnimatedPresentationButtonDelegate:self];
 	return cell;
 }
 
@@ -170,6 +186,12 @@
 	kRUConditionalReturn_ReturnValueNil(self.expandedIndexPath != nil, NO);
 	
 	return selectedIndexPath;
+}
+
+#pragma mark - ATExpandingTableViewCell_beginAnimatedPresentationButton_didTouchUpInsideDelegate
+-(void)expandingTableViewCell_beginAnimatedPresentationButton_didTouchUpInside:(ATExpandingTableViewCell *)expandingTableViewCell
+{
+	NSLog(@"received");
 }
 
 @end

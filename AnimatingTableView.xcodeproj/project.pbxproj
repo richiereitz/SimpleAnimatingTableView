@@ -11,6 +11,7 @@
 		B68958421F9126E000539DA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B68958411F9126E000539DA2 /* main.m */; };
 		B689584E1F9127B400539DA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B689584B1F91277600539DA2 /* AppDelegate.m */; };
 		B68958521F91299700539DA2 /* ATAnimatingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B68958511F91299700539DA2 /* ATAnimatingTableViewController.m */; };
+		B68958561F9137EA00539DA2 /* ATExpandingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B68958551F9137EA00539DA2 /* ATExpandingTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,9 @@
 		B689584C1F91277600539DA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B68958501F91299700539DA2 /* ATAnimatingTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAnimatingTableViewController.h; sourceTree = "<group>"; };
 		B68958511F91299700539DA2 /* ATAnimatingTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAnimatingTableViewController.m; sourceTree = "<group>"; };
+		B68958541F9137EA00539DA2 /* ATExpandingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATExpandingTableViewCell.h; sourceTree = "<group>"; };
+		B68958551F9137EA00539DA2 /* ATExpandingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATExpandingTableViewCell.m; sourceTree = "<group>"; };
+		B68958571F913DE100539DA2 /* ATExpandingTableViewCell_Protocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATExpandingTableViewCell_Protocols.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		B68958481F9126F400539DA2 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				B68958531F9137D100539DA2 /* UITableViewCell */,
 				B689584F1F91297600539DA2 /* UIViewController */,
 				B689584C1F91277600539DA2 /* AppDelegate.h */,
 				B689584B1F91277600539DA2 /* AppDelegate.m */,
@@ -110,6 +115,16 @@
 				B68958511F91299700539DA2 /* ATAnimatingTableViewController.m */,
 			);
 			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		B68958531F9137D100539DA2 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B68958571F913DE100539DA2 /* ATExpandingTableViewCell_Protocols.h */,
+				B68958541F9137EA00539DA2 /* ATExpandingTableViewCell.h */,
+				B68958551F9137EA00539DA2 /* ATExpandingTableViewCell.m */,
+			);
+			path = UITableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +250,7 @@
 				B68958521F91299700539DA2 /* ATAnimatingTableViewController.m in Sources */,
 				B689584E1F9127B400539DA2 /* AppDelegate.m in Sources */,
 				B68958421F9126E000539DA2 /* main.m in Sources */,
+				B68958561F9137EA00539DA2 /* ATExpandingTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
