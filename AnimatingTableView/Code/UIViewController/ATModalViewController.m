@@ -41,14 +41,25 @@
 	[self.dismissButton setTitle:@"Push Me To Go Back" forState:UIControlStateNormal];
 	[self.dismissButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 	[self.dismissButton addTarget:self action:@selector(dismissButton_didTouchUpInside) forControlEvents:UIControlEventTouchUpInside];
+	[self.dismissButton setAlpha:0.0f];
 	[self.view addSubview:self.dismissButton];
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
+	[super viewWillAppear:animated];
 	__weak typeof(self) const self_weak = self;
 	[UIView animateWithDuration:0.3 animations:^{
 		[self_weak.view setBackgroundColor:[UIColor redColor]];
+	}];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+	[super viewDidAppear:animated];
+	__weak typeof(self) const self_weak = self;
+	[UIView animateWithDuration:0.3 animations:^{
+		[self_weak.dismissButton setAlpha:1.0f];
 	}];
 }
 
@@ -79,8 +90,9 @@
 	__weak typeof(self) const self_weak = self;
 	[UIView animateWithDuration:0.3 animations:^{
 		[self_weak.view setBackgroundColor:[UIColor whiteColor]];
+		[self_weak.dismissButton setAlpha:0.0f];
 	}];
-	
+
 	[self.dismissButtonDelegate modalViewController_dismissButton_didTouchUpInside];
 }
 
