@@ -10,6 +10,7 @@
 #import "ATExpandingTableViewCell.h"
 #import "ATPresentationTransitionManager.h"
 #import "ATModalViewController.h"
+#import "ATCellHelper.h"
 
 #import <ResplendentUtilities/NSString+RUMacros.h>
 #import <ResplendentUtilities/RUConditionalReturn.h>
@@ -49,6 +50,9 @@
 #pragma mark - beginTransition
 -(void)beginTransition;
 
+#pragma mark - cellHelpers
+@property (nonatomic, readonly, strong, nullable) NSArray<ATCellHelper*>* cellHelpers;
+
 @end
 
 
@@ -56,6 +60,24 @@
 
 
 @implementation ATAnimatingTableViewController
+
+@synthesize cellHelpers = _cellHelpers;
+-(NSArray<ATCellHelper *> *)cellHelpers
+{
+	if (_cellHelpers == nil)
+	{
+		NSMutableArray<ATCellHelper*>* cellHelpers_mutable = [NSMutableArray<ATCellHelper*> array];
+		for (NSInteger x = 0 ; x < 50 ; x++)
+		{
+			ATCellHelper* helper = [ATCellHelper new];
+			[cellHelpers_mutable addObject:helper];
+		}
+		
+		_cellHelpers = [NSArray<ATCellHelper*> arrayWithArray:cellHelpers_mutable];
+	}
+	
+	return _cellHelpers;
+}
 
 #pragma mark - UIViewController
 -(void)viewDidLoad
@@ -115,9 +137,7 @@
 	
 	//Since we want the animation to appear as though the cells are shifing an equal amount in both directions, we will use half of the difference in height for our offset
 	CGFloat const heightModifier = heightDifference / 2.0f;
-	
-	
-#warning !!WARNING!! come back and update this logic to be more performant. Want to handle offset in edge cases
+		
 	[self.tableView setContentOffset:(CGPoint){
 		.x = 0,
 		.y = (self.expandedIndexPath) ? currentOffset.y + heightModifier : currentOffset.y - heightModifier
@@ -127,9 +147,6 @@
 
 -(void)tableView_expandedIndexPath_shouldExpandFooter_animate_update
 {
-	kRUConditionalReturn(self.expandedIndexPath.section == 0, NO);
-	kRUConditionalReturn(self.expandedIndexPath.section == [self.tableView numberOfSections] - 1, NO);
-	
 	CGPoint const currentOffset = self.tableView.contentOffset;
 	CGFloat const heightDifference = [self cellHeight_expanded] - [self cellHeight_default];
 	
@@ -140,7 +157,6 @@
 	CGFloat const heightModifier = heightDifference / 2.0f;
 	
 	
-#warning !!WARNING!! come back and update this logic to be more performant. Want to handle offset in edge cases
 	[self.tableView setContentOffset:(CGPoint){
 		.x = 0,
 		.y = (self.expandedIndexPath_shouldExpandFooter) ? currentOffset.y + heightModifier : currentOffset.y - heightModifier
@@ -162,7 +178,7 @@
 #pragma mark - UITableViewDelegate, UITableViewDataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-	return 10;
+	return self.cellHelpers.count;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -179,6 +195,10 @@
 
 	[cell setSelectionStyle:UITableViewCellSelectionStyleNone];
 	[cell setBeginAnimatedPresentationButtonDelegate:self];
+	
+	ATCellHelper* const cellHelper = self.cellHelpers[indexPath.section];
+	[cell setCellHelper:cellHelper];
+	
 	return cell;
 }
 
@@ -215,6 +235,11 @@
 	kRUConditionalReturn(self.expandedIndexPath == expandedIndexPath, NO);
 	
 	[self setExpandedIndexPath_previous:self.expandedIndexPath];
+	if (self.expandedIndexPath)
+	{
+		ATCellHelper* const cellHelper = self.cellHelpers[self.expandedIndexPath.section];
+		[cellHelper setCellShouldShowButton:NO];
+	}
 	
 	_expandedIndexPath = expandedIndexPath;
 	
@@ -223,6 +248,12 @@
 	[UIView animateWithDuration:0.3 animations:^{
 		[self_weak tableView_expandedIndexPath_animate_update];
 	}];
+	
+	if (self.expandedIndexPath)
+	{
+		ATCellHelper* const cellHelper = self.cellHelpers[self.expandedIndexPath.section];
+		[cellHelper setCellShouldShowButton:YES];
+	}
 }
 
 -(void)expandedIndexPath_update_for_selectedIndexPath:(nonnull NSIndexPath*)selectedIndexPath
@@ -236,6 +267,7 @@
 	
 	return selectedIndexPath;
 }
+
 #pragma mark - expandedIndexPath_shouldExpandFooter
 -(void)setExpandedIndexPath_shouldExpandFooter:(BOOL)expandedIndexPath_shouldExpandFooter
 {
@@ -301,6 +333,9 @@
 	[self.tableView beginUpdates];
 	[self setExpandedIndexPath_shouldExpandFooter:YES];
 	[self.tableView endUpdates];
+	
+	ATCellHelper* const cellHelper = self.cellHelpers[self.expandedIndexPath.section];
+	[cellHelper setCellShouldShowButton:NO];
 }
 
 #pragma mark - ATModalViewController_dismissalDelegate
@@ -309,6 +344,9 @@
 	[self.tableView beginUpdates];
 	[self setExpandedIndexPath_shouldExpandFooter:NO];
 	[self.tableView endUpdates];
+	
+	ATCellHelper* const cellHelper = self.cellHelpers[self.expandedIndexPath.section];
+	[cellHelper setCellShouldShowButton:YES];
 }
 
 @end

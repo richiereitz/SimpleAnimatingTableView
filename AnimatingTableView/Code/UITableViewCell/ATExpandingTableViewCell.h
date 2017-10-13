@@ -14,6 +14,12 @@
 
 
 
+@class ATCellHelper;
+
+
+
+
+
 @interface ATExpandingTableViewCell : UITableViewCell
 
 #pragma mark - beginAnimatedPresentationButtonDelegate
@@ -21,5 +27,8 @@
 
 #pragma mark - roundedContentView
 @property (nonatomic, readonly, strong, nullable) UIView* roundedContentView;
+
+#pragma mark - cellHelper
+@property (nonatomic, strong, nullable) ATCellHelper* cellHelper;
 
 @end

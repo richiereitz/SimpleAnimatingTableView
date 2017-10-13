@@ -15,6 +15,7 @@
 		B689585B1F913F8E00539DA2 /* ATPresentationAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B689585A1F913F8E00539DA2 /* ATPresentationAnimationManager.m */; };
 		B689585E1F913FA100539DA2 /* ATPresentationTransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B689585D1F913FA100539DA2 /* ATPresentationTransitionManager.m */; };
 		B68958611F9146AE00539DA2 /* ATModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B68958601F9146AE00539DA2 /* ATModalViewController.m */; };
+		B68958681F91715C00539DA2 /* ATCellHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B68958671F91715C00539DA2 /* ATCellHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		B689585F1F9146AE00539DA2 /* ATModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATModalViewController.h; sourceTree = "<group>"; };
 		B68958601F9146AE00539DA2 /* ATModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATModalViewController.m; sourceTree = "<group>"; };
 		B68958621F9146CB00539DA2 /* ATModalViewController_Protocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATModalViewController_Protocols.h; sourceTree = "<group>"; };
+		B68958661F91715C00539DA2 /* ATCellHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCellHelper.h; sourceTree = "<group>"; };
+		B68958671F91715C00539DA2 /* ATCellHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATCellHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 		B68958581F913F7000539DA2 /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
+				B68958661F91715C00539DA2 /* ATCellHelper.h */,
+				B68958671F91715C00539DA2 /* ATCellHelper.m */,
 				B68958591F913F8E00539DA2 /* ATPresentationAnimationManager.h */,
 				B689585A1F913F8E00539DA2 /* ATPresentationAnimationManager.m */,
 				B689585C1F913FA100539DA2 /* ATPresentationTransitionManager.h */,
@@ -278,6 +283,7 @@
 				B689584E1F9127B400539DA2 /* AppDelegate.m in Sources */,
 				B689585E1F913FA100539DA2 /* ATPresentationTransitionManager.m in Sources */,
 				B68958421F9126E000539DA2 /* main.m in Sources */,
+				B68958681F91715C00539DA2 /* ATCellHelper.m in Sources */,
 				B68958561F9137EA00539DA2 /* ATExpandingTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

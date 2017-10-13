@@ -8,6 +8,8 @@
 
 #import "ATModalViewController.h"
 
+#import <ResplendentUtilities/UIView+RUUtility.h>
+
 
 
 
@@ -35,7 +37,9 @@
 	[self.view setBackgroundColor:[UIColor whiteColor]];
 	
 	_dismissButton = [UIButton buttonWithType:UIButtonTypeCustom];
-	[self.dismissButton setBackgroundColor:[UIColor redColor]];
+	[self.dismissButton setBackgroundColor:[UIColor greenColor]];
+	[self.dismissButton setTitle:@"Push Me To Go Back" forState:UIControlStateNormal];
+	[self.dismissButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
 	[self.dismissButton addTarget:self action:@selector(dismissButton_didTouchUpInside) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:self.dismissButton];
 }
@@ -50,12 +54,16 @@
 #pragma mark - dismissButton
 -(CGRect)dismissButton_frame
 {
-	return (CGRect){
-		.origin.x = 50,
-		.origin.y = 50,
-		.size.width = 50,
-		.size.height = 50
+	CGSize const size = (CGSize){
+		.width = 200.0f,
+		.height = 100.0f,
 	};
+	
+	return CGRectCeilOrigin((CGRect){
+		.origin.x	= CGRectGetHorizontallyAlignedXCoordForWidthOnWidth(size.width, CGRectGetWidth(self.view.bounds)),
+		.origin.y	= CGRectGetVerticallyAlignedYCoordForHeightOnHeight(size.height, CGRectGetHeight(self.view.bounds)),
+		.size		= size
+	});
 }
 
 -(void)dismissButton_didTouchUpInside
