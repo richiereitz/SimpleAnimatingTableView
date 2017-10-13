@@ -86,6 +86,8 @@
 	
 	_transitionManager = [ATPresentationTransitionManager new];
 	
+	[self.navigationItem setTitle:@"Tap a cell to start"];
+	
 	_tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
 	[self.tableView setBackgroundColor:[UIColor blueColor]];
 	[self.tableView setDelegate:self];
@@ -137,7 +139,7 @@
 	
 	//Since we want the animation to appear as though the cells are shifing an equal amount in both directions, we will use half of the difference in height for our offset
 	CGFloat const heightModifier = heightDifference / 2.0f;
-		
+	
 	[self.tableView setContentOffset:(CGPoint){
 		.x = 0,
 		.y = (self.expandedIndexPath) ? currentOffset.y + heightModifier : currentOffset.y - heightModifier
